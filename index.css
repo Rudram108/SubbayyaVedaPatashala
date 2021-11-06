@@ -114,6 +114,14 @@
 		left : 150px;
 		right : 150px;
 	}
+	@media screen and (max-width: 770px){
+		.banner-text{
+			padding-top : 80px;
+			left : 110px;
+		right : 110px;
+			
+		}
+	}
 	
 	.tutor-text{
 		text-align : center;
@@ -126,7 +134,11 @@
 		font-size: 30px;
 		font-style: italic;
 	}
-	
+	@media screen and (max-width: 770px){
+		.banner-text p{
+		font-size: 20px;
+		 white-space: nowrap; 
+		}
 	.banner-btn{
 		margin: 30px auto 0;
 	}
