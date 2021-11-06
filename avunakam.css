@@ -79,9 +79,12 @@
 		/*vertical-align:sub;*/
 		text-decoration: underline;
 		/*color :#2f4f4f;*/
-		color: #dc143c;
+		/*color: #dc143c;*/
 		/*color:#737373;*/
-		/*color: #34495E;*/
+		color: #6b6a6a;
+		/*#34495E*/
+		
+		
 	}
 	
 	.audio-text button b {
