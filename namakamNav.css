@@ -1,0 +1,291 @@
+	*{
+		margin : 0;
+		padding : 0;
+	}
+	
+	.bg{
+		background: linear-gradient(#009688,rgb(135,206,235));
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow:hidden;
+		width: 100vw;
+	}
+
+	div{
+		display : block;
+	}
+
+	.anubg{
+		max-width : 100%;
+		height:100%;
+	}
+	.logoSec{
+		width : 100%;
+		height: 10%;
+	}
+	#allPage{
+		text-align : center;
+		color : #000;
+		font-size: xx-large;
+		position: relative;
+		top : -70px;
+	}
+	
+	@media only screen and (max-width: 700px) {
+	#allPage {
+		font-size: x-large;
+		text-align : center;
+		position: relative;
+		top : -70px;
+	}
+	
+	.tutor-text{
+		text-align : center;
+	}
+	
+	.logo{
+			width : 70px;
+			height : 70px;
+			position:fixed;	
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.logo {
+		width : 70px;
+		height : 70px;
+	}
+	}
+		
+	.allPage{
+		text-align : center;
+		color : #fff;
+		padding-top : 0px;
+		font-size: xx-large;
+		position: fixed;
+	}
+
+	.audio-text {
+    font-size: 18px !important;
+    text-align: justify;
+    padding-left: 1px !important;
+    overflow: hidden;
+    position: relative;
+	top:50px;
+	right : 100px;
+	width: 600px;
+	}
+	@media only screen and (min-device-width: 375px) and (max-width: 700px) {
+	.audio-text {
+		width: 600px;
+		left: 22px;
+	}
+	}
+	
+	.audio-text button {
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: #000;
+		font-size: 21px;
+		padding-bottom : 10px;
+		padding-left: 33px;
+	}
+	
+	.audio-text button:active {
+		color: blue;
+	}
+
+	.audio-text button:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		font-size: 20px;
+		padding-bottom : 10px;
+	}
+	
+	.audio-text button small {
+		
+		font-size: 15px;
+		/*vertical-align:sub;  */
+	}
+	
+	.audio-text button b {
+		
+		font-size : 23px;
+	/*	vertical-align:super;*/
+	}
+	@media only screen and (max-width: 700px) {
+	.audio-text button {
+		font-size: 15px;
+		padding-left: 33px;
+		/*white-space: normal;*/
+	}
+	}
+	
+	
+	/*@media only screen and (max-width: 700px) {
+	.audio-text {
+		position:absolute;
+		left: auto;
+		right:110px;
+		padding-top : 1px;
+	}
+	}*/
+	.namakam-btn button{
+		width: 100px;
+		text-decoration: none;
+		border-style:none;
+		background-color: Transparent;
+		padding: 10px 0;
+		color : black;
+		position: relative;
+		right: 45%;
+		top: 20px;
+		z-index: 1;
+		transition: color 0.5s;
+		
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.namakam-btn {
+		left: 220px;
+		top : 80px;
+	}
+	}
+	.namakam-btn button:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		padding-bottom : 10px;
+	}
+	
+	.goButton {
+		position: relative;
+		left: 450px;
+		top : 80px;
+	}
+	
+	.goButton button img{
+		width : 30px;
+		background-color: Transparent;
+		cursor: pointer;
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.goButton {
+		left: 330px;
+		top : 80px;
+	}
+	}
+	#anu1Aud{
+		top: 0px;
+		right : 50px;
+		width : 100%;
+		background : #009688;
+		overflow: hidden;
+		border: medium dashed green;
+	}
+	audio::-webkit-media-controls-play-button{
+background-color:#009688;}
+
+@media only screen and (max-width: 700px) {
+	#anu1Aud{
+		
+		width: 40%;
+		position:fixed;
+		left: 40px;
+	}
+}
+
+	/*
+	@media (min-width: 768px)
+	.goButton  {
+    width: 10px;
+	}
+	*/
+	.goButton button img:hover{
+		width : 50px;
+		background-color: Transparent;
+		cursor: pointer;
+	}
+	
+	/*#anu1Aud{
+		position : static;
+		left:100px;
+		top : -100px;
+	}*/
+	.nav{
+		position: fixed;
+		width : 500px;
+		height: 100%;
+		 overflow-x: hidden; 
+		 margin-top: 0;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+		width : 100%;
+		height: 80%;
+	}
+	.audio-select{
+		position : fixed;
+		top:0px;
+		bottom:0px;
+		left:20px;  
+		width: 100%;
+		height: 88px;
+		display: block;
+		overflow: hidden;
+		z-index : 1;
+	}
+	
+	.audio-select embed{
+		width: 100%;
+		height: 220px;
+		
+	}
+	
+	.audio-select audio{
+		 background: transparent;
+	}
+	
+	.audio-select hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+.audio-select hr:after {
+    content: "🕉️";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: transparent;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009688; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #009666	; 
+}

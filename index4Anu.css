@@ -1,0 +1,171 @@
+.bg{
+		position:fixed;
+		background: linear-gradient(#009688,rgba(0,0,0,0));				
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+		border :1;
+		
+	}
+	
+	.wrapper{
+			display : grid;
+			gap: 10px;
+			grid-template-rows: 100px 100vw;
+			grid-template-columns: 110px 100vw;
+	}
+	
+	.logo{
+		width : 100px;
+		position: fixed;
+		top : 1%;
+		left : 1%;	
+	}
+	@media only screen and (max-width: 700px) {
+	.logo{
+		width : 70px;
+	}
+	}
+	
+	.allPage{
+		position : fixed;
+		left: 220px;
+		text-align : center;
+		color : #fff;
+		font-size: xx-large;
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.allPage{
+		font-size: large;
+		left: 140px;
+	
+	}
+	}
+	@media only screen and (min-width: 705px) {
+	.allPage{
+		font-size: xx-large;
+		left: 190px;
+		
+	}
+	}
+	.allPage img{
+		position:relative;
+		left : 75vw;
+		bottom:0px;
+		cursor : pointer;
+	}
+	@media only screen and (max-width: 700px) {
+	.allPage img{
+		position:relative;
+		left : 25vw;
+		bottom : 5vw;
+	}
+	}
+		@media only screen and (min-width: 705px) {
+	.allPage a{
+		left : 30vw;
+		bottom : 7vw;
+		
+	}
+	}
+
+	.namakambtn {
+		width: 11vw;
+		position : fixed;
+		top: 20%;
+		left : 0%;
+		transition: 1s;
+		cursor:pointer;
+		z-index:7;
+	}
+	
+	@media only screen  and (max-width: 1700px) {
+	.namakambtn{
+		top: 25%;
+		left : 0%;
+		width: 20vw;
+	}
+	}
+	@media only screen  and (max-width: 700px) {
+	.namakambtn{
+		top: 25%;
+		left : 0%;
+		width: 41vw;
+	}
+	}
+	
+	@media only screen and (max-width: 375px) {
+	.namakambtn{
+		top: 25%;
+		left : 0%;
+		width: 47vw;
+	}
+	}
+	nav ul li{
+		list-style: none;
+		margin-top : 10px;
+	}
+	
+	nav ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	nav ul li a:hover{
+		text-decoration: none;
+		color: yellow;
+	}
+	
+	#manuBtn{
+		width: 1px;
+		height: 1px;
+		text-align: center;
+		position: fixed;
+		left: 2px;
+		top: 20%;
+		border-radius: 3px;
+		z-index: 8;
+		cursor: pointer;
+	}
+	#manuBtn img{
+		width: 10px;
+		margin-top: 45px;
+	}
+	
+	.anu-space{
+		position : relative;
+		top:10%;
+		width : 66vw;
+		height : 100vh;
+		z-index :1;
+	}
+	
+	
+	@media only screen  and (max-width: 700px) {
+	.anu-space{
+		top:170%;
+		width: 70vw;
+		left: 20px;
+	}
+	}
+	
+		
+	@media only screen and (min-width: 200px) {
+	.anu-space{
+		top:150%;
+		width: 70vw;
+		left: 0px;
+	}
+	}
+	
+	.top-nav{
+		z-index: 5;
+		
+	}
+	
+	
+	
+	
+	

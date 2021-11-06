@@ -1,0 +1,172 @@
+html{
+overflow-y: scroll;
+}
+
+.bg{
+		/*position:fixed;*/
+		background: rgba(0,0,0,0);				
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+		border :1;
+		
+	}
+	
+	.header{
+		position : fixed;
+		background:#009688;	
+		width : 100%;
+		height : 118px;
+		z-index : 1;
+		top : 0%;
+		left : 0%;
+		right:0%;
+	}
+	@media only screen and (max-width: 700px) {
+	.header{
+		height : 100px;
+	}
+	}
+
+	
+	.logo{
+		width : 100px;
+		position: fixed;
+		top : 1%;
+		left : 1%;	
+	}
+	@media only screen and (max-width: 700px) {
+	.logo{
+		width : 70px;
+	}
+	}
+	.allPage{
+		position : fixed;
+		right:15%;
+		text-align : center;
+		color : #000;
+		font-size: xx-large;
+	}
+	
+	@media only screen and (max-width: 700px) {
+	.allPage{
+		font-size: large;
+		left: 140px;
+	
+	}
+	}
+	@media only screen and (min-width: 705px) {
+	.allPage{
+		font-size: xx-large;
+		left: 190px;
+		
+	}
+	}
+	.allPage img{
+		position:relative;
+		left : 75vw;
+		bottom:0px;
+		cursor : pointer;
+	}
+	@media only screen and (max-width: 700px) {
+	.allPage img{
+		position:relative;
+		left : 25vw;
+		bottom : 5vw;
+	}
+	}
+		@media only screen and (min-width: 705px) {
+	.allPage a{
+		left : 30vw;
+		bottom : 7vw;
+		
+	}
+	}
+	#info{
+		position:relative;
+		padding-top : 1%;
+		top : 21%;
+		right:0%;
+		font-size : large;
+	}
+	@media only screen and (max-width: 700px) {
+	#info{
+		top : 15%;
+		right: 0%;
+	}
+	}
+	
+.squares {
+	width:80%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin:auto;
+	position : relative;
+	top : 120px;
+	
+}
+
+.images{
+	flex-basis : 30%;
+	text-align : center;
+	border-radius : 7px;
+	margin-bottom : 30px;
+	color: #fff;
+	position : relative;
+	
+}
+.images img{
+	width :100%;
+	border-radius : 7px;/*mine*/
+
+}
+.images a{
+	color : #fff;
+}
+.text{
+	width:100%;
+	height: 100%;
+	position : absolute;
+	top:0;
+	border-radius:7px;
+	cursor:pointer;
+	background:linear-gradient(rgba(0,0,0,0.5),#009688);
+	opacity:0;
+	transition:1s;
+}
+
+.images:hover .text{
+	opacity :1;
+}
+
+#title {
+	color : #000;
+	font-size : large;
+}
+
+.desc{
+	padding-top : 50%;
+	text-align : center;
+}
+
+.desc b{
+	color: yellow;
+	
+}
+@media only screen and (max-width: 700px) {
+	.desc{
+		padding-top : 10%;
+		font-size: small;
+		
+	
+	}
+	}
+	@media only screen and (min-width: 705px) {
+	.desc{
+		font-size: large;
+		left: 190px;
+		
+	}
+	}

@@ -1,0 +1,120 @@
+<html>
+<head>
+<style>
+*{
+marging : 0px;
+padding: 0px;
+}
+
+body{
+padding: 50px;
+}
+
+h1{
+text-align: center;
+margin-bottom: 50px;
+}
+
+ul#navmenu, ul.sub1, ul.sub2{
+list-style-type : none;
+font-size: 9px;
+}  
+
+
+
+ul#navmenu li{
+width: 125px;
+text-align: center;
+position: relative;
+float: right;
+margin-right:4px;
+	
+}
+
+ul#navmenu a{
+text-decoration:none;
+display: block;
+width: 125px;
+height: 25px;
+line-height: 25px;
+border: 1px solid white;
+border-radius: 5px;
+}
+
+ul#navmenu .sub1 li{
+margin-top: 0px;
+list-style-type : none;
+font-size: 9pts;
+}
+
+ul#navmenu .sub1 a{
+margin-top: 5px;
+}
+
+ul#navmenu .sub2 a{
+margin-left: 10px;
+}
+
+ul#navmenu li:hover > a{
+background-color: #CFC;
+}
+
+ul#navmenu li:hover  a:hover{
+background-color: #FF;
+}
+
+ul#navmenu ul.sub1{
+display: none;
+position:absolute;
+top: 26px;
+left: 0px;
+}
+
+ul#navmenu li:hover .sub1{
+display: block;
+}
+
+ul#navmenu ul.sub2{
+display: none;
+position: absolute;
+top: 0px;
+left: 121px;
+}
+
+ul#navmenu .sub1  li:hover .sub2{
+display: block;
+}
+
+
+
+</style>
+<head>
+	 <title>Namakam</title>
+	  <link rel="stylesheet" href="index.css">
+
+	  <meta name ="viewport" content = "width = device-width, initial-scale=1">
+	
+</head>
+
+<body>
+<ul id="navmenu">
+	
+	<li> <a href = "#">Language</a>
+		<ul class = "sub1">
+			<li> <a href = "#">Telugu</a></li>
+			<li> <a href = "#">Hindi</a></li>
+			<li> <a href = "#">English</a></li>
+		</ul>
+	</li>
+	
+	<li> <a href = "#">Learning Level</a>
+		<ul class = "sub1">
+			<li> <a href = "#">Word-by-word</a></li>
+			<li> <a href = "#">Line-by-line</a></li>
+			<li> <a href = "#">No repitiptions</a></li>
+		</ul>
+	</li>		
+</ul>
+
+</body>
+</html>
