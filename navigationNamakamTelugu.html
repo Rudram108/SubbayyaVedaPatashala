@@ -1,9 +1,13 @@
 <html lang="en">
 
 <head>
+
 	 <title>Namakam</title>
 	  <link rel="stylesheet" href="index4Anu.css">
 	  <link rel="stylesheet" href="dd.css">
+	  <meta name="description" content="Namakam telugu tutorial">
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	  <meta name ="viewport" content = "width = device-width, initial-scale=1">
 	<script src="scripts/anu1Telugu.js"></script>
 </head>
@@ -33,17 +37,17 @@
 			<ul>	
 				<li><a href = "javascript:showDiv('01')" target = "_top"><span></span> Anuvakam 1</a></li>
 				<li><a href = "javascript:showDiv('02')" target = "_top"> Anuvakam 2 </a></li>
-				<li><a href = "namakanAnu2Tel.html" target = "_top"> Anuvakam 3 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 3 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 4 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 5 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 6 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 7 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 8 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 9 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 10 </a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 11</a></li>
-				<li><a href = "namakamAnu1Tel.html"> Anuvakam 12 </a></li>
+				<li><a href = "pageNotFound.html" target = "_top"> Anuvakam 3 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 3 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 4 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 5 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 6 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 7 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 8 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 9 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 10 </a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 11</a></li>
+				<li><a href = "pageNotFound.html"> Anuvakam 12 </a></li>
 			</ul>
 			
 			
@@ -57,27 +61,28 @@
 	
 		<div class= "top-nav">
 			<ul id="navmenu">
-				<li> <a href = "#">Language</a>
+				<li id = "lanCap"> <a href = "javascript:openLanguage('lanCap')">Language</a>
 					<ul class = "sub1">
-						<li> <a href = "javascript:setLanguage('Tel')" target = "_top">Telugu</a></li>
-						<li> <a href = "javascript:setLanguage('Hin')" target = "_top">Hindi</a></li>
-						<li> <a href = "javascript:setLanguage('Eng')" target = "_top">English</a></li>
+						<li id ="lanList1" class = "lang"> <a href = "javascript:setLanguage('Tel')">Telugu</a></li>
+						<li id ="lanList2" class = "lang"> <a href = "javascript:setLanguage('Hin')">Hindi</a></li>
+						<li id ="lanList3" class = "lang"> <a href = "javascript:setLanguage('Eng')">English</a></li>
+						<li id ="lanList4" class = "lang"> <a href = "javascript:setLanguage('Tam')">Tamil</a></li>
 					</ul>
 				</li>
 				
 				<!-- changes made-->
-				<li> <a href = "#">Text</a>
+				<li id="textCap"> <a href = "javascript:openText('lanCap')">Text</a>
 					<ul class = "sub1">
-						<li> <a href = "javascript:setTextMode('nrl')">Normal</a></li>
-						<li> <a href = "javascript:setTextMode('swr')">Swaraas</a></li>
+						<li id ="textList1"> <a href = "javascript:setTextMode('nrl')">Normal</a></li>
+						<li id ="textList2"> <a href = "javascript:setTextMode('swr')">Swaraas</a></li>
 					</ul>
 				</li>
 				<!-- changes made-->
 				
-				<li> <a href = "#">Learning Level</a>
+				<li id="llCap"> <a href = "javascript:openMode('llCap')">Learning Level</a>
 					<ul class = "sub1">
-						<li> <a href = "javascript:setLearningMode('ww')">WordByWord</a></li>
-						<li> <a href = "javascript:setLearningMode('ll')">LineByLine</a></li>
+						<li id ="llList1"> <a href = "javascript:setLearningMode('ww')">WordByWord</a></li>
+						<li id ="llList2"> <a href = "javascript:setLearningMode('ll')">LineByLine</a></li>
 						<!--<li> <a href = "javascript:setLearningMode('nrp')">Tutorial</a></li>-->
 					</ul>
 				</li>
