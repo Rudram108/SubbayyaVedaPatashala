@@ -62,8 +62,9 @@
 			source.src = sourceAud;	
 			sounds.load();
 			sounds.play();
-			
+			//alert('reached');
 		sounds.onended = function() {
+			//alert('reached');
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
@@ -72,11 +73,14 @@
 				}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
-			var ele = document.getElementById('audioText');
+				//alert(buttonNum);
+			var ele = document.getElementById('audio-text');
 			var numberOfButtons = ele.getElementsByTagName('button').length;
+			//alert(numberOfButtons);
 			if( buttonNum < numberOfButtons)								
 				anu1TeluguPrint(anuNum,buttonNum);
-				alert("Anuvakam is complete. Please choose the next one");
+			else
+			alert("Anuvakam is complete. Please choose the next one");
 		}
 					
 	}
