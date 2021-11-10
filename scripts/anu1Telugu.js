@@ -137,7 +137,7 @@
 			var ele = document.getElementById('audio-text');
 			var numberOfButtons = ele.getElementsByTagName('button').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
-			alert(+numberOfButtons + +numberOfSpans);
+			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(anuNum,buttonNum);
 			else
