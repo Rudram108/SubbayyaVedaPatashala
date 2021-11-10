@@ -35,42 +35,24 @@
 				
 				var dualButton = +playingButton -1;
 				dualButton = leftPad(dualButton,2);
-				////alert('dualButton');
-				//alert(dualButton);
 				var dualButtonId = "button" + dualButton;
-				//alert(dualButtonId);
-				document.getElementById(dualButtonId).style.color = "#000";
+				//document.getElementById(dualButtonId).style.color = "#000";
+				inActiveButtonColor(dualButtonId);
 				dualButton = +playingButton -2;
 				dualButton = leftPad(dualButton,2);
 				dualButtonId = "button" + dualButton;
-				//alert(dualButtonId);
-				//alert(dualButton);
 				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
 					dualButton = +playingButton -3;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "button" + dualButton;
-				//alert(dualButtonId);
-				//alert(dualButton);
-				document.getElementById(dualButtonId).style.color = "#000";
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "button" + dualButton;
+				
+					inActiveButtonColor(dualButtonId);
 				}
 				else
-				document.getElementById(dualButtonId).style.color = "#000";
-				/*for(var i = 0; i< buttonEle.children.length; i++)
-					 buttonEle.children[i].style.color = "blue";*/
+					inActiveButtonColor(dualButtonId);
+			
 			}else
-				currButtonEle.style.color = "#000";
-				var smalls = currButtonEle.getElementsByTagName('small');
-				for(var i = 0; i < smalls.length; i++)
-					{
-						smalls[i].style.color = '#424949';
-							//smalls[i].style.color = '#dc143c';
-					}
-				var bolds = currButtonEle.getElementsByTagName('b');
-					
-				for(var i = 0; i < bolds.length; i++)
-				{
-					bolds[i].style.color = '#17202A';
-				}	
+				inActiveButtonColor(curBut);
 			}
 				
 		if(!sounds.paused)
@@ -84,8 +66,8 @@
 				//alert('dualButton');
 				//alert(dualButton);
 				var dualButtonId = "button" + dualButton;
-				//alert(dualButtonId);
-				document.getElementById(dualButtonId).style.color = "blue";
+				
+				activeButtonColor(dualButtonId);
 				dualButton = +buttonNum -2;
 				dualButton = leftPad(dualButton,2);
 				dualButtonId = "button" + dualButton;
@@ -93,30 +75,18 @@
 				//alert(dualButton);
 				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
 					dualButton = +buttonNum -3;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "button" + dualButton;
-				//alert(dualButtonId);
-				//alert(dualButton);
-				document.getElementById(dualButtonId).style.color = "blue";
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "button" + dualButton;
+					
+					activeButtonColor(dualButtonId);
 				}
 				else
-					document.getElementById(dualButtonId).style.color = "blue";
-				
-				/*for(var i = 0; i< buttonEle.children.length; i++)
-					 buttonEle.children[i].style.color = "blue";*/
+					activeButtonColor(dualButtonId);
+					
 			}
 			else
-			//buttonEle.style.color = "#086D1B";
-				buttonEle.style.color = "blue";
-		var smalls = buttonEle.getElementsByTagName('small');
-		for(var i = 0; i < smalls.length; i++){
-						//smalls[i].style.color = '#1C37B6';
-				smalls[i].style.color = '#dc143c';
-		}
-		var bolds = buttonEle.getElementsByTagName('b');
-		for(var i = 0; i < bolds.length; i++){
-			bolds[i].style.color = '#241CB6';
-		}
+				activeButtonColor(buttonId);
+			
 				
 			buttonEle.style.border = "none";
 			source.src = sourceAud;	
@@ -366,5 +336,32 @@
 		
 	}
 	
+	function activeButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "blue";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++){
+									//smalls[i].style.color = '#1C37B6';
+			smalls[i].style.color = '#dc143c';
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		for(var i = 0; i < bolds.length; i++){
+			bolds[i].style.color = '#241CB6'
+		}
+	}
 	 
+	function inActiveButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "#000";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++)
+		{
+			smalls[i].style.color = '#424949';
+			//smalls[i].style.color = '#dc143c';
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		
+		for(var i = 0; i < bolds.length; i++)
+		{
+			bolds[i].style.color = '#17202A';
+		}	
+	}
 	
