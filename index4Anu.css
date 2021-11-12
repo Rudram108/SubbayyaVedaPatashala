@@ -50,6 +50,13 @@
 		
 	}
 	}
+	@media only screen and (min-width: 1025px) {
+	.allPage{
+		font-size: xx-large;
+		left: 290px;
+		
+	}
+	}
 	.allPage img{
 		position:relative;
 		left : 75vw;
@@ -85,14 +92,14 @@
 	.namakambtn{
 		top: 25%;
 		left : 0%;
-		width: 20vw;
+		width: 19vw;
 	}
 	}
 	@media only screen  and (max-width: 700px) {
 	.namakambtn{
 		top: 25%;
 		left : 0%;
-		width: 36vw;
+		width: 30vw;
 	}
 	}
 	
@@ -100,9 +107,10 @@
 	.namakambtn{
 		top: 25%;
 		left : 0%;
-		width: 47vw;
+		width: 43vw;
 	}
 	}
+	
 	nav ul li{
 		list-style: none;
 		margin-top : 10px;
@@ -159,7 +167,10 @@
 		left: 0px;
 	}
 	}
-	
+	@media only screen and (min-width:1025px) {
+	.anu-space{
+		left: 180px;
+	}}
 	.top-nav{
 		z-index: 5;
 		
