@@ -52,14 +52,13 @@
 	position :relative;
 	top:50px;
 	left:23px;
-	width: 80vw;
+	width: 78vw;
 	}
 	
 	.audio-text button {
 		border: none;
 		cursor: pointer;
 		background-color: Transparent;
-		
 		color: #340002;
 		font-size: 19px;
 		padding-bottom : 10px;
