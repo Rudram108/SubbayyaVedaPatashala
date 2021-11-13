@@ -315,10 +315,11 @@
 	
 	function openMode(listID){		 
 		const myElement = document.getElementById(listID);
+		var list;
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;	
 			if (listClass != ''){
-				var list = document.getElementsByClassName(listClass)[2];
+				list = document.getElementsByClassName(listClass)[2];
 				for (let j = 0; j < list.children.length; j++) {
 					if(document.getElementById(list.children[j].id).style.display == "block")
 						document.getElementById(list.children[j].id).style.display = "none";
@@ -327,13 +328,6 @@
 				}
 			}
 		}
-		if(getLearningMode() == 'ww'){
-			document.getElementById("llList1").style.color = "red";
-		}else{
-			document.getElementById("llList2").style.color = "red";
-			
-		}	
-		
 	}
 	
 	function activeButtonColor(buttonId){
