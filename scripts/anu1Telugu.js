@@ -8,6 +8,8 @@
 	function anu1TeluguPrint(anuNum, buttonNum){
 				//alert(anuNum);
 				//alert(buttonNum);
+				
+					
 		var buttonId = "button" + buttonNum;
 		var buttonEle = document.getElementById(buttonId);
 		var curBut; 
@@ -15,6 +17,8 @@
 		var prevNum;
 		var targetLength = 2;
 		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
+		if(anuNum == '4')
+			sourceAud = "audio/Namakam-Anuvakam-4.0.m4a";
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
