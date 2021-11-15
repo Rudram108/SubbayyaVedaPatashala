@@ -6,7 +6,7 @@
 
 
 	.homebg{
-		background: linear-gradient(rgba(0,0,0,0),#009688),url(images/bckgrnd.jpg);
+		background: linear-gradient(rgba(0,0,0,0),#009688),url(../images/bckgrnd.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		
