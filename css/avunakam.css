@@ -16,7 +16,7 @@
 		position : fixed;
 		top:0px;
 		bottom:0px;
-		left: 40px;  
+		left: 0px;  
 		width: 70vw;
 		height: 88px;
 		display: block;
@@ -31,8 +31,11 @@
 
 	
 	#anu1Aud{
-		top: 0px;
-		right : 30px;/*was 50*/
+		position : relative;
+		/*top: 0px;
+		/*right : 30px;/*was 50*/
+		left : 40px;
+		padding-left : 10px;
 		width : 50%;
 		background : #009688;
 		overflow: hidden;
@@ -42,7 +45,7 @@
 	background-color:#009688;}
 	@media only screen and (max-width: 700px) {
 	#anu1Aud {
-		width: 60vw;
+		width: 57vw;
 	}}
 
 	.audio-text {
@@ -51,7 +54,7 @@
     overflow: scroll;
 	position :relative;
 	top:50px;
-	left:23px;
+	left:39px;
 	width: 78vw;
 	}
 	
