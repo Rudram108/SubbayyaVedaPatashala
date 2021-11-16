@@ -4,7 +4,7 @@
 	.bg{
 			position:fixed;
 			background: linear-gradient(#009688,rgba(0,0,0,0))!important;		
-			/*background: #009688;*/
+			/*background: linear-gradient(#009688,rgba(1,1,1,1))!important;*/
 			top:0;
 			right:0;
 			left:0;
