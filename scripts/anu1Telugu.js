@@ -5,6 +5,19 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
+		
+	function playMeditativeMode(anuNum){
+		var sounds = document.getElementById('compAudio');
+		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+".mp3";
+		if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+		var source = document.getElementById('compSource');
+		source.src =sourceAud ;
+		sounds.load();
+		sounds.play();
+	}	
 	function anu1TeluguPrint(anuNum, buttonNum){
 				//alert(anuNum);
 				//alert(buttonNum);
@@ -17,8 +30,7 @@
 		var prevNum;
 		var targetLength = 2;
 		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
-		if(anuNum == '4')
-			sourceAud = "audio/Namakam-Anuvakam-4.0.m4a";
+		
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -136,12 +148,14 @@
 		localStorage.setItem("learningMode" , mode);
 		document.getElementById("llList1").style.display = "none";
 		document.getElementById("llList2").style.display = "none";
-		if(mode == 'ww'){
-			document.getElementById("llList1").style.color = "red";
-		}else{
-			document.getElementById("llList2").style.color = "red";
+		document.getElementById("llList3").style.display = "none";
+		if(mode == 'com'){
+			var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+			var scrAnuvakam = scrName.substring(10,12);
+			playMeditativeMode(scrAnuvakam);
 			
-		}	
+		}
 	}
 		/*
 		This function get the Learning Mode
@@ -201,7 +215,9 @@
 	}			
 			/*
 		This function get the Language Mode
-		*/		 
+		*/	
+
+		
 			 
 	function getLanguage(){
 		lang = localStorage.getItem("language");
