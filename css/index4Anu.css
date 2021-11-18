@@ -175,6 +175,11 @@
 	.anu-space{
 		left: 180px;
 	}}
+	.anu-space p{
+		position : relative;
+		left : 40px;
+		color : red;
+	}
 	.top-nav{
 		z-index: 5;
 		
