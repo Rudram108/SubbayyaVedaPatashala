@@ -170,7 +170,7 @@
 			sounds.play();
 			}
 			catch(err){
-				alert("The audio you are trying to play is not available.Please contact Subayya Shastry garu");
+				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
 		}
