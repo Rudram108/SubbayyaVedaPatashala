@@ -146,8 +146,9 @@
 			alert(mode);
 					
 			var iframe = document.getElementById("anu");
-			iframe = iframe.substring(iframe.lastIndexOf('/')+1);
-			var scrAnuvakam = iframe.substring(10,12);
+			var scrName = document.getElementById("anu").src;
+			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+			var scrAnuvakam = scrName.substring(10,12);
 			alert(iframe);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			alert(innerDoc);
