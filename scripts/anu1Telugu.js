@@ -170,6 +170,7 @@
 			sounds.play();
 			}
 			catch(err){
+				console.log("In catch");
 				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
