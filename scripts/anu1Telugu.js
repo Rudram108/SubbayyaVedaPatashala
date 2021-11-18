@@ -149,19 +149,19 @@
 			var scrName = document.getElementById("anu").src;
 			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			var scrAnuvakam = scrName.substring(10,12);
-			alert(iframe);
-			alert(scrName);
+			//alert(iframe);
+			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			alert(innerDoc);
+			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
-			alert(source.src);
+			//alert(source.src);
 			currAud = source.src ;
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 			alert(playingButton);
-			playingButton=leftPad(playingButton,targetLength);
+			playingButton=leftPad(playingButton,2);
 			
 		if(mode == 'com'){
 			alert(mode);
