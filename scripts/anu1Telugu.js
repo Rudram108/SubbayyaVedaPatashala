@@ -162,9 +162,14 @@
 				{
 					sounds.pause();								
 				}
-			source.src = "Anu"+ scrAnuvakam+mode+".mp3";
+			try{
+			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
 			sounds.load();
 			sounds.play();
+			}
+			catch(err){
+				alert("The audio you are trying to play is not available.Please contact Subayya Shastry garu");
+			}
 		
 		}
 	}
