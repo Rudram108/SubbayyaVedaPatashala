@@ -29,7 +29,6 @@
 		currAud = source.src ;
 		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 		var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-		
 		/*FETCHING THE CURRENTLY PLAYING BUTTON NUMBER BASED ON THE AUDIO BEING PLAYED. THAT BUTTON COLOR IS CHANGED TO BLACK.
 		IN FEW ANUVAKAS TWO LINES ARE BEING READ AT THE SAME TIME. IN WHICH CASE THAT BUTTONS ARE KEPT IN THE DIV AND IF THE 
 		ELEMENT IS A DIV, ALL THE CHILDRENS COLOR IS CHANGED TO BLACK AFTER PAUSING.
@@ -138,64 +137,43 @@
 		This function set the Learning Mode
 		*/
 	function setLearningMode(mode){
-		
 		learningMode = mode;
 		localStorage.setItem("learningMode" , mode);
 		document.getElementById("llList1").style.display = "none";
 		document.getElementById("llList2").style.display = "none";
 		document.getElementById("llList3").style.display = "none";
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
-			var iframe = document.getElementById("anu");
+		var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
 			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			var scrAnuvakam = scrName.substring(10,12);
-			alert(iframe);
-			alert(scrName);
+			//alert(iframe);
+			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			alert(innerDoc);
+			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
-			alert(source.src);
-			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
-			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-			alert(playingButton);
-			playingButton=leftPad(playingButton,targetLength);
-			
-		if(mode == 'com'){
-			alert(mode);
-	
-			try{
-			alert(source.src);
-			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
-			
-				}
-			catch(err){
-				console.log("In catch");
-				// document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
-			}
-		
-		}
-		else{
-			alert(mode);
-	
-			try{
-				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
-				}
-			catch(err){
-				console.log("In catch");
-				// document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
-			}
-		
-		}
-		
-				
+			//alert(source.src);
 			if(!sounds.paused)
 				{
+					//alert('pausing');
 					sounds.pause();								
 				}
+		if(mode == 'com'){
+			//alert(mode);
+	
+			try{
+			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
 			sounds.load();
 			sounds.play();
+			}
+			catch(err){
+				console.log("In catch");
+				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
+			}
+		
+		}
 	}
 		/*
 		This function get the Learning Mode
