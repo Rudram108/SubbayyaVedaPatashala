@@ -145,11 +145,11 @@
 		if(mode == 'com'){
 			alert(mode);
 					
-			var iframe = document.getElementById("iframe");
-			alert(anu);
+			var iframe = document.getElementById("anu");
+			alert(iframe);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			alert(innerDoc);
-			
+			console.log(innerDoc.body);
 			
 		}
 	}
