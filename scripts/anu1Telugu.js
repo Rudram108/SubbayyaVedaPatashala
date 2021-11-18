@@ -146,11 +146,24 @@
 			alert(mode);
 					
 			var iframe = document.getElementById("anu");
+			iframe = iframe.substring(iframe.lastIndexOf('/')+1);
+			var scrAnuvakam = iframe.substring(10,12);
 			alert(iframe);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			alert(innerDoc);
-			console.log(innerDoc.body);
+			var sounds = innerDoc.getElementById('anu1Aud');
+			sounds.controls = true;
+			var source = innerDoc.getElementById('audioSource');
 			
+			alert(source.src);
+			if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			source.src = "Anu"+ scrAnuvakam+mode+".mp3";
+			sounds.load();
+			sounds.play();
+		
 		}
 	}
 		/*
