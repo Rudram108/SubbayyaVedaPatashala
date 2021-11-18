@@ -6,31 +6,23 @@
 		Audio and button are named such that they show the line number they are associated to.
 		*/
 		
-	function playMeditativeMode(anuNum){
-		var sounds = document.getElementById('compAudio');
-		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+".mp3";
-		if(!sounds.paused)
-				{
-					sounds.pause();								
-				}
-		var source = document.getElementById('compSource');
-		source.src =sourceAud ;
-		sounds.load();
-		sounds.play();
-	}	
+	
 	function anu1TeluguPrint(anuNum, buttonNum){
-				//alert(anuNum);
-				//alert(buttonNum);
+				alert(anuNum);
+				alert(buttonNum);
 				
-					
+			
 		var buttonId = "button" + buttonNum;
+		
 		var buttonEle = document.getElementById(buttonId);
+		
 		var curBut; 
 		var currAud;
 		var prevNum;
 		var targetLength = 2;
+		alert(getLearningMode());
 		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
-		
+		alert('here');
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -45,6 +37,7 @@
 			{
 				playingButton=leftPad(playingButton,targetLength);
 				curBut = "button" + playingButton;
+				alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
 				if(currButtonEle instanceof HTMLSpanElement){
@@ -150,10 +143,13 @@
 		document.getElementById("llList2").style.display = "none";
 		document.getElementById("llList3").style.display = "none";
 		if(mode == 'com'){
-			var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
-			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-			var scrAnuvakam = scrName.substring(10,12);
-			playMeditativeMode(scrAnuvakam);
+			alert(mode);
+					
+			var iframe = document.getElementById("iframe");
+			alert(anu);
+			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+			alert(innerDoc);
+			
 			
 		}
 	}
@@ -161,6 +157,7 @@
 		This function get the Learning Mode
 		*/	
 	function getLearningMode(){
+
 		lMode = localStorage.getItem("learningMode");
 		if(lMode === null){
 			return 'ww';
