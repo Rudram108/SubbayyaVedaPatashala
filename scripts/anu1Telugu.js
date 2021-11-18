@@ -160,10 +160,12 @@
 			alert(source.src);
 			if(!sounds.paused)
 				{
+					alert(pausing);
 					sounds.pause();								
 				}
 			try{
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
+			alert(source.src);
 			sounds.load();
 			sounds.play();
 			}
