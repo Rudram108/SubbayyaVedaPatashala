@@ -165,7 +165,6 @@
 				}
 			try{
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
-			alert(source.src);
 			sounds.load();
 			sounds.play();
 			}
