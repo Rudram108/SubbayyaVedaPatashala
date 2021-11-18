@@ -8,8 +8,8 @@
 		
 	
 	function anu1TeluguPrint(anuNum, buttonNum){
-				alert(anuNum);
-				alert(buttonNum);
+			//	alert(anuNum);
+			//	alert(buttonNum);
 				
 			
 		var buttonId = "button" + buttonNum;
@@ -20,9 +20,9 @@
 		var currAud;
 		var prevNum;
 		var targetLength = 2;
-		alert(getLearningMode());
+		//alert(getLearningMode());
 		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
-		alert('here');
+		//alert('here');
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -37,7 +37,7 @@
 			{
 				playingButton=leftPad(playingButton,targetLength);
 				curBut = "button" + playingButton;
-				alert("here");
+				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
 				if(currButtonEle instanceof HTMLSpanElement){
@@ -143,24 +143,24 @@
 		document.getElementById("llList2").style.display = "none";
 		document.getElementById("llList3").style.display = "none";
 		if(mode == 'com'){
-			alert(mode);
+			//alert(mode);
 					
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
 			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			var scrAnuvakam = scrName.substring(10,12);
-			alert(iframe);
-			alert(scrName);
+			//alert(iframe);
+			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			alert(innerDoc);
+			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
 			
-			alert(source.src);
+			//alert(source.src);
 			if(!sounds.paused)
 				{
-					alert(pausing);
+					//alert(pausing);
 					sounds.pause();								
 				}
 			try{
