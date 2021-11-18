@@ -150,6 +150,7 @@
 			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			var scrAnuvakam = scrName.substring(10,12);
 			alert(iframe);
+			alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
