@@ -37,7 +37,7 @@
 		if(Number.isInteger(playingButton))	
 			{
 				playingButton=leftPad(playingButton,targetLength);
-				curBut = "button" + playingButton;
+				curBut = "p" + playingButton;
 				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
@@ -45,16 +45,16 @@
 				
 				var dualButton = +playingButton -1;
 				dualButton = leftPad(dualButton,2);
-				var dualButtonId = "button" + dualButton;
+				var dualButtonId = "p" + dualButton;
 				//document.getElementById(dualButtonId).style.color = "#000";
 				inActiveButtonColor(dualButtonId);
 				dualButton = +playingButton -2;
 				dualButton = leftPad(dualButton,2);
-				dualButtonId = "button" + dualButton;
+				dualButtonId = "p" + dualButton;
 				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
 					dualButton = +playingButton -3;
 					dualButton = leftPad(dualButton,2);
-					dualButtonId = "button" + dualButton;
+					dualButtonId = "p" + dualButton;
 				
 					inActiveButtonColor(dualButtonId);
 				}
@@ -75,18 +75,18 @@
 				dualButton = leftPad(dualButton,2);
 				//alert('dualButton');
 				//alert(dualButton);
-				var dualButtonId = "button" + dualButton;
+				var dualButtonId = "p" + dualButton;
 				
 				activeButtonColor(dualButtonId);
 				dualButton = +buttonNum -2;
 				dualButton = leftPad(dualButton,2);
-				dualButtonId = "button" + dualButton;
+				dualButtonId = "p" + dualButton;
 				//alert(dualButtonId);
 				//alert(dualButton);
 				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
 					dualButton = +buttonNum -3;
 					dualButton = leftPad(dualButton,2);
-					dualButtonId = "button" + dualButton;
+					dualButtonId = "p" + dualButton;
 					
 					activeButtonColor(dualButtonId);
 				}
