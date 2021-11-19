@@ -291,7 +291,7 @@
 		var doc;
 	
 		if(namakam.style.left== "-250px"){
-			namakam.style.left = "0"; 
+			namakam.style.left = "15px"; 
 			menu.src = "images/close.png"
 			namakam.style.backgroundColor = "#20B2AA";	
 		}

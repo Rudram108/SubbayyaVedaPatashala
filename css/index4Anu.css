@@ -85,8 +85,8 @@
 	.namakambtn {
 		width: 11vw;
 		position : fixed;
-		top: 20%;
-		left : 0%;
+		top: 10%;/*Yamini was 20*/
+		left : 5%;
 		transition: 1s;
 		cursor:pointer;
 		z-index:7;
@@ -94,15 +94,15 @@
 	
 	@media only screen  and (max-width: 1700px) {
 	.namakambtn{
-		top: 25%;
-		left : 0%;
+		top: 15%;/*Yamini was 25*/
+		left : 5%;
 		width: 19vw;
 	}
 	}
 	@media only screen  and (max-width: 700px) {
 	.namakambtn{
 		top: 25%;
-		left : 0%;
+		left : 5%;
 		width: 37vw;
 	}
 	}
@@ -110,24 +110,27 @@
 	@media only screen and (max-width: 375px) {
 	.namakambtn{
 		top: 25%;
-		left : 0%;
+		left : 3%;
 		width: 47vw;
 	}
 	}
 	
 	nav ul li{
 		list-style: none;
-		margin-top : 10px;
+		margin-top : 13px;
 	}
 	
 	nav ul li a{
 		text-decoration: none;
 		color: #fff;
+		font-size : 22px;
+		font-family : Sans-serif;
 	}
 	
 	nav ul li a:hover{
 		text-decoration: none;
 		color: yellow;
+		font-size : 25px;
 	}
 	
 	#manuBtn{
@@ -136,7 +139,7 @@
 		text-align: center;
 		position: fixed;
 		left: 15px;
-		top: 20%;
+		top: 10%;/*Yamini was 20*/
 		border-radius: 3px;
 		z-index: 8;
 		cursor: pointer;
@@ -149,6 +152,8 @@
 	.anu-space{
 		position : relative;
 		top:10%;
+		/*added now*/
+		left: 50%;
 		width : 66vw;
 		height : 100vh;
 		z-index :1;
@@ -168,7 +173,7 @@
 	.anu-space{
 		top:150%;
 		width: 70vw;
-		left: 0px;
+		left: 30px;/*Yamini was 0px*/
 	}
 	}
 	@media only screen and (min-width:1025px) {
