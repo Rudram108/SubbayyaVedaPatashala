@@ -51,27 +51,37 @@
 	.audio-text {
     text-align: justify;
     padding-right: 1px !important;
-    overflow: scroll;
 	position :relative;
 	top:50px;
 	left:39px;
-	width: 78vw;
+	width: 90%; /*78vw;*/
+	word-wrap: break-word;
 	}
 	
-	.audio-text button {
+	/*.audio-text button {
 		border: none;
 		cursor: pointer;
 		background-color: Transparent;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19
+		padding-bottom : 10px;
+		padding-top : 10px;
+		padding-right: 3px;/*changing it to 1 was 33
+		word-wrap:break-word;
+		margin: 1px auto;
+	}*/
+	.audio-text p {
+		 text-align: justify;
+		cursor: pointer;
 		color: #340002;
 		font-size: 22px;/*Yamini was 19*/
 		padding-bottom : 10px;
 		padding-top : 10px;
 		padding-right: 3px;/*changing it to 1 was 33*/
-		word-wrap:break-word;
+		padding-left: 1px;
+		
 		margin: 1px auto;
-	}
-	.audio-text button:active {
-		color: blue;
+	
 	}
 	
 	
