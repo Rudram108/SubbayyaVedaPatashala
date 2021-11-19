@@ -12,7 +12,7 @@
 			//	alert(buttonNum);
 				
 			
-		var buttonId = "button" + buttonNum;
+		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
 		

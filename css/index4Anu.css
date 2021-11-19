@@ -94,7 +94,7 @@
 	
 	@media only screen  and (max-width: 1700px) {
 	.namakambtn{
-		top: 15%;/*Yamini was 25*/
+		top: 25%;/*Yamini was 25*/
 		left : 5%;
 		width: 19vw;
 	}

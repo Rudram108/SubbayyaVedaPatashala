@@ -1,6 +1,6 @@
 ul#navmenu, ul.sub1, ul.sub2{
 list-style-type : none;
-font-size: 9px;
+font-size: 19px;
 }  
 
 
@@ -18,7 +18,7 @@ float: right;
 }    
 ul#navmenu{
 list-style-type : none;
-font-size: 14px;
+font-size: 20px;/*Yamini was 14*/
 float: right;
 position: absolute;
   top: 100px;
