@@ -160,8 +160,11 @@
 			currAud = source.src ;
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-			if(Number.isInteger(playingButton))
+			if(Number.isInteger(playingButton)){
 				playingButton=leftPad(playingButton,2);
+				
+				
+			}
 			else 
 				playingButton = '00';
 			//alert("playingButton"+playingButton);
@@ -176,6 +179,8 @@
 		else{
 			try{
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
+				var curBut = "p" + playingButton;
+				activeButtonColor(curBut);
 				}
 			catch(err){
 				
