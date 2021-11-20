@@ -201,8 +201,9 @@
 					sounds.pause();								
 				}
 			//	alert(source.src);
-			sounds.load();
 			try{
+			sounds.load();
+			
 			sounds.play();
 			}catch(err)
 			{
