@@ -21,7 +21,7 @@
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
-		var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
+		var sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
@@ -119,7 +119,7 @@
 			var numberOfSpans = ele.getElementsByTagName('span').length;
 			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
-				anu1TeluguPrint(anuNum,buttonNum);
+				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
 			else
 			alert("Anuvakam is complete. Please choose the next one");
 		}
@@ -149,10 +149,10 @@
 			var scrName = document.getElementById("anu").src;
 			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			var scrAnuvakam = scrName.substring(10,12);
-			//alert(iframe);
-			//alert(scrName);
+			alert(iframe);
+			alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			//alert(innerDoc);
+			alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
@@ -291,7 +291,7 @@
 		var doc;
 	
 		if(namakam.style.left== "-250px"){
-			namakam.style.left = "15px"; 
+			namakam.style.left = "25px"; 
 			menu.src = "images/close.png"
 			namakam.style.backgroundColor = "#20B2AA";	
 		}
