@@ -160,7 +160,7 @@
 			currAud = source.src ;
 			if(Number.isNaN(currAud))
 			{
-				
+				alert("true");
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 			alert(playingButton);
