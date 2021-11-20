@@ -158,6 +158,10 @@
 			var source = innerDoc.getElementById('audioSource');
 			alert(source.src);
 			currAud = source.src ;
+			if(Number.isNaN(currAud))
+			{
+				alert("trur");
+			}
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 			alert(playingButton);
