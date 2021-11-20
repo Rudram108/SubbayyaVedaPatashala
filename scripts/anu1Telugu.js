@@ -160,21 +160,21 @@
 			currAud = source.src ;
 			if(Number.isNaN(currAud))
 			{
-				alert("true");
+				//alert("true");
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 			
 			playingButton=leftPad(playingButton,2);
 			}
 			else playingButton = '00';
-			alert("playingButton"+playingButton);
+			//alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			alert(mode);
 	
 			try{
-			alert(source.src);
+			//alert(source.src);
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
-			alert(source.src);
+			//alert(source.src);
 				}
 			catch(err){
 				console.log("In catch");
@@ -183,14 +183,14 @@
 		
 		}
 		else{
-			alert(mode);
+			//alert(mode);
 	
 			try{
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				}
 			catch(err){
 				console.log("In catch");
-				// document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
+				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
 		}
@@ -200,7 +200,7 @@
 				{
 					sounds.pause();								
 				}
-				alert(source.src);
+			//	alert(source.src);
 			sounds.load();
 			try{
 			sounds.play();
