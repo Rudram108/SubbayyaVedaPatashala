@@ -208,6 +208,7 @@
 			{
 				console.log("Yamini");
 			}
+			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
 	}
 		/*
 		This function get the Learning Mode
