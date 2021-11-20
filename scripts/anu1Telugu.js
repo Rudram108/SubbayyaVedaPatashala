@@ -177,7 +177,7 @@
 			//alert(source.src);
 				}
 			catch(err){
-				console.log("In catch");
+				alert("In catchvvv");
 				// document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
@@ -189,7 +189,7 @@
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				}
 			catch(err){
-				console.log("In catch");
+				alert("In catch");
 				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
@@ -206,7 +206,7 @@
 			sounds.play();
 			}catch(err)
 			{
-				console.log("Yamini");
+				alert("Yamini");
 			}
 			alert( document.getElementById("error"));
 			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
