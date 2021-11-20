@@ -156,7 +156,7 @@
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
-			alert(source.src);
+			//alert(source.src);
 			currAud = source.src ;
 			if(Number.isNaN(currAud))
 			{
