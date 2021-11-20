@@ -180,7 +180,16 @@
 			try{
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				var curBut = "p" + playingButton;
-				activeButtonColor(curBut);
+					innerDoc.getElementById(curBut).style.color = "blue";
+					var smalls = innerDoc.getElementById(buttonId).getElementsByTagName('small');
+					for(var i = 0; i < smalls.length; i++){
+												//smalls[i].style.color = '#1C37B6';
+						smalls[i].style.color = '#dc143c';
+					}
+					var bolds = innerDoc.getElementById(buttonId).getElementsByTagName('b');
+					for(var i = 0; i < bolds.length; i++){
+						bolds[i].style.color = '#241CB6'
+					}
 				}
 			catch(err){
 				
