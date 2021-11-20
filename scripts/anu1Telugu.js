@@ -200,7 +200,7 @@
 			}catch(err)
 			{
 			
-			alert( document.getElementById("error"));
+			//alert( document.getElementById("error"));
 			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
 			}
 	}
