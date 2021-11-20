@@ -169,7 +169,7 @@
 			try{
 			alert(source.src);
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
-			
+			alert(source.src);
 				}
 			catch(err){
 				console.log("In catch");
@@ -196,6 +196,7 @@
 					sounds.pause();								
 				}
 			sounds.load();
+			
 			sounds.play();
 	}
 		/*
