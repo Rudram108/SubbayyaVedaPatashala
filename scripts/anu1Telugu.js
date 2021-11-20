@@ -22,7 +22,7 @@
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
-			var source.src = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
+			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+mode+".mp3";
 		else
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
