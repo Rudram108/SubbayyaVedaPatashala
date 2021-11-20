@@ -208,6 +208,7 @@
 			{
 				console.log("Yamini");
 			}
+			alert( document.getElementById("error"));
 			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
 	}
 		/*
