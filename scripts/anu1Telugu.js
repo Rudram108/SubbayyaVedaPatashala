@@ -158,15 +158,12 @@
 			var source = innerDoc.getElementById('audioSource');
 			//alert(source.src);
 			currAud = source.src ;
-			if(Number.isNaN(currAud))
-			{
-				alert("true");
 			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-			
-			playingButton=leftPad(playingButton,2);
-			}
-			else playingButton = '00';
+			if(Number.isInteger(playingButton))
+				playingButton=leftPad(playingButton,2);
+			else 
+				playingButton = '00';
 			//alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
