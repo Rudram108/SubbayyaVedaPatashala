@@ -169,27 +169,19 @@
 			else playingButton = '00';
 			//alert("playingButton"+playingButton);
 		if(mode == 'com'){
-			alert(mode);
-	
 			try{
-			//alert(source.src);
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
-			//alert(source.src);
 				}
 			catch(err){
-				alert("In catchvvv");
-				// document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
+				document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
-		
 		}
 		else{
-			//alert(mode);
-	
 			try{
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				}
 			catch(err){
-				alert("In catch");
+				
 				 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
 			}
 		
@@ -207,10 +199,10 @@
 			sounds.play();
 			}catch(err)
 			{
-				alert("Yamini");
-			}
+			
 			alert( document.getElementById("error"));
 			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
+			}
 	}
 		/*
 		This function get the Learning Mode
