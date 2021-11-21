@@ -207,16 +207,15 @@
 					sounds.pause();								
 				}
 			//	alert(source.src);
-			try{
+			
 			sounds.load();
 			
 			sounds.play();
-			}catch(err)
-			{
 			
+			sounds.onabort = function(){
 			//alert( document.getElementById("error"));
-			 document.getElementById("error").innerHTML = "Please contact Subbaya Shastry garu";
-			}
+			 document.getElementById("error").innerHTML = "Audio not available. Please contact Subbaya Shastry garu";
+			};
 	}
 		/*
 		This function get the Learning Mode
