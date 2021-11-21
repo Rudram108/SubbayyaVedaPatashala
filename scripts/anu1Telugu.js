@@ -10,7 +10,7 @@
 	function anu1TeluguPrint(anuNum, buttonNum){
 			//	alert(anuNum);
 			//	alert(buttonNum);
-				
+				 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
 		
@@ -141,12 +141,12 @@
 		This function set the Learning Mode
 		*/
 	function setLearningMode(mode){
-		
-		learningMode = mode;
-		localStorage.setItem("learningMode" , mode);
-		document.getElementById("llList1").style.display = "none";
-		document.getElementById("llList2").style.display = "none";
-		document.getElementById("llList3").style.display = "none";
+			document.getElementById("error").innerHTML = "";
+			learningMode = mode;
+			localStorage.setItem("learningMode" , mode);
+			document.getElementById("llList1").style.display = "none";
+			document.getElementById("llList2").style.display = "none";
+			document.getElementById("llList3").style.display = "none";
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
@@ -165,8 +165,6 @@
 			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 			if(Number.isInteger(playingButton)){
 				playingButton=leftPad(playingButton,2);
-				
-				
 			}
 			else 
 				playingButton = '00';
@@ -186,7 +184,6 @@
 					innerDoc.getElementById(curBut).style.color = "blue";
 					var smalls = innerDoc.getElementById(curBut).getElementsByTagName('small');
 					for(var i = 0; i < smalls.length; i++){
-												//smalls[i].style.color = '#1C37B6';
 						smalls[i].style.color = '#dc143c';
 					}
 					var bolds = innerDoc.getElementById(curBut).getElementsByTagName('b');
@@ -213,15 +210,19 @@
 			sounds.play();
 			
 			sounds.onabort = function(){
-			//alert( document.getElementById("error"));
 			 document.getElementById("error").innerHTML = "Audio not available. Please contact Subbaya Shastry garu";
 			};
+			if(mode != 'com'){
+			playingButton = +playingButton + 1;
+			playingButton = leftPad(playingButton,2);
+			anu1TeluguPrint(scrAnuvakam,playingButton);
+			}
 	}
 		/*
 		This function get the Learning Mode
 		*/	
 	function getLearningMode(){
-
+	
 		lMode = localStorage.getItem("learningMode");
 		if(lMode === null){
 			return 'ww';
@@ -232,6 +233,7 @@
 		This function set the Text Mode
 		*/			
 	function setTextMode(tMode){
+		document.getElementById("error").innerHTML = "";
 		textMode = tMode;
 		localStorage.setItem("textMode" , tMode);
 		var iframe = document.getElementById("anu");
@@ -260,6 +262,7 @@
 		*/			
 			 
 	function setLanguage(lang){
+		document.getElementById("error").innerHTML = "";
 		language = lang;						
 		localStorage.setItem("language" , lang);
 		var iframe = document.getElementById("anu");
@@ -303,6 +306,7 @@
 	
 
 	function manuBtnOnClick(){
+		document.getElementById("error").innerHTML = "";
 		var manuBtn = document.getElementById("manuBtn");
 		var namakam = document.getElementById("namakambtn");
 		var menu = document.getElementById("menu");
@@ -362,7 +366,8 @@
 						}
 	}
 			 */
-	function openLanguage(listID){		 
+	function openLanguage(listID){	
+document.getElementById("error").innerHTML = "";	
 		const myElement = document.getElementById(listID);
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;
@@ -378,7 +383,8 @@
 		}
 	}
 	
-	function openText(listID){		 
+	function openText(listID){		
+document.getElementById("error").innerHTML = "";	
 		const myElement = document.getElementById(listID);
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;
@@ -394,7 +400,8 @@
 		}
 	}
 	
-	function openMode(listID){		 
+	function openMode(listID){		
+document.getElementById("error").innerHTML = "";	
 		const myElement = document.getElementById(listID);
 		var list;
 		for (let i = 0; i < myElement.children.length; i++) {
