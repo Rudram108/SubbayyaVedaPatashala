@@ -21,7 +21,7 @@
 		height: 88px;
 		display: block;
 		overflow: hidden;
-		z-index : 1;
+		z-index : 10;
 	}
 	
 	.audio-select audio{
@@ -31,23 +31,18 @@
 
 	
 	#anu1Aud{
-		position : relative;
-		/*top: 0px;
-		/*right : 30px;/*was 50*/
-		left : 40px;
+		
 		padding-left : 10px;
-		width : 50%;
+		width : 40%;
 		background : #009688;
 		overflow: hidden;
 		border: medium dashed green;
-		
 	}
 		::-webkit-media-controls-play-button{
 	background-color:#009688;}
-	@media only screen and (max-width: 1240px) {
+	@media only screen and (max-width: 700px) {
 	#anu1Aud {
 		width: 57vw;
-		left : 150px;
 	}}
 
 	.audio-text {
@@ -55,14 +50,10 @@
     padding-right: 1px !important;
 	position :relative;
 	top:50px;
-	left:39px;
-	width: 90%; /*78vw;*/
+	left:9px;
+	width: 78%; /*78vw;*/
 	word-wrap: break-word;
 	}
-	@media only screen and (max-width: 1240px) {
-	.audio-text {
-		left:55px;
-	}}
 	
 	/*.audio-text button {
 		border: none;
