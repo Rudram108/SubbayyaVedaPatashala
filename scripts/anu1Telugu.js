@@ -185,10 +185,12 @@
 					var smalls = innerDoc.getElementById(curBut).getElementsByTagName('small');
 					for(var i = 0; i < smalls.length; i++){
 						smalls[i].style.color = '#dc143c';
+						
 					}
 					var bolds = innerDoc.getElementById(curBut).getElementsByTagName('b');
 					for(var i = 0; i < bolds.length; i++){
 						bolds[i].style.color = '#241CB6'
+						
 					}
 				}
 			catch(err){
@@ -215,6 +217,7 @@
 			if(mode != 'com'){
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
+			alert(playingButton);
 			anu1TeluguPrint(scrAnuvakam,playingButton);
 			}
 	}
@@ -424,10 +427,12 @@
 		for(var i = 0; i < smalls.length; i++){
 									//smalls[i].style.color = '#1C37B6';
 			smalls[i].style.color = '#dc143c';
+			
 		}
 		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
 		for(var i = 0; i < bolds.length; i++){
 			bolds[i].style.color = '#241CB6'
+			
 		}
 	}
 	 
@@ -437,6 +442,7 @@
 		for(var i = 0; i < smalls.length; i++)
 		{
 			smalls[i].style.color = '#424949';
+			
 			//smalls[i].style.color = '#dc143c';
 		}
 		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
@@ -444,6 +450,7 @@
 		for(var i = 0; i < bolds.length; i++)
 		{
 			bolds[i].style.color = '#17202A';
+			
 		}	
 	}
 	

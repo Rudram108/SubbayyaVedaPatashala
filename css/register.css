@@ -99,6 +99,19 @@
 		top : 80px;
 	}
 	}	
+	.bckGrndImg5{
+		width : 120px;
+		
+		top : 500px;
+		right:50%;
+		z-index : 6;
+	}@media only screen and  (max-width: 1240px) {
+	.bckGrndImg5{
+		width : 40px;
+		right:50%;
+		top : 280px;
+	}
+	}	
 	.regBlock h1{
 		position : relative;
 		top : 240px;

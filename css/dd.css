@@ -24,9 +24,12 @@ width: 125px;
 text-align: center;
 position: relative;
 float: left;
-margin-right:6px;
+margin-right:26px;
 }
-
+@media screen and (min-width: 1240px) { 
+ul#navmenu li{
+	margin-right:6px;
+}}
 ul#navmenu a{
 text-decoration:none;
 display: block;
@@ -38,7 +41,7 @@ border-radius: 18px;
 color: white;
 z-index :5;
 position:relative;
-font-size : 20px;
+font-size : 28px;
 }
 @media screen and (min-width: 1240px) { /*for laptop*/
 ul#navmenu a{
