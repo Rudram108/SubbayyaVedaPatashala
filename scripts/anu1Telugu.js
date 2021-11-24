@@ -25,7 +25,7 @@
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+mode+".mp3";
 		else
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
-		alert('here');
+		//alert('here');
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -217,8 +217,8 @@
 			if(mode != 'com'){
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
-			alert(playingButton);
-			alert("scrAnuvakam" +scrAnuvakam);
+		//	alert(playingButton);
+			//alert("scrAnuvakam" +scrAnuvakam);
 			anu1TeluguPrint(scrAnuvakam,playingButton);
 			}
 	}
