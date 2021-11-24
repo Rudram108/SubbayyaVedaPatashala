@@ -218,6 +218,7 @@
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
 			alert(playingButton);
+			alert("scrAnuvakam" +scrAnuvakam);
 			anu1TeluguPrint(scrAnuvakam,playingButton);
 			}
 	}
