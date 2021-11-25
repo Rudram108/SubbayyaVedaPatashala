@@ -188,9 +188,9 @@
 			}
 		}
 		else{
-			try{
+			//try{
 				var playingButtonId  = "p" +playingButton;
-				innerDoc.getElementById(playingButtonId).click();
+			innerDoc.getElementById(playingButtonId).click();}
 				/*source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				alert( "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3");
 				var curBut = "p" + playingButton;
