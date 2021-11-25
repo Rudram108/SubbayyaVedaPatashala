@@ -180,6 +180,7 @@
 		else{
 			try{
 				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
+				alert( "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3");
 				var curBut = "p" + playingButton;
 					innerDoc.getElementById(curBut).style.color = "blue";
 					var smalls = innerDoc.getElementById(curBut).getElementsByTagName('small');
@@ -211,9 +212,7 @@
 			alert("playing " +playingButton);
 			sounds.play();
 			
-			/*sounds.onabort = function(){
-			 document.getElementById("error").innerHTML = "Audio not available. Please contact Subbaya Shastry garu";
-			};*/
+			
 			if(mode != 'com'){
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
