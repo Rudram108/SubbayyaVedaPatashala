@@ -168,7 +168,7 @@
 			}
 			else 
 				playingButton = '00';
-			//alert("playingButton"+playingButton);
+			alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
@@ -208,7 +208,7 @@
 			//	alert(source.src);
 			
 			sounds.load();
-			
+			alert("playing " +playingButton);
 			sounds.play();
 			
 			/*sounds.onabort = function(){
