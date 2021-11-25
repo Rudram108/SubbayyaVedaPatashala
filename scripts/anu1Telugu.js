@@ -172,6 +172,16 @@
 		if(mode == 'com'){
 			try{
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
+			if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			//	alert(source.src);
+			
+			sounds.load();
+			alert("playing " +playingButton);
+			sounds.play();
+			
 				}
 			catch(err){
 				document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
@@ -179,7 +189,9 @@
 		}
 		else{
 			try{
-				source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
+				var playingButtonId  = "p" +playingButton;
+				innerDoc.getElementById(playingButtonId).click();
+				/*source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				alert( "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3");
 				var curBut = "p" + playingButton;
 					innerDoc.getElementById(curBut).style.color = "blue";
@@ -221,7 +233,7 @@
 			alert("scrAnuvakam" +scrAnuvakam);
 			//anu1TeluguPrint(scrAnuvakam,playingButton);
 			innerDoc.getElementById(playingButtonId).click();
-			}
+			}*/
 	}
 		/*
 		This function get the Learning Mode
