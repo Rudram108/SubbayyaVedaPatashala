@@ -156,8 +156,8 @@
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			//alert(innerDoc);
-			//var sounds = innerDoc.getElementById('anu1Aud');
-			//sounds.controls = true;
+			var sounds = innerDoc.getElementById('anu1Aud');
+			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
 			//alert(source.src);
 			currAud = source.src ;
