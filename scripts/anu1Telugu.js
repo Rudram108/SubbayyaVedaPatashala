@@ -8,8 +8,8 @@
 		
 	
 	function anu1TeluguPrint(anuNum, buttonNum){
-			alert(anuNum);
-				alert(buttonNum);
+			//alert(anuNum);
+				//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
@@ -168,7 +168,7 @@
 			}
 			else 
 				playingButton = '00';
-			alert("playingButton"+playingButton);
+		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
 			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
@@ -179,7 +179,7 @@
 			//	alert(source.src);
 			
 			sounds.load();
-			alert("playing " +playingButton);
+			//alert("playing " +playingButton);
 			sounds.play();
 			
 				}
@@ -188,10 +188,11 @@
 			}
 		}
 		else{
-			//try{
+		//	try{
 				var playingButtonId  = "p" +playingButton;
-			innerDoc.getElementById(playingButtonId).click();}
-				/*source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
+				innerDoc.getElementById(playingButtonId).click();
+		}
+		}		/*source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
 				alert( "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3");
 				var curBut = "p" + playingButton;
 					innerDoc.getElementById(curBut).style.color = "blue";
@@ -234,7 +235,7 @@
 			//anu1TeluguPrint(scrAnuvakam,playingButton);
 			innerDoc.getElementById(playingButtonId).click();
 			}*/
-	}
+	
 		/*
 		This function get the Learning Mode
 		*/	
