@@ -218,9 +218,10 @@
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
 		alert(playingButton);
+		var playingButtonId  = "p" +playingButton;
 			alert("scrAnuvakam" +scrAnuvakam);
 			//anu1TeluguPrint(scrAnuvakam,playingButton);
-			innerDoc.getElementById(playingButton).click();
+			innerDoc.getElementById(playingButtonId).click();
 			}
 	}
 		/*
