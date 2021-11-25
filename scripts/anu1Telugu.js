@@ -8,8 +8,8 @@
 		
 	
 	function anu1TeluguPrint(anuNum, buttonNum){
-			//	alert(anuNum);
-			//	alert(buttonNum);
+			alert(anuNum);
+				alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
@@ -157,7 +157,7 @@
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
-			sounds.controls = true;
+			//sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
 			//alert(source.src);
 			currAud = source.src ;
@@ -217,8 +217,8 @@
 			if(mode != 'com'){
 			playingButton = +playingButton + 1;
 			playingButton = leftPad(playingButton,2);
-		//	alert(playingButton);
-			//alert("scrAnuvakam" +scrAnuvakam);
+		alert(playingButton);
+			alert("scrAnuvakam" +scrAnuvakam);
 			anu1TeluguPrint(scrAnuvakam,playingButton);
 			}
 	}
