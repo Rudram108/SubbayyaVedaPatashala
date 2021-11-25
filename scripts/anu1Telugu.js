@@ -157,7 +157,7 @@
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
-			//sounds.controls = true;
+			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
 			//alert(source.src);
 			currAud = source.src ;
@@ -219,7 +219,8 @@
 			playingButton = leftPad(playingButton,2);
 		alert(playingButton);
 			alert("scrAnuvakam" +scrAnuvakam);
-			anu1TeluguPrint(scrAnuvakam,playingButton);
+			//anu1TeluguPrint(scrAnuvakam,playingButton);
+			innerDoc.getElementById(playingButton).click();
 			}
 	}
 		/*
