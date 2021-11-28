@@ -34,35 +34,80 @@
 	
 	.allPage{
 		position : fixed;
-		left: 330px;
 		top : 33px;
+		left: 40%;
+		width : 500px;
 		text-align : center;
 		color : #fff;
 		font-size: xx-large;
 	}
 	
-	@media only screen and (max-width: 700px) {
+	@media only screen and  (max-width: 1240px) {
 	.allPage{
 		font-size: xx-large;
 		left: 280px;
 	
 	}
 	}
-	@media only screen and (min-width: 705px) {
-	.allPage{
-		font-size: xx-large;
-		left: 280px;
-		
+	.allPage h3{position:fixed;top : 40px;}
+	@media only screen and  (max-width: 1240px) {
+		.allPage h3{top : 50px;}
 	}
+	.ammaPic{
+		width : 50px;
+		position: fixed;
+		top : 0;
+		left:30%;
+		z-index : 6;
 	}
-	@media only screen and (min-width: 1025px) {
-	.allPage{
-		font-size: xx-large;
-		left: 290px;
-		
+	@media only screen and  (max-width: 1240px) {
+	.ammaPic{
+		top : 10px;
+		width : 40px;
 	}
 	}
 	
+	
+	.babaPic{
+		width : 50px;
+		position: fixed;
+		top : 0;
+		left:50%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.babaPic{
+		top : 10px;
+		width : 40px;
+	}
+	}
+	
+	.psaiPic{
+		width : 50px;
+		position: fixed;
+		top : 0;
+		left:55%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.psaiPic{
+		top : 10px;
+		width : 40px;
+	}
+	}
+	.ammachiPic{
+		width : 50px;
+		position: fixed;
+		top : 0;
+		left:80%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.ammachiPic{
+		top : 10px;
+		width : 40px;
+	}
+	}
 	
 	#manuBtn{
 		width: 1px;

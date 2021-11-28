@@ -1,0 +1,104 @@
+.bckGrndImg1{
+		width : 100px;
+		position: fixed;
+		top : 0px;
+		left:0;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg1{
+		
+		width : 40px;
+	}
+	}
+	
+	.bckGrndImg2{
+		width : 100px;
+		position: fixed;
+		top :0px;
+		left:30%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg2{
+		width : 40px;
+		left:30%;
+		
+	}
+	}
+	.bckGrndImg3{
+		width : 100px;
+		position: fixed;
+		top : 0px;
+		left:60%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg3{
+		width : 40px;
+		left:60%;
+		
+	}
+	}
+	.bckGrndImg4{
+		width : 100px;
+		position: fixed;
+		top : 0px;
+		right:0;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg4{
+		width : 40px;
+		right:20px;
+		
+	}
+	}	
+	.bckGrndImg5{
+		width : 100px;
+		position: fixed;
+		top : 0px;
+		right:50%;
+		z-index : 6;
+	}@media only screen and  (max-width: 1240px) {
+	.bckGrndImg5{
+		width : 40px;
+		right:50%;
+		
+	}
+	}	
+	
+	.logoImg{
+		position: absolute;
+		right: 0; 
+		bottom: 10px;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.logoImg {
+		width : 40px;
+	}
+	}	
+	
+	.logoImg img{
+		width : 140px;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.logoImg img {
+		width : 40px;
+		top : 50px;
+	}
+	}	
+	
+	.allPage h3{
+		position: fixed;
+		left: 445px;
+		top:90px;
+		color:yellow;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.allPage h3{
+		width : 140px;
+		top : 0px;
+		left: 365px;
+	}
+	}
