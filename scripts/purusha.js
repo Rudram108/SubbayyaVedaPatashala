@@ -5,112 +5,128 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
-		function anu1TeluguPrint(anuNum, buttonNum)
+		function playPurushaSuktam(buttonNum)
 			{
 				//alert(anuNum);
 				//alert(buttonNum);
-				var buttonId = "button" + buttonNum;
-				var buttonEle = document.getElementById(buttonId);
-				var curBut; 
-				var currAud;
-				var prevNum;
-				var targetLength = 2;
-				//alert("value returned" +getLearningMode());
-				var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
-				//alert(sourceAud);
-				var sounds = document.getElementById('anu1Aud');
-				sounds.controls = true;
-				var source = document.getElementById('audioSource');
-				currAud = source.src ;
-				//alert(currAud);
-				currAud = currAud.substring(currAud.lastIndexOf('/')+1);
-				//alert(currAud);
-				var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-				//var playingButton = parseInt((currAud.substring(currAud.length-6,currAud.length)).substring(0,2));
-				//alert(playingButton);
-				//alert("if " + Number.isInteger(playingButton));
-				//if((Number.isInteger(playingButton)))
-				if(Number.isInteger(playingButton))	
-				{
-					playingButton=leftPad(playingButton,targetLength);
-					curBut = "button" + playingButton;
-					//alert(curBut);
-					var currButtonEle = document.getElementById(curBut);
-					currButtonEle.style.color = "#000";
-					var smalls = currButtonEle.getElementsByTagName('small');
-					for(var i = 0; i < smalls.length; i++)
-						{
-							smalls[i].style.color = '#424949';
-							//smalls[i].style.color = '#dc143c';
-						}
-					var bolds = currButtonEle.getElementsByTagName('b');
-					
-						for(var i = 0; i < bolds.length; i++)
-						{
-							bolds[i].style.color = '#17202A';
-						}	
-				}
-			/* If an audio is already playing pause the audio beofre assinging a new audio*/
-				if(!sounds.paused)
-				{
-					sounds.pause();					
-				}
-					
-					//buttonEle.style.color = "#086D1B";
-					buttonEle.style.color = "blue";
-					
-					var smalls = buttonEle.getElementsByTagName('small');
-					
-						for(var i = 0; i < smalls.length; i++)
-						{
-							//smalls[i].style.color = '#1C37B6';
-							smalls[i].style.color = '#dc143c';
-						}
-					var bolds = buttonEle.getElementsByTagName('b');
-					
-						for(var i = 0; i < bolds.length; i++)
-						{
-							bolds[i].style.color = '#241CB6';
-						}
-					
-					
-					//alert(buttonEle.style.fontSize);
-					//buttonEle.style.fontSize   = document.getElementById(curBut).style.fontSize +1;		
-					buttonEle.style.border = "none";
-					source.src = sourceAud;	
-					sounds.load();
-					
-					sounds.play();
-					
+			//	 document.getElementById("error").innerHTML = "";
+			
+		var buttonId = "p" + buttonNum;
+		
+		var buttonEle = document.getElementById(buttonId);
+		
+		var curBut; 
+		var currAud;
+		var prevNum;
+		var targetLength = 2;
+		//alert(getLearningMode());
+		if(getLearningMode() == 'com')
+			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
+		else if(buttonEle instanceof HTMLButtonElement)
+			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
+		else
+			sourceAud = "audio/PurushaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
+		//alert('here');
+		var sounds = document.getElementById('anu1Aud');
+		sounds.controls = true;
+		var source = document.getElementById('audioSource');
+		currAud = source.src ;
+		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
+		var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
+		
+		/*FETCHING THE CURRENTLY PLAYING BUTTON NUMBER BASED ON THE AUDIO BEING PLAYED. THAT BUTTON COLOR IS CHANGED TO BLACK.
+		IN FEW ANUVAKAS TWO LINES ARE BEING READ AT THE SAME TIME. IN WHICH CASE THAT BUTTONS ARE KEPT IN THE DIV AND IF THE 
+		ELEMENT IS A DIV, ALL THE CHILDRENS COLOR IS CHANGED TO BLACK AFTER PAUSING.
+		*/
+		if(Number.isInteger(playingButton))	
+			{
+				playingButton=leftPad(playingButton,targetLength);
+				curBut = "p" + playingButton;
+				//alert("here");
+				var currButtonEle = document.getElementById(curBut);
+				/*ChNGES FOR ANU3*/
+				if(currButtonEle instanceof HTMLButtonElement){
 				
-				sounds.onended = function() 
-				{
-					buttonEle.style.color = "#000";
-					//for(var i = 0; i < smalls.length; i++)
-						//{
-							//smalls[i].style.color = '#424949';
-					//	}
-					var bolds = buttonEle.getElementsByTagName('b');
-					
-						for(var i = 0; i < bolds.length; i++)
-						{
-							bolds[i].style.color = '#17202A';
-						}
-					//buttonEle.style.fontSize   ="21px";
-					buttonNum = +buttonNum + 1;
-					
-					buttonNum = leftPad(buttonNum,2);
-					//alert(buttonNum);
-					var ele = document.getElementById('audioText');
-					//alert(ele);
-					var numberOfButtons = ele.getElementsByTagName('button').length;
-					//alert(numberOfButtons);
-					//alert(buttonNum);
-					if( buttonNum < numberOfButtons)
-						anu1TeluguPrint(anuNum,buttonNum);
-					else
-						alert("Anuvakam is complete. Please choose the next one");
+				var dualButton = +playingButton -1;
+				dualButton = leftPad(dualButton,2);
+				var dualButtonId = "p" + dualButton;
+				//document.getElementById(dualButtonId).style.color = "#000";
+				inActiveButtonColor(dualButtonId);
+				dualButton = +playingButton -2;
+				dualButton = leftPad(dualButton,2);
+				dualButtonId = "p" + dualButton;
+				if(document.getElementById(dualButtonId) instanceof HTMLButtonElement){
+					dualButton = +playingButton -3;
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "p" + dualButton;
+				
+					inActiveButtonColor(dualButtonId);
 				}
+				else
+					inActiveButtonColor(dualButtonId);
+			
+			}else
+				inActiveButtonColor(curBut);
+			}
+				
+		if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			if(buttonEle instanceof HTMLButtonElement){
+				//alert('inspan');
+				var dualButton = +buttonNum -1;
+				dualButton = leftPad(dualButton,2);
+				//alert('dualButton');
+				//alert(dualButton);
+				var dualButtonId = "p" + dualButton;
+				
+				activeButtonColor(dualButtonId);
+				dualButton = +buttonNum -2;
+				dualButton = leftPad(dualButton,2);
+				dualButtonId = "p" + dualButton;
+				//alert(dualButtonId);
+				//alert(dualButton);
+				if(document.getElementById(dualButtonId) instanceof HTMLButtonElement){
+					dualButton = +buttonNum -3;
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "p" + dualButton;
+					
+					activeButtonColor(dualButtonId);
+				}
+				else
+					activeButtonColor(dualButtonId);
+					
+			}
+			else
+				activeButtonColor(buttonId);
+			
+				
+			buttonEle.style.border = "none";
+			source.src = sourceAud;	
+			sounds.load();
+			sounds.play();
+			//alert('reached');
+		sounds.onended = function() {
+			//alert('reached');
+			buttonEle.style.color = "#000";
+			var bolds = buttonEle.getElementsByTagName('b');
+			for(var i = 0; i < bolds.length; i++)
+				{
+					bolds[i].style.color = '#17202A';
+				}
+			buttonNum = +buttonNum + 1;
+			buttonNum = leftPad(buttonNum,2);
+				//alert(buttonNum);
+			var ele = document.getElementById('audio-text');
+			var numberOfButtons = ele.getElementsByTagName('p').length;
+			var numberOfSpans = ele.getElementsByTagName('span').length;
+			//alert(+numberOfButtons + +numberOfSpans);
+			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
+				playPurushaSuktam(buttonNum);
+			else
+			alert("Anuvakam is complete. Please choose the next one");
+		}
 					
 			}
 			
@@ -255,17 +271,59 @@
 	}
 	}
 	
-	function openMode(listID){		 
+	function openMode(listID){		
+//document.getElementById("error").innerHTML = "";	
 		const myElement = document.getElementById(listID);
+		var list;
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;	
 			if (listClass != ''){
-				var list = document.getElementsByClassName(listClass)[2];
+				list = document.getElementsByClassName(listClass)[2];
 				for (let j = 0; j < list.children.length; j++) {
-				document.getElementById(list.children[j].id).style.display = "block";
+					if(document.getElementById(list.children[j].id).style.display == "block")
+						document.getElementById(list.children[j].id).style.display = "none";
+					else
+						document.getElementById(list.children[j].id).style.display = "block";
 				}
 			}
 		}
 	}
 	
+	function activeButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "blue";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++){
+									//smalls[i].style.color = '#1C37B6';
+			smalls[i].style.color = '#dc143c';
+			
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		for(var i = 0; i < bolds.length; i++){
+			bolds[i].style.color = '#241CB6'
+			
+		}
+		var spans = document.getElementById(buttonId).getElementsByTagName('span');
+		for(var i = 0; i < spans.length; i++){
+			spans[i].style.color = "blue";
+			
+		}
+	}
+	 
+	function inActiveButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "#000";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++)
+		{
+			smalls[i].style.color = '#424949';
+			
+			//smalls[i].style.color = '#dc143c';
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		
+		for(var i = 0; i < bolds.length; i++)
+		{
+			bolds[i].style.color = '#17202A';
+			
+		}	
+	}
 	
