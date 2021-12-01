@@ -258,7 +258,7 @@
 			document.getElementById("anu").src = scr;
 			
 			var divId = document.getElementById("anu1");
-		divId.style.visibility = 'visible';
+			divId.style.visibility = 'visible';
 		
 			document.getElementById("lanList1").style.display = "none";
 			document.getElementById("lanList2").style.display = "none";
