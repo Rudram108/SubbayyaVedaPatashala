@@ -142,11 +142,58 @@
 		This function set the Learning Mode
 		*/
 			function setLearningMode(mode){
-				 learningMode = mode;
-				 localStorage.setItem("learningMode" , mode);
-				 document.getElementById("llList1").style.display = "none";
-				 document.getElementById("llList2").style.display = "none";
+		//	document.getElementById("error").innerHTML = "";
+			learningMode = mode;
+			localStorage.setItem("learningMode" , mode);
+			document.getElementById("llList1").style.display = "none";
+			document.getElementById("llList2").style.display = "none";
+			document.getElementById("llList3").style.display = "none";
+		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
+			var iframe = document.getElementById("anu");
+			var scrName = document.getElementById("anu").src;
+			//scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+			//var scrAnuvakam = scrName.substring(10,12);
+			//alert(iframe);
+			//alert(scrName);
+			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+			//alert(innerDoc);
+			var sounds = innerDoc.getElementById('anu1Aud');
+			sounds.controls = true;
+			var source = innerDoc.getElementById('audioSource');
+			//alert(source.src);
+			currAud = source.src ;
+			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
+			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
+			if(Number.isInteger(playingButton)){
+				playingButton=leftPad(playingButton,2);
 			}
+			else 
+				playingButton = '00';
+		//	alert("playingButton"+playingButton);
+		if(mode == 'com'){
+			try{
+			source.src = "audio/PurushaSuktam/PPcom.mp3";
+			if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			//	alert(source.src);
+			
+			sounds.load();
+			//alert("playing " +playingButton);
+			sounds.play();
+			
+				}
+			catch(err){
+				document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
+			}
+		}
+		else{
+		//	try{
+				var playingButtonId  = "p" +playingButton;
+				innerDoc.getElementById(playingButtonId).click();
+		}
+		}	
 		/*
 		This function get the Learning Mode
 		*/	

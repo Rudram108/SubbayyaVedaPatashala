@@ -58,6 +58,7 @@
 	left:39px;
 	width: 90%; /*78vw;*/
 	word-wrap: break-word;
+	
 	}
 	@media only screen and (max-width: 1240px) {
 	.audio-text {
@@ -118,7 +119,10 @@
 		color: yellow;
 		font-size: 21px;
 		padding-bottom : 12px;
-	}
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text :hover *{
+		font-size: 43px;
+	}}
 	
 	.audio-text p:hover , .audio-text p small:hover , .audio-text p b:hover{
 		border: none;
