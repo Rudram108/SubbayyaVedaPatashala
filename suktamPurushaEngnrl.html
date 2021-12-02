@@ -1,12 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html lang="en">
   <head> 
-  	  <meta name ="viewport" content = "width = device-width, initial-scale=1">
-	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Durga Suktam</title>
+  	  <title>Veda patashala -purusha Suktam</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="robots" content="index, follow" />
+		
 		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
-		<script src="scripts/anu1Telugu.js"></script>
+		
+		<style type="text/css" id="custom-css">
+		@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Tenali+Ramakrishna&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+		@font-face {
+			font-family: 'NotoSans';
+			src: url("https://www.rudramschool.org/fonts/NotoSans-Regular.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
+		@font-face {
+			font-family: 'NotoSansTelugu';
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
+		}
+		</style>
+		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
+		<link rel="stylesheet" href="css/dd.css">
+		<script src="scripts/purusha.js"></script>
 	
 	</head>
   <body class = "anubg">
@@ -17,26 +43,270 @@
 	</nav>
 	
 	
-	<div class = "audio-text" id="audio-text" ><br><br>
-			<P id = "P00" onclick="suktamDurgaPlay('00')">ōm ॥ jā̠tavē̍dasē sunavāma̠ sōma̍ marātīya̠tō nida̍hāti̠ vēda̍ḥ ।<br></P><br>
-			<P id = "P01" onclick="suktamDurgaPlay('01')">sa na̍ḥ par-ṣa̠dati̍ du̠rgāṇi̠ viśvā̍ nā̠vēva̠ sindhu̍ṃ duri̠tā'tya̠gniḥ ॥<br></P><br><br><br>
-			<P id = "P02" onclick="suktamDurgaPlay('02')">tāma̠gniva̍rṇāṃ tapa̍sā jvala̠ntīṃ vai̍rōcha̠nīṃ ka̍rmapha̠lēṣu̠ juṣṭā̎m ।<br></P><br>
-			<P id = "P03" onclick="suktamDurgaPlay('03')">du̠rgāṃ dē̠vīgṃ śara̍ṇama̠haṃ prapa̍dyē su̠tara̍si tarasē̍ nama̍ḥ ॥<br></P><br><br>
-			<P id = "P04" onclick="suktamDurgaPlay('04')">agnē̠ tvaṃ pā̍rayā̠ navyō̍ a̠smānth-sva̠stibhi̠rati̍ du̠rgāṇi̠ viśvā̎ ।<br></P><br>
-			<P id = "P05" onclick="suktamDurgaPlay('05')">pūścha̍ pṛ̠thvī ba̍hu̠lā na̍ u̠rvī bhavā̍ tō̠kāya̠ tana̍yāya̠ śaṃyōḥ ॥<br></P><br><br>
-			<P id = "P06" onclick="suktamDurgaPlay('06')">viśvā̍ni nō du̠rgahā̍ jātavēda̠ḥ sindhu̠nna nā̠vā du̍ri̠tā'ti̍par-ṣi ।<br></P><br>
-			<P id = "P07" onclick="anu1TeluguPrint('07')">agnē̍ atri̠vanmana̍sā gṛṇā̠nō̎'smāka̍ṃ bōdhyavi̠tā ta̠nūnā̎m ॥<br></P><br><br>
-			<P id = "P08" onclick="anu1TeluguPrint('08')">pṛ̠ta̠nā̠ jita̠gṃ̠ saha̍mānamu̠grama̠gnigṃ hu̍vēma para̠māth-sa̠dhasthā̎t ।<br></P><br>
-			<P id = "P09" onclick="anu1TeluguPrint('09')">sa na̍ḥ par-ṣa̠dati̍ du̠rgāṇi̠ viśvā̠ kṣāma̍ddē̠vō ati̍ duri̠tā'tya̠gniḥ ॥<br></P><br><br>
-			<P id = "P10" onclick="anu1TeluguPrint('10')">pra̠tnōṣi̍ ka̠mīḍyō̍ adhva̠rēṣu̍ sa̠nāchcha̠ hōtā̠ navya̍ścha satsi̍ ।<br></P><br>
-			<P id = "P11" onclick="anu1TeluguPrint('11')">svāñchā̎'gnē ta̠nuva̍ṃ pi̠praya̍svā̠smabhya̍ṃ cha̠ saubha̍ga̠māya̍jasva ॥<br></P><br>
-			<P id = "P12" onclick="anu1TeluguPrint('12')">gōbhi̠rjuṣṭa̍mayujō̠ niṣi̍kta̠ṃ tavē̎mdra viṣṇō̠ranu̠sañcha̍rēma ।<br></P><br>
-			<P id = "P13" onclick="anu1TeluguPrint('13')">nāka̍sya pṛ̠ṣṭhama̠bhi sa̠ṃvasā̍nō̠ vaiṣṇa̍vīṃ lō̠ka i̠ha mā̍dayantām ॥<br></P><br>
-			<P id = "P14" onclick="anu1TeluguPrint('14')">ōṃ kā̠tyā̠ya̠nāya̍ vi̠dmahē̍ kanyaku̠māri̍ dhīmahi । tannō̍ durgiḥ prachō̠dayā̎t ॥<br></P><br>
-			<P id = "P15" onclick="anu1TeluguPrint('15')">ōṃ śānti̠ḥ śānti̠ḥ śānti̍ḥ ॥<br></P><br>
+	<div class = "audio-text" id="audio-text" style="font-family:NotoSansTelugu;line-height : 190%; font-size: 22px;" ><br><br>
+			<p id = "p16"> 
+				<span id = "p00" onclick="playPurushaSuktam('00')">ōṃ tachCha̠ṃ yōrāvṛ̍ṇīmahē ।</span>
+				<span id = "p01" onclick="playPurushaSuktam('01')">gā̠tuṃ ya̠jñāya̍ ।</span>
+				<button id = "p02" style = "display:none;"></button>
+				<span id = "p03" onclick="playPurushaSuktam('03')">gā̠tuṃ ya̠jñapa̍tayē ।</span><br> 
+				<button id = "p04" style = "display:none"></button>
+				<span id = "p05" onclick="playPurushaSuktam('05')">daivī̎ sva̠stira̍stu naḥ ।</span>
+				<button id = "p06" style = "display:none"></button>
+				<span id = "p07" onclick="playPurushaSuktam('07')">sva̠stirmānu̍ṣēbhyaḥ । </span>
+				<button id = "p08" style = "display:none"></button>
+				<span id = "p09" onclick="playPurushaSuktam('09')">ū̠rdhvaṃ ji̍gātu bhēṣa̠jam ।</span><br>
+				<button id = "p10" style = "display:none"></button>
+				<span id = "p11" onclick="playPurushaSuktam('11')">śaṃ nō̍ astu dvi̠padē̎ ।</span>
+				<button id = "p12" style = "display:none"></button>
+				<span id = "p13" onclick="playPurushaSuktam('13')"> śaṃ chatu̍ṣpadē ।</span><br>
+				<button id = "p14" style = "display:none"></button>
+				<span id = "p15" onclick="playPurushaSuktam('15')">ōṃ śānti̠ḥ śānti̠ḥ śānti̍ḥ ॥<br>
+			</p><br>
+			
+			
+			<p id = "p24">
+				<span id = "p17" onclick="playPurushaSuktam('17')">sa̠hasra̍śīr​ṣā̠ puru̍ṣaḥ । </span>
+				<span id = "p18" onclick="playPurushaSuktam('18')"> sa̠ha̠srā̠kṣaḥ sa̠hasra̍pāt ।</span><br>
+				<button id = "p19" style = "display:none;"></button>
+				<span id = "p20" onclick="playPurushaSuktam('20')">sa bhūmi̍ṃ vi̠śvatō̍ vṛ̠tvā ।</span>
+				<button id = "p21" style = "display:none;"></button>
+				<span id = "p22" onclick="playPurushaSuktam('21')">atya̍tiṣṭhaddaśāṅgu̠lam ॥</span><br>
+				<button id = "p23" style = "display:none;"></button>
+			</p><br>
+			<p id = "p32">
+				<span id = "p25" onclick="playPurushaSuktam('25')">puru̍ṣa ē̠vēdagṃ sarvam̎ । </span>
+				<span id = "p26" onclick="playPurushaSuktam('26')">yadbhū̠taṃ yachcha̠ bhavyam̎ ।</span><br>
+				<button id = "p27" style = "display:none;"></button>
+				<span id = "p28" onclick="playPurushaSuktam('28')">u̠tāmṛ̍ta̠tva syēśā̍naḥ । </span>
+				<button id = "p29" style = "display:none;"></button>
+				<span id = "p30" onclick="playPurushaSuktam('30')"> ya̠dannē̍nāti̠rōha̍ti ॥</span><br>
+				<button id = "p31" style = "display:none;"></button>
+			</p><br>
+			<p id = "p40">
+				<span id = "p33" onclick="playPurushaSuktam('33')">ē̠tāvā̍nasya mahi̠mā ।</span>
+				<span id = "p34" onclick="playPurushaSuktam('34')"> atō̠ jyāyāg̍ścha̠ pūru̍ṣaḥ ।</span><br>
+				<button id = "p35" style = "display:none;"></button>
+				<span id = "p36" onclick="playPurushaSuktam('36')">pādō̎'sya̠ viśvā̍ bhū̠tāni̍ ।</span> <span>
+				<button id = "p37" style = "display:none;"></button>
+				<span id = "p38" onclick="playPurushaSuktam('38')">tri̠pāda̍syā̠mṛta̍ṃ di̠vi ॥</span><br>
+				<button id = "p39" style = "display:none;"></button>
+			</p><br>	
+			<p id = "p48">
+				<span id = "p41" onclick="playPurushaSuktam('41')">tri̠pādū̠rdhva udai̠tpuru̍ṣaḥ ।</span>
+				<span id = "p42" onclick="playPurushaSuktam('42')">pādō̎'syē̠hā''bha̍vā̠tpuna̍ḥ ।</span><br>
+				<button id = "p43" style = "display:none;"></button>
+				<span id = "p44" onclick="playPurushaSuktam('44')">tatō̠ viṣva̠ṅvya̍krāmat । </span>
+				<button id = "p45" style = "display:none;"></button>
+				<span id = "p46" onclick="playPurushaSuktam('46')">sā̠śa̠nā̠na̠śa̠nē a̠bhi ॥</span><br>
+				<button id = "p47" style = "display:none;"></button>
+			</p><br>
+			<p id = "p56">
+				<span id = "p49" onclick="playPurushaSuktam('49')">tasmā̎dvi̠rāḍa̍jāyata । </span>
+				<span id = "p50" onclick="playPurushaSuktam('50')"> vi̠rājō̠ adhi̠ pūru̍ṣaḥ ।</span><br>
+				<button id = "p51" style = "display:none;"></button>
+				<span id = "p52" onclick="playPurushaSuktam('52')">sa jā̠tō atya̍richyata ।</span>
+				<button id = "p53" style = "display:none;"></button>
+				<span id = "p54" onclick="playPurushaSuktam('54')">pa̠śchādbhūmi̠mathō̍ pu̠raḥ ॥</span><br>
+				<button id = "p55" style = "display:none;"></button>
+			</p><br>
+			<p id="p64">
+				<span id = "p57" onclick="playPurushaSuktam('57')">yatpuru̍ṣēṇa ha̠viṣā̎ ।</span>
+				<span id="p58"onclick="playPurushaSuktam('58')">dē̠vā ya̠jñamata̍nvata ।</span><br>
+				<button id = "p59" style = "display:none;"></button>
+				<span id = "p60" onclick="playPurushaSuktam('60')">va̠sa̠ntō a̍syāsī̠dājyam̎ ।</span>
+				<button id = "p61" style = "display:none;"></button>
+				<span id="p62" onclick="playPurushaSuktam('62')">  grī̠ṣma i̠dhmaśśa̠radhdha̠viḥ ॥</span><br>
+				<button id = "p63" style = "display:none;"></button>
+			</p><br>
+			<p id="p72">
+				<span id = "p65" onclick="playPurushaSuktam('65')">sa̠ptāsyā̍sanpari̠dhaya̍ḥ । </span> 
+				<span id = "p66" onclick="playPurushaSuktam('66')">triḥ sa̠pta sa̠midha̍ḥ kṛ̠tāḥ ।</span><br>
+				<button id = "p67" style = "display:none;"></button>
+				<span id = "p68" onclick="playPurushaSuktam('68')">dē̠vā yadya̠jñaṃ ta̍nvā̠nāḥ ।</span> 
+				<button id = "p69" style = "display:none;"></button>
+				<span id = "p70" onclick="playPurushaSuktam('70')">aba̍dhna̠n-puru̍ṣaṃ pa̠śum ॥</span><br>
+				<button id = "p71" style = "display:none;"></button>
+			</p><br>
+			<p id="p80">
+				<span id = "p73" onclick="playPurushaSuktam('73')">taṃ ya̠jñaṃ ba̠r̠​hiṣi̠ praukṣan̍ ।</span>
+				<span id = "p74" onclick = "playPurushaSuktam('74')">puru̍ṣaṃ jā̠tama̍gra̠taḥ ।</span><br>
+				<button id = "p75" style = "display:none;"></button>
+				<span id = "p76" onclick="playPurushaSuktam('76')">tēna̍ dē̠vā aya̍janta । </span>
+				<button id = "p77" style = "display:none;"></button>
+				<span id = "p78" onclick="playPurushaSuktam('78')">  sā̠dhyā ṛṣa̍yaścha̠ yē ॥</span><br>
+				<button id = "p79" style = "display:none;"></button>
+			</p><br>
+			<p id = "p88">
+				<span id = "p81" onclick="playPurushaSuktam('81')">tasmā̎dya̠jñāthsa̍rva̠huta̍ḥ ।</span>
+				<span id = "p82" onclick="playPurushaSuktam('82')">sambhṛ̍taṃ pṛṣadā̠jyam ।</span><br>
+				<button id = "p83" style = "display:none;"></button>
+				<span id = "p84" onclick="playPurushaSuktam('84')">pa̠śūgg-stāgg-ścha̍krē vāya̠vyān̍ ।</span> 
+				<button id = "p85" style = "display:none;"></button>
+				<span id = "p86" onclick="playPurushaSuktam('86')">ā̠ra̠ṇyān-grā̠myāścha̠ yē ॥</span><br>
+				<button id = "p87" style = "display:none;"></button>
+			</p><br>
+			<p id = "p96">
+				<span id ="p89" onclick="playPurushaSuktam('89')">tasmā̎dya̠jñāthsa̍rva̠huta̍ḥ । </span>
+				<span id ="p90" onclick="playPurushaSuktam('90')"> ṛcha̠ḥ sāmā̍ni jajñirē ।</span><br>
+				<button id = "p91" style = "display:none;"></button>
+				<span id ="p92" onclick="playPurushaSuktam('92')">Chandāg̍ṃsi jajñirē̠ tasmā̎t ।</span> 
+				<button id = "p93" style = "display:none;"></button>
+				<span id ="p94" onclick="playPurushaSuktam('94')">yaju̠stasmā̍dajāyata ॥</span><br>
+				<button id = "p95" style = "display:none;"></button>
+			</p><br>
+			<p id = "p104">
+				<span id ="p97" onclick="playPurushaSuktam('97')">tasmā̠daśvā̍ ajāyanta । </span>
+				<span id ="p98" onclick="playPurushaSuktam('98')"> yē kē chō̍bha̠yāda̍taḥ ।</span><br>
+				<button id = "p99" style = "display:none;"></button>
+				<span id ="p100" onclick="playPurushaSuktam('100')">gāvō̍ ha jajñirē̠ tasmā̎t ।</span>
+				<button id = "p101" style = "display:none;"></button>
+				<span id = "p102" onclick="playPurushaSuktam('102')">tasmā̎jjā̠tā a̍jā̠vaya̍ḥ ॥</span><br>
+				<button id = "p103" style = "display:none;"></button>
+			</p><br>
+			<p id = "p112">
+				<span id ="p105" onclick="playPurushaSuktam('105')">yatpuru̍ṣa̠ṃ vya̍dadhuḥ । </span>
+				<span id ="p106" onclick="playPurushaSuktam('106')"> ka̠ti̠thā vya̍kalpayann ।</span><br>
+				<button id = "p107" style = "display:none;"></button>
+				<span id ="p108" onclick="playPurushaSuktam('108')">mukha̠ṃ kima̍sya̠ kau bā̠hū । </span> 
+				<button id = "p109" style = "display:none;"></button>
+				<span id ="p110" onclick="playPurushaSuktam('110')">kāvū̠rū pādā̍vuchyētē ॥</span><br>
+				<button id = "p111" style = "display:none;"></button>
+			</p><br>
+			<p id = "p120">
+				<span id ="p113" onclick="playPurushaSuktam('113')">brā̠hma̠ṇō̎'sya̠ mukha̍māsīt ।</span>
+				<span id ="p114" onclick="playPurushaSuktam('114')">bā̠hū rā̍ja̠nya̍ḥ kṛ̠taḥ ।</span><br>
+				<button id = "p115" style = "display:none;"></button>
+				<span id ="p116" onclick="playPurushaSuktam('116')">ū̠rū tada̍sya̠ yadvaiśya̍ḥ ।</span> 
+				<button id = "p117" style = "display:none;"></button>
+				<span id ="p118" onclick="playPurushaSuktam('118')">pa̠dbhyāgṃ śū̠drō a̍jāyataḥ ॥</span> <br>
+				<button id = "p119" style = "display:none;"></button>
+			</p><br>
+			<p id = "p128">
+				<span id ="p121" onclick="playPurushaSuktam('121')">చం॒ద్రమా॒ మన॑సో జా॒తః ।</span>
+				<span id ="p122" onclick="playPurushaSuktam('122')">చక్షోః॒ సూర్యో॑ అజాయత ।</span><br>
+				<button id = "p123" style = "display:none;"></button>
+				<span id ="p124" onclick="playPurushaSuktam('124')">ముఖా॒దింద్ర॑శ్చా॒గ్నిశ్చ॑ ।</span> 
+				<button id = "p125" style = "display:none;"></button>
+				<span id ="p126" onclick="playPurushaSuktam('126')">ప్రా॒ణాద్వా॒యుర॑జాయత ॥</span> <br>
+				<button id = "p127" style = "display:none;"></button>
+			</p><br>
+			<p id = "p136">
+				<span id ="p129" onclick="playPurushaSuktam('129')">నాభ్యా॑ ఆసీదం॒తరి॑క్షమ్ ।</span>
+				<span id ="p130" onclick="playPurushaSuktam('130')">శీ॒ర్​ష్ణో ద్యౌః సమ॑వర్తత ।</span><br>
+				<button id = "p131" style = "display:none;"></button>
+				<span id ="p132" onclick="playPurushaSuktam('132')">ప॒ద్భ్యాం భూమి॒ర్దిశః॒ శ్రోత్రా᳚త్ ।</span>
+				<button id = "p133" style = "display:none;"></button>				
+				<span id ="p134" onclick="playPurushaSuktam('134')">తథా॑ లో॒కాగ్ం అ॑కల్పయన్న్ ॥</span> <br>
+				<button id = "p135" style = "display:none;"></button>
+			</p><br>
+			<p id = "p144">
+				<span id ="p137" onclick="playPurushaSuktam('137')">వేదా॒హమే॒తం పురు॑షం మ॒హాంతం᳚ ।</span> 
+				<span id ="p138" onclick="playPurushaSuktam('138')">ఆ॒ది॒త్యవ॑ర్ణం॒ తమ॑స॒స్తు పా॒రే ।</span><br>
+				<button id = "p139" style = "display:none;"></button>
+				<span id ="p140" onclick="playPurushaSuktam('140')">సర్వా॑ణి రూ॒పాణి॑ వి॒చిత్య॒ ధీరః॑ ।</span>
+				<button id = "p141" style = "display:none;"></button>
+				<span id ="p142" onclick="playPurushaSuktam('142')">నామా॑ని కృ॒త్వాఽభి॒వద॒న్॒, యదాఽఽస్తే᳚ ॥</span> <br>
+				<button id = "p143" style = "display:none;"></button>
+			</p><br>
+			<p id = "p152">
+				<span id ="p145" onclick="playPurushaSuktam('145')">ధా॒తా పు॒రస్తా॒ద్యము॑దాజ॒హార॑ ।</span>
+				<span id ="p146" onclick="playPurushaSuktam('146')">శ॒క్రః ప్రవి॒ద్వాన్-ప్ర॒దిశ॒శ్చత॑స్రః ।</span><br>
+				<button id = "p147" style = "display:none;"></button>
+				<span id ="p148" onclick="playPurushaSuktam('148')">తమే॒వం-విఀ॒ద్వాన॒మృత॑ ఇ॒హ భ॑వతి ।</span>
+				<button id = "p149" style = "display:none;"></button>				
+				<span id ="p150" onclick="playPurushaSuktam('150')">నాన్యః పంథా॒ అయ॑నాయ విద్యతే ॥</span> <br>
+				<button id = "p151" style = "display:none;"></button>
+			</p><br>
+			<p id = "p160">
+				<span id ="p153" onclick="playPurushaSuktam('153')">య॒జ్ఞేన॑ య॒జ్ఞమ॑యజంత దే॒వాః ।</span>
+				<span id ="p154" onclick="playPurushaSuktam('154')">తాని॒ ధర్మా॑ణి ప్రథ॒మాన్యా॑సన్న్ ।</span><br>
+				<button id = "p155" style = "display:none;"></button>	
+				<span id ="p156" onclick="playPurushaSuktam('156')">తే హ॒ నాకం॑ మహి॒మానః॑ సచంతే ।</span> 
+				<button id = "p157" style = "display:none;"></button>
+				<span id ="p158" onclick="playPurushaSuktam('158')">యత్ర॒ పూర్వే॑ సా॒ధ్యాస్సంతి॑ దే॒వాః ॥</span> <br>
+				<button id = "p159" style = "display:none;"></button>
+			</p><br>
+			<p id = "p168">
+				<span id ="p161" onclick="playPurushaSuktam('161')">అ॒ద్భ్యః సంభూ॑తః పృథి॒వ్యై రసా᳚చ్చ ।</span> 
+				<span id ="p162" onclick="playPurushaSuktam('162')">వి॒శ్వక॑ర్మణః॒ సమ॑వర్త॒తాధి॑ ।</span><br>
+				<button id = "p163" style = "display:none;"></button>
+				<span id ="p164" onclick="playPurushaSuktam('164')">తస్య॒ త్వష్టా॑ వి॒దధ॑ద్రూ॒పమే॑తి ।</span>
+				<button id = "p165" style = "display:none;"></button>
+				<span id ="p166" onclick="playPurushaSuktam('166')">తత్పురు॑షస్య॒ విశ్వ॒మాజా॑న॒మగ్రే᳚ ॥</span> <br>
+				<button id = "p167" style = "display:none;"></button>
+			</p><br>
+			<p id = "p176">
+				<span id ="p169" onclick="playPurushaSuktam('169')">వేదా॒హమే॒తం పురు॑షం మ॒హాంతం᳚ ।</span>
+				<span id ="p170" onclick="playPurushaSuktam('170')">ఆ॒ది॒త్యవ॑ర్ణం॒ తమ॑సః॒ పర॑స్తాత్ ।</span><br>
+				<button id = "p171" style = "display:none;"></button>
+				<span id ="p172" onclick="playPurushaSuktam('172')">తమే॒వం-విఀ॒ద్వాన॒మృత॑ ఇ॒హ భ॑వతి ।</span>
+				<button id = "p173" style = "display:none;"></button>
+				<span id ="p174" onclick="playPurushaSuktam('174')">నాన్యః పంథా॑ విద్య॒తేఽయ॑నాయ ॥</span> <br>
+				<button id = "p175" style = "display:none;"></button>
+			</p><br>
+			<p id = "p184">
+				<span id ="p177" onclick="playPurushaSuktam('177')">ప్ర॒జాప॑తిశ్చరతి॒ గర్భే॑ అం॒తః ।</span>
+				<span id ="p178" onclick="playPurushaSuktam('178')">అ॒జాయ॑మానో బహు॒ధా విజా॑యతే ।</span><br>
+				<button id = "p179" style = "display:none;"></button>
+				<span id ="p180" onclick="playPurushaSuktam('180')">తస్య॒ ధీరాః॒ పరి॑జానంతి॒ యోనిం᳚ ।</span>
+				<button id = "p181" style = "display:none;"></button>
+				<span id ="p182" onclick="playPurushaSuktam('182')">మరీ॑చీనాం ప॒దమి॑చ్ఛంతి వే॒ధసః॑ ॥</span> <br>
+				<button id = "p183" style = "display:none;"></button>
+			</p><br>
+			<p id = "p192">
+				<span id ="p185" onclick="playPurushaSuktam('185')">యో దే॒వేభ్య॒ ఆత॑పతి ।</span> 
+				<span id ="p186" onclick="playPurushaSuktam('186')">యో దే॒వానాం᳚ పు॒రోహి॑తః ।</span><br>
+				<button id = "p187" style = "display:none;"></button>
+				<span id ="p188" onclick="playPurushaSuktam('188')">పూర్వో॒ యో దే॒వేభ్యో॑ జా॒తః ।</span> 
+				<button id = "p189" style = "display:none;"></button>
+				<span id ="p190" onclick="playPurushaSuktam('190')">నమో॑ రు॒చాయ॒ బ్రాహ్మ॑యే ॥</span> <br>
+				<button id = "p191" style = "display:none;"></button>
+			</p><br>
+			<p id = "p200">
+				<span id ="p193" onclick="playPurushaSuktam('193')">రుచం॑ బ్రా॒హ్మం జ॒నయం॑తః ।</span>
+				<span id ="p194" onclick="playPurushaSuktam('194')">దే॒వా అగ్రే॒ తద॑బ్రువన్న్ ।</span><br>
+				<button id = "p195" style = "display:none;"></button>
+				<span id ="p196" onclick="playPurushaSuktam('196')">యస్త్వై॒వం బ్రా᳚హ్మ॒ణో వి॒ద్యాత్ ।</span> 
+				<button id = "p197" style = "display:none;"></button>
+				<span id ="p198" onclick="playPurushaSuktam('198')">తస్య॑ దే॒వా అస॒న్ వశే᳚ ॥</span> <br>
+				<button id = "p199" style = "display:none;"></button>
+			</p><br>
+			<p id = "p214">
+				<span id ="p201" onclick="playPurushaSuktam('201')">హ్రీశ్చ॑ తే ల॒క్ష్మీశ్చ॒ పత్న్యౌ᳚ ।</span>
+				<span id ="p202" onclick="playPurushaSuktam('194')">అ॒హో॒రా॒త్రే పా॒ర్​శ్వే ।</span><br>
+				<button id = "p203" style = "display:none;"></button>
+				<span id ="p204" onclick="playPurushaSuktam('204')">నక్ష॑త్రాణి రూ॒పమ్ ।</span>
+				<button id = "p205" style = "display:none;"></button>
+				<span id ="p206" onclick="playPurushaSuktam('206')">అ॒శ్వినౌ॒ వ్యాత్తం᳚ ।</span><br>
+				<button id = "p207" style = "display:none;"></button>
+				<span id ="p208" onclick="playPurushaSuktam('208')">ఇ॒ష్టం మ॑నిషాణ ।</span>
+				<button id = "p209" style = "display:none;"></button>
+				<span id ="p210" onclick="playPurushaSuktam('210')">అ॒ముం మ॑నిషాణ ।</span><br>
+				<button id = "p211" style = "display:none;"></button>				
+				<span id ="p212" onclick="playPurushaSuktam('212')">సర్వం॑ మనిషాణ ॥<br>
+				<button id = "p213" style = "display:none;"></button>	
+			</p><br>
+			<p id = "p232">
+				<span id ="p215" onclick="playPurushaSuktam('215')">తచ్ఛం॒-యోఀరావృ॑ణీమహే ।</span>
+				<span id ="p216" onclick="playPurushaSuktam('216')">గా॒తుం-యఀ॒జ్ఞాయ॑ ।</span>
+				<button id = "p217" style = "display:none;"></button>
+				<span id ="p218" onclick="playPurushaSuktam('218')">గా॒తుం-యఀ॒జ్ఞప॑తయే ।</span> <br>
+				<button id = "p219" style = "display:none;"></button>
+				<span id ="p220" onclick="playPurushaSuktam('220')">దైవీ᳚ స్వ॒స్తిర॑స్తు నః ।</span>
+				<button id = "p221" style = "display:none;"></button>
+				<span id ="p222" onclick="playPurushaSuktam('222')">స్వ॒స్తిర్మాను॑షేభ్యః ।</span>
+				<button id = "p223" style = "display:none;"></button>				
+				<span id ="p224" onclick="playPurushaSuktam('224')">ఊ॒ర్ధ్వం జి॑గాతు భేష॒జమ్ ।</span><br> 
+				<button id = "p225" style = "display:none;"></button>
+				<span id ="p226" onclick="playPurushaSuktam('226')">శం నో॑ అస్తు ద్వి॒పదే᳚ ।</span>
+				<button id = "p227" style = "display:none;"></button>				
+				<span id ="p228" onclick="playPurushaSuktam('228')">శం చతు॑ష్పదే ।</span><br>
+				<button id = "p229" style = "display:none;"></button>
+				<span id ="p230" onclick="playPurushaSuktam('230')">ఓం శాంతిః॒ శాంతిః॒ శాంతిః॑ ॥<br>
+				<button id = "p231" style = "display:none;"></button>
+			</p><br>
 			<br><br>
-		<br><br>
-		<br><br>
+		
 	</div>	
    
   </body> 
