@@ -32,8 +32,6 @@
 	
 	#anu1Aud{
 		position : relative;
-		/*top: 0px;
-		/*right : 30px;/*was 50*/
 		top: 0px;
 		left : 40px;
 		padding-left : 10px;
@@ -41,12 +39,15 @@
 		background : #009688;
 		overflow: hidden;
 		border: medium dashed green;
-		
 	}
-		::-webkit-media-controls-play-button{
-	background-color:#009688;}
+	
+	::-webkit-media-controls-play-button{
+		background-color:#009688;
+	}
+	
 	@media only screen and (max-width: 1240px) {
 	#anu1Aud {
+		top : 0px;
 		width: 57vw;
 		left : 150px;
 	}}
