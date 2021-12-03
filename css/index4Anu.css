@@ -120,6 +120,15 @@
 		z-index: 8;
 		cursor: pointer;
 	}
+	@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  #manuBtn{
+		  top: 35%;
+		  } 
+	  }
 	#manuBtn img{
 		width: 20px;
 		margin-top: 15px;
@@ -136,22 +145,7 @@
 		width: 30px;
 	}
 	}
-	/*@media only screen and (min-width: 705px){
-	#manuBtn{
-		top: 11%;
-	}
-	}
-	@media only screen and (min-width: 1025px) {
-	#manuBtn{
-		top:22%;
-	}
-	}
-	@media only screen and (min-width: 1025px) {
-	#manuBtn img{
-		width: 11px;
-	}
-	}*/
-
+	
 	.namakambtn {
 		width: 19vw;
 		position : fixed;
@@ -176,14 +170,6 @@
 		width: 10vw;
 	}
 	}
-	/*@media only screen  and (max-width: 1700px) {
-	.namakambtn{
-		top: 15%;/*Yamini was 25
-		left : 5%;
-		width: 19vw;
-	}
-	}*/
-	
 	
 	nav ul li{
 		list-style: none;
