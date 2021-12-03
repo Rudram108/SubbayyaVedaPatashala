@@ -126,7 +126,7 @@
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
 			else
-			alert("Anuvakam is complete. Please choose the next one");
+				alert("Anuvakam is complete. Please choose the next one");
 		}
 					
 	}
@@ -194,49 +194,7 @@
 				var playingButtonId  = "p" +playingButton;
 				innerDoc.getElementById(playingButtonId).click();
 		}
-		}		/*source.src = "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3";
-				alert( "audio/Anu"+ scrAnuvakam+mode+"_"+playingButton+".mp3");
-				var curBut = "p" + playingButton;
-					innerDoc.getElementById(curBut).style.color = "blue";
-					var smalls = innerDoc.getElementById(curBut).getElementsByTagName('small');
-					for(var i = 0; i < smalls.length; i++){
-						smalls[i].style.color = '#dc143c';
-						
-					}
-					var bolds = innerDoc.getElementById(curBut).getElementsByTagName('b');
-					for(var i = 0; i < bolds.length; i++){
-						bolds[i].style.color = '#241CB6'
-						
-					}
-				}
-			catch(err){
-				
-			//	 document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
-			}
-		
-		}
-		
-				
-			if(!sounds.paused)
-				{
-					sounds.pause();								
-				}
-			//	alert(source.src);
-			
-			sounds.load();
-			alert("playing " +playingButton);
-			sounds.play();
-			
-			
-			if(mode != 'com'){
-			playingButton = +playingButton + 1;
-			playingButton = leftPad(playingButton,2);
-		alert(playingButton);
-		var playingButtonId  = "p" +playingButton;
-			alert("scrAnuvakam" +scrAnuvakam);
-			//anu1TeluguPrint(scrAnuvakam,playingButton);
-			innerDoc.getElementById(playingButtonId).click();
-			}*/
+		}		
 	
 		/*
 		This function get the Learning Mode
