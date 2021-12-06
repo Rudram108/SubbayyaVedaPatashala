@@ -48,7 +48,7 @@
 	@media only screen and (max-width: 1240px) {
 	#anu1Aud {
 		top : 0px;
-		width: 57vw;
+		width: 60vw;
 		left : 150px;
 	}}
 	
@@ -109,7 +109,7 @@
 	
 	.audio-text p small {
 		font-size: 22px;
-		text-decoration: underline;
+		/*text-decoration: underline;*/
 		color: #6b6a6a;
 	}@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p small {
