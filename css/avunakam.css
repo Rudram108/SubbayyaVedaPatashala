@@ -35,7 +35,7 @@
 		top: 0px;
 		left : 40px;
 		padding-left : 10px;
-		width : 57vw;
+		width : 37vw;
 		background : #009688;
 		overflow: hidden;
 		border: medium dashed green;
@@ -48,7 +48,7 @@
 	@media only screen and (max-width: 1240px) {
 	#anu1Aud {
 		top : 0px;
-		width: 60vw;
+		width: 40vw;
 		left : 150px;
 	}}
 	
