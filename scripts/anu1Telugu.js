@@ -279,6 +279,9 @@
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
+		
+		setLearningMode(getLearningMode());
+		
 	}
 		
 	
