@@ -34,7 +34,11 @@
 		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
 		<script src="scripts/anu1Telugu.js"></script>
-	
+		<script>
+		document.addEventListener("contextmenu", function(event){
+		event.preventDefault(); 
+		}, false);
+	</script>
 	</head>
   <body class = "anubg">
  
@@ -45,29 +49,38 @@
 	
 	
 	<div class = "audio-text" id="audio-text" ><br>
-	<br>This page will play the complete anuvakam.Line by line or word by word audios are under development.<br><br>
+	<br><br>
 			<p id = "p00" onclick="anu1TeluguPrint('6','00')">namō̎ jyē<small>̠ṣṭ</small>hā<b>ya̍</b> cha ka<small>ni̠</small>ṣṭhā<b>ya̍</b> <small>cha̠</small><br></p><br>
+			
 			<p id = "p01" onclick="anu1TeluguPrint('6','01')">na<b>ma̍ḥ</b> pūr<small>va̠</small>jā<b>ya̍</b> chāpa<small>ra̠</small>jā<b>ya̍</b> cha̠<br></p><br>
-			<p id = "p02" onclick="anu1TeluguPrint('6','02')">na<b>mō̍</b> madh<small>ya̠</small>mā<b>ya̍</b> chāpa<small>ga̠</small>lbhā<b>ya̍</b> <small>cha̠</small><br></p><br>
-			<p id = "p03" onclick="anu1TeluguPrint('6','03')">na<b>mō̍</b> jag<small>ha̠</small>n<b>yā̍</b>ya <small>cha̠</small> budhni̍yāya <small>cha̠</small><br></p><br>
-			<p id = "p05" onclick="anu1TeluguPrint('6','05')">na<b>ma̍ḥ</b> sō̠bh<b>yā̍</b>ya cha pratisa̠r<b>yā̍</b>ya <small>cha̠</small><br></p><br>
-			<p id = "p05" onclick="anu1TeluguPrint('6','05')">na<small>mō̠</small>yām<b>yā̍</b>ya <small>cha̠</small> kṣēm<b>yā̍</b>ya <small>cha̠</small><br></p><br>
+			<span id = "p02"></span>
+			<p id = "p03" onclick="anu1TeluguPrint('6','03')">na<b>mō̍</b> madh<small>ya̠</small>mā<b>ya̍</b> chāpa<small>ga̠</small>lbhā<b>ya̍</b> <small>cha̠</small><br></p><br>
+			<span id = "p04"></span>
+			<p id = "p05" onclick="anu1TeluguPrint('6','05')">na<b>mō̍</b> jag<small>ha̠</small>n<b>yā̍</b>ya <small>cha̠</small> budhni̍yāya <small>cha̠</small><br></p><br>
 			<span id = "p06"></span>
-			<p id = "p07" onclick="anu1TeluguPrint('6','07')">na<b>ma̍</b> urva̠r<b>yā̍</b>ya <small>cha̠</small> khal<b>yā̍</b>ya <small>cha̠</small><br></p><br>
+			<p id = "p07" onclick="anu1TeluguPrint('6','07')">na<b>ma̍ḥ</b> sō̠bh<b>yā̍</b>ya cha pratisa̠r<b>yā̍</b>ya <small>cha̠</small><br></p><br>
 			<span id = "p08"></span>
-			<p id = "p09" onclick="anu1TeluguPrint('6','09')">nama̠ḥ ślōk<b>yā̍</b>ya <b>chā'</b>vasā̠n<b>yā̍</b>ya <small>cha̠</small> namō̠ vanyā̍ya <small>cha̠</small> <br></p><br>
+			<p id = "p09" onclick="anu1TeluguPrint('6','09')">na<small>mō̠</small>yām<b>yā̍</b>ya <small>cha̠</small> kṣēm<b>yā̍</b>ya <small>cha̠</small><br></p><br>
 			<span id = "p10"></span>
-			<p id = "p11" onclick="anu1TeluguPrint('6','11')">kakṣ<b>yā̍</b>ya <small>cha̠</small> na<b>ma̍ḥ</b> śra̠vāya̍ cha<br></p><br>
+			<p id = "p11" onclick="anu1TeluguPrint('6','11')">na<b>ma̍</b> urva̠r<b>yā̍</b>ya <small>cha̠</small> khal<b>yā̍</b>ya <small>cha̠</small><br></p><br>
 			<span id = "p12"></span>
-			<p id = "p13" onclick="anu1TeluguPrint('6','13')">pratiś<small>ra̠</small>vā<b>ya̍</b> <small>cha̠</small> na<b>ma̍</b> ā̠śu<b>ṣē̍</b>ṇāya ch<small>ā̠ś</small>u<b>ra̍</b>thāya <small>cha̠</small> <br></p><br>
-			<span id = "p15"></span>
-			<p id = "p15" onclick="anu1TeluguPrint('6','15')"> nama̠ḥ śūrā̍ya chāvabhinda̠tē <small>cha̠</small> namō̍ va̠rmiṇē̍ cha<br></p><br>
+			<p id = "p13" onclick="anu1TeluguPrint('6','13')">nama̠ḥ ślōk<b>yā̍</b>ya <b>chā'</b>vasā̠n<b>yā̍</b>ya <small>cha̠</small> <br></p><br>
+			<span id = "p14"></span>
+			<p id = "p15" onclick="anu1TeluguPrint('6','15')">nam<small>ō̠ </small>vany<b>ā̍</b>ya <small>cha̠</small> kakṣ<b>yā̍</b>ya <small>cha̠</small><br></p><br>
 			<span id = "p16"></span>
-			<p id = "p17" onclick="anu1TeluguPrint('6','17')">varū̠dhinē̍ <small>cha̠</small> na<b>mō̍</b> <small>bi̠</small>lmi<b>nē̍</b> cha<br></p><br>
+			<p id = "p17" onclick="anu1TeluguPrint('6','17')"> na<b>ma̍ḥ</b> śra̠vāy<b>a̍</b> cha pratiś<small>ra̠</small>vā<b>ya̍</b> <small>cha̠</small>  <br></p><br>
 			<span id = "p18"></span>
-			<p id = "p19" onclick="anu1TeluguPrint('6','19')">kava̠chinē̍ <small>cha̠</small> na<b>ma̍ḥ</b> ś<small>ru̠</small>tā<b>ya̍</b> cha śrutasē̠nā<b>ya</b>̍ cha ॥ 6 ॥<br></p><br>
-			<span id ="p20"></span>
-	</div>	
+			<p id = "p19" onclick="anu1TeluguPrint('6','19')"> na<b>ma̍</b> ā̠śu<b>ṣē̍</b>ṇāya ch<small>ā̠ś</small>u<b>ra̍</b>thāya <small>cha̠</small> <br></p><br>
+			<span id = "p20"></span>
+			<p id = "p21" onclick="anu1TeluguPrint('6','21')">nama̠ḥ śūrā̍ya chāvabhinda̠tē <small>cha̠</small><br></p><br>
+			<span id = "p22"></span>
+			<p id = "p23" onclick="anu1TeluguPrint('6','23')"> namō̍ va̠rmiṇē̍ cha varū̠dhinē̍ <small>cha̠</small> <br></p><br>
+			<span id ="p24"></span>
+			<p id = "p25" onclick="anu1TeluguPrint('6','25')">na<b>mō̍</b> <small>bi̠</small>lmi<b>nē̍</b> cha kava̠chinē̍ <small>cha̠</small> <br></p><br>
+			<span id ="p26"></span>
+			<p id = "p27" onclick="anu1TeluguPrint('6','27')">na<b>ma̍ḥ</b> ś<small>ru̠</small>tā<b>ya̍</b> cha śrutasē̠nā<b>ya</b>̍ cha ॥ 6 ॥ <br></p><br>
+			<span id ="p28"></span>
+		</div>
    
   </body> 
 </html>		
