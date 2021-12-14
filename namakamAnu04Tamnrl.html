@@ -30,10 +30,17 @@
 				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
 				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
 		}
+		@font-face {
+			font-family: 'NotoSansTamil';
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.ttf") format("truetype");
 		</style>
 		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
 		<script src="scripts/anu1Telugu.js"></script>
+		
 		<script>
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
@@ -48,7 +55,7 @@
 	</nav>
 	
 	
-	<div class = "audio-text" id="audio-text" ><br>
+	<div class = "audio-text" id="audio-text" style="font-family:NotoSansTamil; line-height:150%; font-size: 22px;"><br><br>
 	
 			<p id = "p00" onclick="anu1TeluguPrint('4','00')">நம॑ ஆவ்யா॒தி4னீ᳚ப்4யோ வி॒வித்4ய॑ன்தீப்4யஶ்ச வோ॒<br></p><br>
 			<p id = "p01" onclick="anu1TeluguPrint('4','01')">நமோ॒ நம॒ உக॑3ணாப்4யஸ்த்ருக்3ம்-ஹ॒தீப்4ய॑ஶ்ச வோ॒<br></p><br>
@@ -84,8 +91,7 @@
 			<p id = "p31" onclick="anu1TeluguPrint('4','31')">நமோ॒ நம॒-ஶ்ஶ்வப்4ய॒-ஶ்ஶ்வப॑திப்4யஶ்ச வோ॒ நம:॑ ॥ 4 ॥<br></p><br>
 			<span id ="p32"></span>
 			<br><br>
-		<br><br>
-		<br><br>
+		
 	</div>	
    
   </body> 

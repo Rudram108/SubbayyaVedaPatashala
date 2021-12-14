@@ -37,10 +37,17 @@
 				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
 				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
 		}
+		@font-face {
+			font-family: 'NotoSansTamil';
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.ttf") format("truetype");
 		</style>
 		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
 		<script src="scripts/anu1Telugu.js"></script>
+		
 		<script>
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
@@ -53,7 +60,7 @@
 		<!--<embed type="text/html" src="navigationNamakam.html" width= "100%" height = "30%">-->
 		<audio id = "anu1Aud" controls  preload="auto"> <source id="audioSource" src=""></source></audio>
 	</nav>
-<div class = "audio-text" id="audio-text"  ><br>	<br>
+<div class = "audio-text" id="audio-text"  style="font-family:NotoSansTamil; line-height:150%; font-size: 22px;"><br>	<br>
 		<p id = "p00" onclick="anu1TeluguPrint('01','00')">ஓஂ நமோ ப4க3வ<b>தே॑</b> ருத்3<small>ரா॒</small>ய ॥<br></p><br>
 		<p id = "p01" onclick="anu1TeluguPrint('01','01')">ந<b>ம॑</b>ஸ்தே ருத்3ர <small>ம॒</small>ன்ய<b>வ॑ </b><small>உ॒</small>தோ<small>த॒</small> இ<b>ஷ॑</b><small>வே॒</small> ந<b>ம:॑</b> ।<br></p><br>
 		<p id = "p02" onclick="anu1TeluguPrint('01','02')">ந<b>ம॑</b>ஸ்தே அஸ்<small>து॒</small> த4ன்<b>வ॑</b>னே <small>பா॒</small>3ஹுப்4யா॑மு॒த தே॒ ந<b>ம:॑</b> ॥<br></p><br>
@@ -100,7 +107,7 @@
 		<br>
 		<p id = "p30" onclick="anu1TeluguPrint('01','30')">ப<b>ரி॑</b> தே॒ த4ன்<b>வ॑</b>னோ ஹே॒தி<small>ர॒</small>ஸ்மான் வ்<b>ரு॑</b>ணக்து <small>வி॒</small>ஶ்வ<b>த:॑</b> ।<br></p><br>
 		<p id = "p31" onclick="anu1TeluguPrint('01','31')">அ<small>தோ॒</small>2 ய <b>இ॑</b>ஷு॒தி4ஸ்த<small>வா॒</small>ரே அ॒ஸ்மன்னி<b>தே॑</b>4ஹி॒ தம்॥ 1 ॥<br></p><br>
-<br>
+<br><br>
   </div> 
   </body> 
 </html>	

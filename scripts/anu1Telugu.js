@@ -280,7 +280,7 @@
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
 		
-		setLearningMode(getLearningMode());
+		
 		
 	}
 		
