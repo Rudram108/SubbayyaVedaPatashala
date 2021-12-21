@@ -126,7 +126,8 @@
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
 			else
-				alert("Anuvakam is complete. Please choose the next one");
+				//alert("Anuvakam is complete. Please choose the next one");
+				anu1TeluguPrint(leftPad(anuNum,2),'00');
 		}
 					
 	}
