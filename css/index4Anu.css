@@ -252,9 +252,9 @@
 		
 	@media only screen and (min-width: 200px) {
 	.anu-space{
-		top:150%;
-		width: 70vw;
-		left: 30px;/*Yamini was 0px*/
+		top:190%;
+		width: 80vw;
+		left: 80px;/*Yamini was 0px*/
 	}
 	}
 	@media only screen and (min-width:1025px) {
