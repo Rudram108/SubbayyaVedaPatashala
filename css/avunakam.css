@@ -21,8 +21,7 @@
 		height: 88px;
 		display: block;
 		overflow: hidden;
-		z-index : 1;
-		border: medium dashed green;
+		z-index : 4;
 	}
 	
 	.audio-select audio{
@@ -39,7 +38,7 @@
 		width : 37vw;
 		background : #009688;
 		overflow: hidden;
-		border: medium dashed green;
+		/*border: medium dashed green;*/
 	}
 	
 	::-webkit-media-controls-play-button{
