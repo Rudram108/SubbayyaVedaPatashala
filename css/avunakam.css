@@ -23,7 +23,11 @@
 		overflow: hidden;
 		z-index : 4;
 	}
-	
+	@media screen and (min-device-width: 320px) 
+	and (max-device-width: 812px) { 
+	.audio-select{
+	top:20px;
+	}}
 	.audio-select audio{
 		 background: transparent;
 	}
