@@ -31,14 +31,9 @@ ul#navmenu li{
 	margin-right:6px;
 }}
 @media screen and (min-device-width: 320px) { 
-ul#navmenu li {
-	margin-left:22px;
-	width: 190px;
-	font-size: 24px;
-}}
-@media screen and (min-device-width: 320px) { 
-ul#navmenu li a{
-	font-size: 33px;
+ul#navmenu{
+	font-size: 44px;
+	float: left;
 }}
 ul#navmenu a{
 text-decoration:none;
@@ -55,13 +50,12 @@ font-size : 28px;
 }
 @media screen and (min-width: 1240px) { /*for laptop*/
 ul#navmenu a{
-margin-top: 6px;
+margin-top: 5px;
 width: 105px;
 height: 25px;
 line-height: 23px;
 font-size : 15px;
 }}
-
 ul#navmenu .sub1 li{
 margin-top: 15px;
 list-style-type : none;
@@ -72,9 +66,9 @@ ul#navmenu .sub1 li{
 margin-top: 5px;
 }}
 @media screen and (max-width: 1240px) { /*for phone*/
-ul#navmenu .sub1 li a{
+ul#navmenu .sub1 li{
 	background-color : #009688;
-	font-size: 33px;
+	font-size: 30px;
 }}
 ul#navmenu .sub1 a{
 	padding-top :0px;

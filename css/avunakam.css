@@ -93,7 +93,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
-		font-size: 44px;
+		font-size: 55px;
 		line-height : 150%;
 	}}
 	@media only screen 
@@ -113,7 +113,7 @@
 		color: #6b6a6a;
 	}@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p small {
-		font-size: 44px;
+		font-size: 55px;
 	}}
 	@media only screen 
 		and (min-device-width: 768px) 
@@ -131,7 +131,7 @@
 	/*	vertical-align:super;*/
 	}@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p b {
-		font-size: 44px;
+		font-size: 55px;
 	}}
 	@media only screen 
 		and (min-device-width: 768px) 
