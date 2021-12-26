@@ -60,7 +60,7 @@ and (max-device-width: 812px) {
 ul#navmenu a{
 	border-radius: 58px;
 	width: 220px;
-	height: 45px;
+	height: 44px;
 }}
 @media screen and (min-width: 1240px) { /*for laptop*/
 ul#navmenu a{
