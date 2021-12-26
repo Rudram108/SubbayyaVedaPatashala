@@ -30,13 +30,15 @@ margin-right:26px;
 ul#navmenu li{
 	margin-right:6px;
 }}
-@media screen and (min-device-width: 320px) { 
+@media screen and (min-device-width: 320px)
+and (max-device-width: 812px)  { 
 ul#navmenu li {
 	margin-left:22px;
 	width: 190px;
 	font-size: 24px;
 }}
-@media screen and (min-device-width: 320px) { 
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 812px) { 
 ul#navmenu li a{
 	font-size: 33px;
 }}
