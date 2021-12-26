@@ -1,1 +1,376 @@
-(function(_0x48e42f,_0x34d7cc){var _0x52165c=_0x1148,_0x3a4dbc=_0x48e42f();while(!![]){try{var _0x517fc6=-parseInt(_0x52165c(0x167))/0x1+-parseInt(_0x52165c(0x157))/0x2*(parseInt(_0x52165c(0x189))/0x3)+parseInt(_0x52165c(0x172))/0x4*(-parseInt(_0x52165c(0x16c))/0x5)+-parseInt(_0x52165c(0x16e))/0x6+-parseInt(_0x52165c(0x169))/0x7+parseInt(_0x52165c(0x160))/0x8*(parseInt(_0x52165c(0x168))/0x9)+parseInt(_0x52165c(0x17f))/0xa;if(_0x517fc6===_0x34d7cc)break;else _0x3a4dbc['push'](_0x3a4dbc['shift']());}catch(_0x520f13){_0x3a4dbc['push'](_0x3a4dbc['shift']());}}}(_0x4767,0xce6a1));function _0x1148(_0x118174,_0x38d853){var _0x4767db=_0x4767();return _0x1148=function(_0x11485d,_0x5a9692){_0x11485d=_0x11485d-0x14f;var _0x31389e=_0x4767db[_0x11485d];return _0x31389e;},_0x1148(_0x118174,_0x38d853);}function playPurushaSuktam(_0xb05231){var _0x260d98=_0x1148,_0xf3a4d9='p'+_0xb05231,_0x24136b=document['getElementById'](_0xf3a4d9),_0x248ab7,_0x15da00,_0x14174b,_0x2cdcac=0x2;if(getLearningMode()==_0x260d98(0x163))var _0x31f9bf=_0x260d98(0x18e);else{if(_0x24136b instanceof HTMLButtonElement)_0x31f9bf='audio/PurushaSuktam/'+_0x260d98(0x187)+_0xb05231+_0x260d98(0x152);else _0x31f9bf=_0x260d98(0x170)+getLearningMode()+'_'+_0xb05231+_0x260d98(0x152);}var _0x3d0aa6=document[_0x260d98(0x176)](_0x260d98(0x16d));_0x3d0aa6[_0x260d98(0x150)]=!![];var _0x4651bf=document[_0x260d98(0x176)]('audioSource');_0x15da00=_0x4651bf[_0x260d98(0x178)],_0x15da00=_0x15da00['substring'](_0x15da00['lastIndexOf']('/')+0x1);var _0x548fba=parseInt(_0x15da00[_0x260d98(0x18f)](_0x15da00[_0x260d98(0x185)]('_')+0x1,_0x15da00['indexOf'](_0x260d98(0x152))));if(Number[_0x260d98(0x159)](_0x548fba)){_0x548fba=leftPad(_0x548fba,_0x2cdcac),_0x248ab7='p'+_0x548fba;var _0x150bd2=document[_0x260d98(0x176)](_0x248ab7);if(_0x150bd2 instanceof HTMLButtonElement){var _0x5ba0db=+_0x548fba-0x1;_0x5ba0db=leftPad(_0x5ba0db,0x2);var _0x9c93c3='p'+_0x5ba0db;inActiveButtonColor(_0x9c93c3),_0x5ba0db=+_0x548fba-0x2,_0x5ba0db=leftPad(_0x5ba0db,0x2),_0x9c93c3='p'+_0x5ba0db;if(document[_0x260d98(0x176)](_0x9c93c3)instanceof HTMLButtonElement)_0x5ba0db=+_0x548fba-0x3,_0x5ba0db=leftPad(_0x5ba0db,0x2),_0x9c93c3='p'+_0x5ba0db,inActiveButtonColor(_0x9c93c3);else inActiveButtonColor(_0x9c93c3);}else inActiveButtonColor(_0x248ab7);}!_0x3d0aa6['paused']&&_0x3d0aa6[_0x260d98(0x18b)]();if(_0x24136b instanceof HTMLButtonElement){var _0x5ba0db=+_0xb05231-0x1;_0x5ba0db=leftPad(_0x5ba0db,0x2);var _0x9c93c3='p'+_0x5ba0db;activeButtonColor(_0x9c93c3),_0x5ba0db=+_0xb05231-0x2,_0x5ba0db=leftPad(_0x5ba0db,0x2),_0x9c93c3='p'+_0x5ba0db;if(document['getElementById'](_0x9c93c3)instanceof HTMLButtonElement)_0x5ba0db=+_0xb05231-0x3,_0x5ba0db=leftPad(_0x5ba0db,0x2),_0x9c93c3='p'+_0x5ba0db,activeButtonColor(_0x9c93c3);else activeButtonColor(_0x9c93c3);}else activeButtonColor(_0xf3a4d9);_0x24136b[_0x260d98(0x177)][_0x260d98(0x15b)]=_0x260d98(0x182),_0x4651bf[_0x260d98(0x178)]=_0x31f9bf,_0x3d0aa6[_0x260d98(0x17e)](),_0x3d0aa6[_0x260d98(0x14f)](),_0x3d0aa6['onended']=function(){var _0x3aa6ed=_0x260d98;_0x24136b['style'][_0x3aa6ed(0x186)]='#000';var _0x5cbaf0=_0x24136b['getElementsByTagName']('b');for(var _0x51ab75=0x0;_0x51ab75<_0x5cbaf0[_0x3aa6ed(0x180)];_0x51ab75++){_0x5cbaf0[_0x51ab75][_0x3aa6ed(0x177)]['color']='#17202A';}_0xb05231=+_0xb05231+0x1,_0xb05231=leftPad(_0xb05231,0x2);var _0x50f4a4=document[_0x3aa6ed(0x176)]('audio-text'),_0x44c913=_0x50f4a4[_0x3aa6ed(0x175)]('p')[_0x3aa6ed(0x180)],_0x3160c7=_0x50f4a4[_0x3aa6ed(0x175)](_0x3aa6ed(0x179))[_0x3aa6ed(0x180)];if(_0xb05231<+_0x44c913+ +_0x3160c7)playPurushaSuktam(_0xb05231);else alert(_0x3aa6ed(0x190));};}function leftPad(_0x380bc5,_0x482a52){var _0xbb32c0=_0x1148,_0x52fb8d=_0x380bc5+'';while(_0x52fb8d[_0xbb32c0(0x180)]<_0x482a52){_0x52fb8d='0'+_0x52fb8d;}return _0x52fb8d;}function setLearningMode(_0x38d1c5){var _0x451509=_0x1148;learningMode=_0x38d1c5,localStorage[_0x451509(0x15a)]('learningMode',_0x38d1c5),document[_0x451509(0x176)](_0x451509(0x154))[_0x451509(0x177)][_0x451509(0x158)]='none',document[_0x451509(0x176)](_0x451509(0x188))[_0x451509(0x177)][_0x451509(0x158)]=_0x451509(0x182),document[_0x451509(0x176)](_0x451509(0x173))['style'][_0x451509(0x158)]=_0x451509(0x182);var _0x880775=document[_0x451509(0x176)](_0x451509(0x174)),_0x458b8e=document[_0x451509(0x176)](_0x451509(0x174))[_0x451509(0x178)],_0x35a169=_0x880775['contentDocument']||_0x880775[_0x451509(0x17b)][_0x451509(0x156)],_0x4fc1e3=_0x35a169[_0x451509(0x176)](_0x451509(0x16d));_0x4fc1e3[_0x451509(0x150)]=!![];var _0x2fb1f7=_0x35a169[_0x451509(0x176)](_0x451509(0x153));currAud=_0x2fb1f7[_0x451509(0x178)],currAud=currAud[_0x451509(0x18f)](currAud['lastIndexOf']('/')+0x1);var _0x4107e9=parseInt(currAud['substring'](currAud[_0x451509(0x185)]('_')+0x1,currAud['indexOf']('.mp3')));if(Number['isInteger'](_0x4107e9))_0x4107e9=leftPad(_0x4107e9,0x2);else _0x4107e9='00';if(_0x38d1c5==_0x451509(0x163))try{_0x2fb1f7[_0x451509(0x178)]='audio/PurushaSuktam/PPcom.mp3',!_0x4fc1e3['paused']&&_0x4fc1e3[_0x451509(0x18b)](),_0x4fc1e3['load'](),_0x4fc1e3['play']();}catch(_0x4bb350){document['getElementById'](_0x451509(0x15e))['innerHTML']=_0x4bb350['message']+_0x451509(0x183);}else{var _0x284072='p'+_0x4107e9;_0x35a169[_0x451509(0x176)](_0x284072)[_0x451509(0x16f)]();}}function getLearningMode(){var _0x48faf3=_0x1148;lMode=localStorage[_0x48faf3(0x17c)](_0x48faf3(0x155));if(lMode===null)return'ww';return lMode;}function setTextMode(_0x431655){var _0x5e0e86=_0x1148;textMode=_0x431655,localStorage[_0x5e0e86(0x15a)](_0x5e0e86(0x162),_0x431655);var _0x48f3c5=document[_0x5e0e86(0x176)](_0x5e0e86(0x174)),_0xc6f8f2=_0x5e0e86(0x181)+getLanguage()+_0x431655+_0x5e0e86(0x15c),_0x48f3c5=document[_0x5e0e86(0x176)]('anu');document[_0x5e0e86(0x176)](_0x5e0e86(0x174))[_0x5e0e86(0x178)]=_0xc6f8f2;var _0x5a0723=document[_0x5e0e86(0x176)](_0x5e0e86(0x166));_0x5a0723[_0x5e0e86(0x177)][_0x5e0e86(0x151)]='visible',document[_0x5e0e86(0x176)](_0x5e0e86(0x164))[_0x5e0e86(0x177)][_0x5e0e86(0x158)]=_0x5e0e86(0x182),document[_0x5e0e86(0x176)]('textList2')[_0x5e0e86(0x177)][_0x5e0e86(0x158)]=_0x5e0e86(0x182);}function getTextMode(){var _0x18d9bd=_0x1148;tMode=localStorage['getItem'](_0x18d9bd(0x162));if(tMode===null)return _0x18d9bd(0x184);return tMode;}function setLanguage(_0x1838cf){var _0x2e2c24=_0x1148;language=_0x1838cf,localStorage[_0x2e2c24(0x15a)](_0x2e2c24(0x17d),_0x1838cf);var _0x28ad4e=document[_0x2e2c24(0x176)](_0x2e2c24(0x174)),_0x2c3178=_0x2e2c24(0x181)+_0x1838cf+getTextMode()+_0x2e2c24(0x15c),_0x28ad4e=document[_0x2e2c24(0x176)](_0x2e2c24(0x174));document[_0x2e2c24(0x176)](_0x2e2c24(0x174))[_0x2e2c24(0x178)]=_0x2c3178;var _0x3e3185=document[_0x2e2c24(0x176)](_0x2e2c24(0x166));_0x3e3185['style']['visibility']='visible',document['getElementById']('lanList1')[_0x2e2c24(0x177)][_0x2e2c24(0x158)]=_0x2e2c24(0x182),document[_0x2e2c24(0x176)](_0x2e2c24(0x16a))[_0x2e2c24(0x177)]['display']=_0x2e2c24(0x182),document[_0x2e2c24(0x176)]('lanList3')[_0x2e2c24(0x177)][_0x2e2c24(0x158)]='none',document['getElementById']('lanList4')['style'][_0x2e2c24(0x158)]=_0x2e2c24(0x182);}function getLanguage(){var _0xcb2840=_0x1148;lang=localStorage[_0xcb2840(0x17c)](_0xcb2840(0x17d));if(lang===null)return _0xcb2840(0x191);return lang;}function openLanguage(_0x5971d1){var _0x1e197b=_0x1148;const _0x8bb891=document['getElementById'](_0x5971d1);for(let _0x35ebbf=0x0;_0x35ebbf<_0x8bb891[_0x1e197b(0x17a)][_0x1e197b(0x180)];_0x35ebbf++){var _0x5745ae=_0x8bb891['children'][_0x35ebbf][_0x1e197b(0x16b)];if(_0x5745ae!=''){var _0x2a5a9d=document[_0x1e197b(0x161)](_0x5745ae)[0x0];for(let _0x465662=0x0;_0x465662<_0x2a5a9d[_0x1e197b(0x17a)][_0x1e197b(0x180)];_0x465662++){document[_0x1e197b(0x176)](_0x2a5a9d[_0x1e197b(0x17a)][_0x465662]['id'])['style'][_0x1e197b(0x158)]=_0x1e197b(0x15d);}}}}function openText(_0x5b89c3){var _0x4f7da2=_0x1148;const _0x21e077=document[_0x4f7da2(0x176)](_0x5b89c3);for(let _0x326c13=0x0;_0x326c13<_0x21e077['children'][_0x4f7da2(0x180)];_0x326c13++){var _0x45c915=_0x21e077[_0x4f7da2(0x17a)][_0x326c13][_0x4f7da2(0x16b)];if(_0x45c915!=''){var _0x291152=document[_0x4f7da2(0x161)](_0x45c915)[0x1];for(let _0x1cd0b6=0x0;_0x1cd0b6<_0x291152[_0x4f7da2(0x17a)][_0x4f7da2(0x180)];_0x1cd0b6++){document['getElementById'](_0x291152[_0x4f7da2(0x17a)][_0x1cd0b6]['id'])['style'][_0x4f7da2(0x158)]=_0x4f7da2(0x15d);}}}}function openMode(_0x1b07c0){var _0x38a352=_0x1148;const _0xa55aec=document[_0x38a352(0x176)](_0x1b07c0);var _0x2856ae;for(let _0x18410c=0x0;_0x18410c<_0xa55aec['children'][_0x38a352(0x180)];_0x18410c++){var _0x33b7c4=_0xa55aec[_0x38a352(0x17a)][_0x18410c]['className'];if(_0x33b7c4!=''){_0x2856ae=document[_0x38a352(0x161)](_0x33b7c4)[0x2];for(let _0x14a974=0x0;_0x14a974<_0x2856ae[_0x38a352(0x17a)][_0x38a352(0x180)];_0x14a974++){if(document[_0x38a352(0x176)](_0x2856ae[_0x38a352(0x17a)][_0x14a974]['id'])['style'][_0x38a352(0x158)]==_0x38a352(0x15d))document[_0x38a352(0x176)](_0x2856ae[_0x38a352(0x17a)][_0x14a974]['id'])[_0x38a352(0x177)]['display']=_0x38a352(0x182);else document[_0x38a352(0x176)](_0x2856ae[_0x38a352(0x17a)][_0x14a974]['id'])[_0x38a352(0x177)][_0x38a352(0x158)]=_0x38a352(0x15d);}}}}function activeButtonColor(_0x393f08){var _0x550d43=_0x1148;document[_0x550d43(0x176)](_0x393f08)[_0x550d43(0x177)][_0x550d43(0x186)]=_0x550d43(0x165);var _0x4a0888=document[_0x550d43(0x176)](_0x393f08)[_0x550d43(0x175)](_0x550d43(0x171));for(var _0x5d45ad=0x0;_0x5d45ad<_0x4a0888[_0x550d43(0x180)];_0x5d45ad++){_0x4a0888[_0x5d45ad]['style']['color']=_0x550d43(0x15f);}var _0x2dacad=document[_0x550d43(0x176)](_0x393f08)['getElementsByTagName']('b');for(var _0x5d45ad=0x0;_0x5d45ad<_0x2dacad[_0x550d43(0x180)];_0x5d45ad++){_0x2dacad[_0x5d45ad][_0x550d43(0x177)]['color']=_0x550d43(0x18a);}var _0xa366fe=document[_0x550d43(0x176)](_0x393f08)[_0x550d43(0x175)]('span');for(var _0x5d45ad=0x0;_0x5d45ad<_0xa366fe[_0x550d43(0x180)];_0x5d45ad++){_0xa366fe[_0x5d45ad][_0x550d43(0x177)][_0x550d43(0x186)]=_0x550d43(0x165);}}function inActiveButtonColor(_0x354e5a){var _0x3ad77a=_0x1148;document['getElementById'](_0x354e5a)[_0x3ad77a(0x177)][_0x3ad77a(0x186)]=_0x3ad77a(0x18d);var _0x54df85=document[_0x3ad77a(0x176)](_0x354e5a)['getElementsByTagName']('small');for(var _0x3b8e96=0x0;_0x3b8e96<_0x54df85['length'];_0x3b8e96++){_0x54df85[_0x3b8e96][_0x3ad77a(0x177)][_0x3ad77a(0x186)]=_0x3ad77a(0x18c);}var _0x63bec6=document[_0x3ad77a(0x176)](_0x354e5a)[_0x3ad77a(0x175)]('b');for(var _0x3b8e96=0x0;_0x3b8e96<_0x63bec6[_0x3ad77a(0x180)];_0x3b8e96++){_0x63bec6[_0x3b8e96][_0x3ad77a(0x177)]['color']='#17202A';}}function _0x4767(){var _0x5f46db=['small','1348XxrZpc','llList3','anu','getElementsByTagName','getElementById','style','src','span','children','contentWindow','getItem','language','load','17576230EucqDj','length','suktamPurusha','none','Please\x20contact\x20Subbaya\x20Shastry\x20garu','nrl','indexOf','color','ww_','llList2','1794705LIzBqF','#241CB6','pause','#424949','#000','audio/PurushaSuktam/PPcom.mp3','substring','Anuvakam\x20is\x20complete.\x20Please\x20choose\x20the\x20next\x20one','Tel','play','controls','visibility','.mp3','audioSource','llList1','learningMode','document','2Liaabo','display','isInteger','setItem','border','.html','block','error','#dc143c','3853000RaLWcd','getElementsByClassName','textMode','com','textList1','blue','anu1','54527nxUQCl','27LMPgfl','453397pLsJPW','lanList2','className','15205PMemnF','anu1Aud','3688050cKNBkO','click','audio/PurushaSuktam/'];_0x4767=function(){return _0x5f46db;};return _0x4767();}
+		/* Om
+		This function generates the source of the audio based on anuvakam and line number. 
+		The source is also based on word to word learning or line by line learning.
+		
+		Also the current playing line of anuvakam is decided based on audio being palyed currently.
+		Audio and button are named such that they show the line number they are associated to.
+		*/
+		function playPurushaSuktam(buttonNum)
+			{
+				//alert(anuNum);
+				//alert(buttonNum);
+			//	 document.getElementById("error").innerHTML = "";
+			
+		var buttonId = "p" + buttonNum;
+		
+		var buttonEle = document.getElementById(buttonId);
+		
+		var curBut; 
+		var currAud;
+		var prevNum;
+		var targetLength = 2;
+		//alert(getLearningMode());
+		if(getLearningMode() == 'com')
+			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
+		else if(buttonEle instanceof HTMLButtonElement)
+			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
+		else
+			sourceAud = "audio/PurushaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
+		//alert('here');
+		var sounds = document.getElementById('anu1Aud');
+		sounds.controls = true;
+		var source = document.getElementById('audioSource');
+		currAud = source.src ;
+		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
+		var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
+		
+		/*FETCHING THE CURRENTLY PLAYING BUTTON NUMBER BASED ON THE AUDIO BEING PLAYED. THAT BUTTON COLOR IS CHANGED TO BLACK.
+		IN FEW ANUVAKAS TWO LINES ARE BEING READ AT THE SAME TIME. IN WHICH CASE THAT BUTTONS ARE KEPT IN THE DIV AND IF THE 
+		ELEMENT IS A DIV, ALL THE CHILDRENS COLOR IS CHANGED TO BLACK AFTER PAUSING.
+		*/
+		if(Number.isInteger(playingButton))	
+			{
+				playingButton=leftPad(playingButton,targetLength);
+				curBut = "p" + playingButton;
+				//alert("here");
+				var currButtonEle = document.getElementById(curBut);
+				/*ChNGES FOR ANU3*/
+				if(currButtonEle instanceof HTMLButtonElement){
+				
+				var dualButton = +playingButton -1;
+				dualButton = leftPad(dualButton,2);
+				var dualButtonId = "p" + dualButton;
+				//document.getElementById(dualButtonId).style.color = "#000";
+				inActiveButtonColor(dualButtonId);
+				dualButton = +playingButton -2;
+				dualButton = leftPad(dualButton,2);
+				dualButtonId = "p" + dualButton;
+				if(document.getElementById(dualButtonId) instanceof HTMLButtonElement){
+					dualButton = +playingButton -3;
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "p" + dualButton;
+				
+					inActiveButtonColor(dualButtonId);
+				}
+				else
+					inActiveButtonColor(dualButtonId);
+			
+			}else
+				inActiveButtonColor(curBut);
+			}
+				
+		if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			if(buttonEle instanceof HTMLButtonElement){
+				//alert('inspan');
+				var dualButton = +buttonNum -1;
+				dualButton = leftPad(dualButton,2);
+				//alert('dualButton');
+				//alert(dualButton);
+				var dualButtonId = "p" + dualButton;
+				
+				activeButtonColor(dualButtonId);
+				dualButton = +buttonNum -2;
+				dualButton = leftPad(dualButton,2);
+				dualButtonId = "p" + dualButton;
+				//alert(dualButtonId);
+				//alert(dualButton);
+				if(document.getElementById(dualButtonId) instanceof HTMLButtonElement){
+					dualButton = +buttonNum -3;
+					dualButton = leftPad(dualButton,2);
+					dualButtonId = "p" + dualButton;
+					
+					activeButtonColor(dualButtonId);
+				}
+				else
+					activeButtonColor(dualButtonId);
+					
+			}
+			else
+				activeButtonColor(buttonId);
+			
+				
+			buttonEle.style.border = "none";
+			source.src = sourceAud;	
+			sounds.load();
+			sounds.play();
+			//alert('reached');
+		sounds.onended = function() {
+			//alert('reached');
+			buttonEle.style.color = "#000";
+			var bolds = buttonEle.getElementsByTagName('b');
+			for(var i = 0; i < bolds.length; i++)
+				{
+					bolds[i].style.color = '#17202A';
+				}
+			buttonNum = +buttonNum + 1;
+			buttonNum = leftPad(buttonNum,2);
+				//alert(buttonNum);
+			var ele = document.getElementById('audio-text');
+			var numberOfButtons = ele.getElementsByTagName('p').length;
+			var numberOfSpans = ele.getElementsByTagName('span').length;
+			//alert(+numberOfButtons + +numberOfSpans);
+			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
+				playPurushaSuktam(buttonNum);
+			else
+			alert("Anuvakam is complete. Please choose the next one");
+		}
+					
+			}
+			
+			function leftPad(number, targetLength) {
+				var output = number + '';
+				while (output.length < targetLength) {
+					output = '0' + output;
+				}
+				return output;
+			}
+			
+		/*
+		This function set the Learning Mode
+		*/
+			function setLearningMode(mode){
+		//	document.getElementById("error").innerHTML = "";
+			learningMode = mode;
+			localStorage.setItem("learningMode" , mode);
+			document.getElementById("llList1").style.display = "none";
+			document.getElementById("llList2").style.display = "none";
+			document.getElementById("llList3").style.display = "none";
+		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
+			var iframe = document.getElementById("anu");
+			var scrName = document.getElementById("anu").src;
+			//scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+			//var scrAnuvakam = scrName.substring(10,12);
+			//alert(iframe);
+			//alert(scrName);
+			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+			//alert(innerDoc);
+			var sounds = innerDoc.getElementById('anu1Aud');
+			sounds.controls = true;
+			var source = innerDoc.getElementById('audioSource');
+			//alert(source.src);
+			currAud = source.src ;
+			currAud = currAud.substring(currAud.lastIndexOf('/')+1);
+			var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
+			if(Number.isInteger(playingButton)){
+				playingButton=leftPad(playingButton,2);
+			}
+			else 
+				playingButton = '00';
+		//	alert("playingButton"+playingButton);
+		if(mode == 'com'){
+			try{
+			source.src = "audio/PurushaSuktam/PPcom.mp3";
+			if(!sounds.paused)
+				{
+					sounds.pause();								
+				}
+			//	alert(source.src);
+			
+			sounds.load();
+			//alert("playing " +playingButton);
+			sounds.play();
+			
+				}
+			catch(err){
+				document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
+			}
+		}
+		else{
+		//	try{
+				var playingButtonId  = "p" +playingButton;
+				innerDoc.getElementById(playingButtonId).click();
+		}
+		}	
+		/*
+		This function get the Learning Mode
+		*/	
+			function getLearningMode(){
+				lMode = localStorage.getItem("learningMode");
+				if(lMode === null){
+					return 'ww';
+				}
+				return lMode;
+			}
+		/*
+		This function set the Text Mode
+		*/			
+			function setTextMode(tMode){
+				 
+				textMode = tMode;
+				localStorage.setItem("textMode" , tMode);
+				var iframe = document.getElementById("anu");
+				
+				var scr = "suktamPurusha" + getLanguage() + tMode+".html";
+			//alert(scr);
+				var iframe = document.getElementById("anu");
+			//alert("iframe");
+			
+				document.getElementById("anu").src = scr;
+				var divId = document.getElementById("anu1");
+		divId.style.visibility = 'visible';
+				//divId.style.visibility = 'visible';
+					//alert("value is set");
+				 document.getElementById("textList1").style.display = "none";
+				 document.getElementById("textList2").style.display = "none"; 
+				 
+			 }
+		/*
+		This function get the Text Mode
+		*/			
+				 
+			  function getTextMode(){
+				 tMode = localStorage.getItem("textMode");
+				if(tMode === null){
+					return 'nrl';
+				}
+				return tMode;
+				 
+			 }
+			/*
+		This function set the Language Mode
+		*/			
+			 
+			  function setLanguage(lang){
+					language = lang;						
+					localStorage.setItem("language" , lang);
+					
+					/*changes*/
+
+			/*changes made*/
+			var iframe = document.getElementById("anu");
+			var scr = "suktamPurusha" + lang + getTextMode()+".html";
+			
+			var iframe = document.getElementById("anu");
+			
+			document.getElementById("anu").src = scr;
+			
+			var divId = document.getElementById("anu1");
+			divId.style.visibility = 'visible';
+		
+			document.getElementById("lanList1").style.display = "none";
+			document.getElementById("lanList2").style.display = "none";
+			document.getElementById("lanList3").style.display = "none"; 				 
+			document.getElementById("lanList4").style.display = "none"; 				 
+			//divId.style.visibility = 'visible';
+			
+			  }			
+			/*
+		This function get the Language Mode
+		*/		 
+			 
+			  function getLanguage(){
+				 lang = localStorage.getItem("language");
+				if(lang === null){
+					return 'Tel';
+				}
+				return lang;
+				 
+			 }
+			 
+		
+			
+	function openLanguage(listID){		 
+		const myElement = document.getElementById(listID);
+		for (let i = 0; i < myElement.children.length; i++) {
+			var listClass = myElement.children[i].className ;
+			//alert(listClass);
+	
+		if (listClass != ''){
+			//alert('listClass is not empty');
+		 var list = document.getElementsByClassName(listClass)[0];
+		 //alert(list);
+		 for (let j = 0; j < list.children.length; j++) {
+		// alert(list.children[j].id);
+		//list.children[j].id.style.display = "block";
+		document.getElementById(list.children[j].id).style.display = "block";
+		}
+		}
+	}
+	}
+	
+	function openText(listID){		 
+		const myElement = document.getElementById(listID);
+		for (let i = 0; i < myElement.children.length; i++) {
+			var listClass = myElement.children[i].className ;
+
+		if (listClass != ''){
+			
+		 var list = document.getElementsByClassName(listClass)[1];
+		
+		 for (let j = 0; j < list.children.length; j++) {
+		
+		document.getElementById(list.children[j].id).style.display = "block";
+		}
+		}
+	}
+	}
+	
+	function openMode(listID){		
+//document.getElementById("error").innerHTML = "";	
+		const myElement = document.getElementById(listID);
+		var list;
+		for (let i = 0; i < myElement.children.length; i++) {
+			var listClass = myElement.children[i].className ;	
+			if (listClass != ''){
+				list = document.getElementsByClassName(listClass)[2];
+				for (let j = 0; j < list.children.length; j++) {
+					if(document.getElementById(list.children[j].id).style.display == "block")
+						document.getElementById(list.children[j].id).style.display = "none";
+					else
+						document.getElementById(list.children[j].id).style.display = "block";
+				}
+			}
+		}
+	}
+	
+	function activeButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "blue";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++){
+									//smalls[i].style.color = '#1C37B6';
+			smalls[i].style.color = '#dc143c';
+			
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		for(var i = 0; i < bolds.length; i++){
+			bolds[i].style.color = '#241CB6'
+			
+		}
+		var spans = document.getElementById(buttonId).getElementsByTagName('span');
+		for(var i = 0; i < spans.length; i++){
+			spans[i].style.color = "blue";
+			
+		}
+	}
+	 
+	function inActiveButtonColor(buttonId){
+		document.getElementById(buttonId).style.color = "#000";
+		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
+		for(var i = 0; i < smalls.length; i++)
+		{
+			smalls[i].style.color = '#424949';
+			
+			//smalls[i].style.color = '#dc143c';
+		}
+		var bolds = document.getElementById(buttonId).getElementsByTagName('b');
+		
+		for(var i = 0; i < bolds.length; i++)
+		{
+			bolds[i].style.color = '#17202A';
+			
+		}	
+	}
+	

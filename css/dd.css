@@ -82,8 +82,9 @@ margin-top: 5px;
 }}
 @media screen and (max-width: 1240px) { /*for phone*/
 ul#navmenu .sub1 li a{
-	background-color : #009688;
+	background-color :#FFF;
 	font-size: 33px;
+	color :  #000;
 }}
 ul#navmenu .sub1 a{
 	padding-top :0px;
