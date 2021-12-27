@@ -15,7 +15,7 @@
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
-		document.getElementById(buttonId).scrollIntoView();
+		document.getElementById(buttonId).scrollIntoViewIfNeeded();
 		var curBut; 
 		var currAud;
 		var prevNum;
