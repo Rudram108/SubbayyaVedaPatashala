@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	  <meta name ="viewport" content = "width = device-width, initial-scale=1">
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ganesha Suktam</title>
+		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
+		<link rel="stylesheet" href="css/dd.css">
+		<script src="scripts/ganesha.js"></script>
+		<!--<script>
+		document.addEventListener("contextmenu", function(event){
+		event.preventDefault();
+		}, false);
+	</script>-->
+	<style type="text/css" id="custom-css">
+		@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Tenali+Ramakrishna&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+		@font-face {
+			font-family: 'NotoSans';
+			src: url("https://www.rudramschool.org/fonts/NotoSans-Regular.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
+		@font-face {
+			font-family: 'NotoSansTelugu';
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
+		}
+		@font-face {
+			font-family: 'NotoSansTamil';
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.ttf") format("truetype");
+				 }
+		</style>
+	</head>
+  <body class = "anubg">
+
+	<nav class = "audio-select">
+		<!--<embed type="text/html" src="navigationNamakam.html" width= "100%" height = "30%">-->
+		<audio id = "anu1Aud" controls  preload="auto"> <source id="audioSource" src=""></source></audio>
+	</nav>
+
+
+	<div class = "audio-text" id="audio-text" style="font-family:NotoSansTamil;line-height : 150%; font-size: 22px;" ><br><br>
+			<p>
+				<p id = "p00" onclick="playGaneshaSuktam('00')">ஆ தூ ந॑ இந்த்³ர க்ஷு॒மந்தம்᳚ சி॒த்ரம் க்³ரா॒ப⁴ம் ஸம் க்³ரு॑பா⁴ய ।</p>
+				<p id = "p01" onclick="playGaneshaSuktam('01')">ம॒ஹா॒ஹ॒ஸ்தீ த³க்ஷி॑ணேந ॥ 1 ॥</p>
+				<button id = "p02" style = "display:none;"></button><br>
+				<p id = "p03" onclick="playGaneshaSuktam('03')">வி॒த்³மா ஹி த்வா᳚ துவிகூ॒ர்மிந்து॒விதே³᳚ஷ்ணம் து॒வீம॑க⁴ம் ।</p>
+				<p id = "p04" onclick="playGaneshaSuktam('04')">து॒வி॒மா॒த்ரமவோ᳚பி⁴꞉ ॥ 2 ॥</p>
+				<button id = "p05" style = "display:none"></button>
+				<span id = "p06"></span><br>
+				<p id = "p07" onclick="playGaneshaSuktam('07')">ந॒ ஹி த்வா᳚ ஶூர தே³॒வா ந மர்தா᳚ஸோ॒ தி³த்ஸ᳚ந்தம் ।</p>
+				<p id = "p08" onclick="playGaneshaSuktam('08')">பீ⁴॒மம் ந கா³ம் வா॒ரய᳚ந்தே ॥ 3 ॥</p>
+				<button id = "p09" style = "display:none"></button>
+				<span id = "p10"></span><br>
+				<p id = "p11" onclick="playGaneshaSuktam('11')">ஏதோ॒ந்விந்த்³ரம்॒ ஸ்தவா॒மேஶா᳚நம்॒ வஸ்வ॑: ஸ்வ॒ராஜம்᳚ ।</p>
+				<p id = "p12" onclick="playGaneshaSuktam('12')">ந ராத⁴॑ஸா மர்தி⁴ஷந்ந꞉ ॥ 4 ॥</p>
+				<button id = "p13" style = "display:none"></button>
+				<span id = "p14"></span>
+				<span id = "p15"></span><br>
+				<p id = "p16" onclick="playGaneshaSuktam('16')">ப்ர ஸ்தோ᳚ஷ॒து³ப॑ கா³ஸிஷ॒ச்ச்²ரவ॒த்ஸாம॑ கீ³॒யமா᳚நம் ।</p>
+				<p id = "p17" onclick="playGaneshaSuktam('17')">அ॒பி⁴ராத⁴॑ஸாஜுகு³ரத் ॥ 5 ॥</p>
+				<button id = "p18" style = "display:none"></button><br>
+				
+				<p id = "p19" onclick="playGaneshaSuktam('19')">ஆ நோ᳚ ப⁴ர॒ த³க்ஷி॑ணேநா॒பி⁴ ஸ॒வ்யேந॒ ப்ர ம்ரு॑ஶ ।</p>
+				<p id = "p20" onclick="playGaneshaSuktam('20')">இந்த்³ர॒ மாநோ॒ வஸோ॒ர்நிர்பா⁴᳚க் ॥ 6 ॥</p>
+				<button id = "p21" style = "display:none"></button>
+				<span id = "p22"></span><br>
+				<p id = "p23" onclick="playGaneshaSuktam('23')">உப॑க்ரம॒ஸ்வா ப⁴॑ர த்⁴ருஷ॒தா த்⁴ரு॑ஷ்ணோ॒ ஜநா᳚நாம் ।</p>
+				<p id = "p24" onclick="playGaneshaSuktam('24')">அதா³᳚ஶூஷ்டரஸ்ய॒ வேத³॑: ॥ 7 ॥</p>
+				<button id = "p25" style = "display:none"></button>
+				<span id = "p26"></span><br>
+				<p id = "p27" onclick="playGaneshaSuktam('27')">இந்த்³ர॒ ய உ॒ நு தே॒ அஸ்தி॒ வாஜோ॒ விப்ரே᳚பி⁴॒: ஸநி॑த்வ꞉ ।</p>
+				<p id = "p28" onclick="playGaneshaSuktam('28')">அ॒ஸ்மாபி⁴॒: ஸுதம் ஸ॑நுஹி ॥ 8 ॥</p>
+				<button id = "p29" style = "display:none"></button>
+				<span id = "p30"></span>
+				<span id = "p31"></span><br>
+				<p id = "p32" onclick="playGaneshaSuktam('32')">ஸ॒த்³யோ॒ஜுவ॑ஸ்தே॒ வாஜா᳚ அ॒ஸ்மப்⁴ய᳚ம் வி॒ஶ்வஶ்ச᳚ந்த்³ரா꞉ ।</p>
+				<p id = "p33" onclick="playGaneshaSuktam('33')">வஶை᳚ஶ்ச ம॒க்ஷூ ஜ॑ரந்தே ॥ 9 ॥</p>
+				<button id = "p34" style = "display:none"></button><br>
+				<p id = "p35" onclick="playGaneshaSuktam('35')">க³॒ணாநாம்᳚ த்வா க³॒ணப॑திம் ஹவாமஹே</p>
+				<p id = "p36" onclick="playGaneshaSuktam('36')">க॒விம் க॑வீ॒நாமு॑ப॒மஶ்ர॑வஸ்தமம் ।</p>
+				<button id = "p37" style = "display:none"></button>
+				<p id = "p38" onclick="playGaneshaSuktam('38')">ஜ்யே॒ஷ்ட²॒ராஜம்॒ ப்³ரஹ்ம॑ணாம் ப்³ரஹ்மணஸ்பத॒</p>
+				<p id = "p39" onclick="playGaneshaSuktam('39')">ஆ ந॑: ஶ்ரு॒ண்வந்நூ॒திபி⁴॑ஸ்ஸீத³॒ ஸாத³॑நம் ॥ 10 ॥</p>
+				<button id = "p40" style = "display:none"></button><br>
+				<span id = "p41"></span>
+				<p id = "p42" onclick="playGaneshaSuktam('42')">நி ஷு ஸீ᳚த³ க³ணபதே க³॒ணேஷு॒ த்வாமா᳚ஹு॒ர்விப்ர॑தமம் கவீ॒நாம் ।</p>
+				<p id = "p43" onclick="playGaneshaSuktam('43')">ந ரு॒தே த்வத்க்ரி॑யதே॒ கிம் ச॒நாரே ம॒ஹாம॒ர்கம் ம॑க⁴வஞ்சி॒த்ரம॑ர்ச ॥ 11 ॥</p>
+				<button id = "p44" style = "display:none"></button><br>
+				<p id = "p45" onclick="playGaneshaSuktam('45')">அ॒பி⁴॒க்²யாநோ᳚ மக⁴வ॒ந்நாத⁴॑மாநா॒ந்த்ஸகே²᳚ போ³॒தி⁴ வ॑ஸுபதே॒ ஸகீ²᳚நாம் ।</p>
+				<p id = "p46" onclick="playGaneshaSuktam('46')">ரணம்᳚ க்ருதி⁴ ரணக்ருத்ஸத்யஶு॒ஷ்மாப⁴॑க்தே சி॒தா³ ப⁴॑ஜா ரா॒யே அ॒ஸ்மாந் ॥ 12 ॥</p>
+				<button id = "p47" style = "display:none"></button><br>
+				<span id = "p48"></span>
+				<span id = "p49"></span>
+			</p>
+				
+			</p><br>
+			<br><br>
+
+	</div>
+
+  </body>
+</html>

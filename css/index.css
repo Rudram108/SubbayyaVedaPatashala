@@ -9,9 +9,12 @@
 		background: linear-gradient(rgba(0,0,0,0),#009688),url(../images/bckgrnd.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		overflow : scroll;
 		
+	}/*@media only screen and (max-width: 700px) {
+	.homebg{
+		background: linear-gradient(#009688,rgba(0,0,0,0)),url(../images/mobileBckg.png);
 	}
+	}*/
 	
 	.bg{
 		/*position:fixed;*/

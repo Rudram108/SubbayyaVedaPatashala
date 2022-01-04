@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	  <meta name ="viewport" content = "width = device-width, initial-scale=1">
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ganesha Suktam</title>
+		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
+		<link rel="stylesheet" href="css/dd.css">
+		<script src="scripts/ganesha.js"></script>
+		<!--<script>
+		document.addEventListener("contextmenu", function(event){
+		event.preventDefault();
+		}, false);
+	</script>-->
+	<style type="text/css" id="custom-css">
+		@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Tenali+Ramakrishna&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+		@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+
+		@font-face {
+			font-family: 'NotoSans';
+			src: url("https://www.rudramschool.org/fonts/NotoSans-Regular.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
+		@font-face {
+			font-family: 'NotoSansTelugu';
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSans/NotoSansTelugu-Regular.ttf") format("truetype");
+		}
+		@font-face {
+			font-family: 'Siddhanta';
+			src: url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.eot");
+			src: url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.ttf") format("truetype");
+		}
+		</style>
+	</head>
+  <body class = "anubg">
+
+	<nav class = "audio-select">
+		<!--<embed type="text/html" src="navigationNamakam.html" width= "100%" height = "30%">-->
+		<audio id = "anu1Aud" controls  preload="auto"> <source id="audioSource" src=""></source></audio>
+	</nav>
+
+
+	<div class = "audio-text" id="audio-text" style="font-family:NotoSansTelugu;line-height : 150%; font-size: 22px;" ><br><br>
+			<p>
+				<p id = "p00" onclick="playGaneshaSuktam('00')">ఆ తూ <b>న॑</b> ఇన్ద్ర <small>క్షు॒</small>మన్తం᳚ <small>చి॒</small>త్రం <small>గ్రా॒</small>భం సం<b>గృ॑</b>భాయ ।</p>
+				<p id = "p01" onclick="playGaneshaSuktam('01')"><small>మ॒హా॒హ॒</small>స్తీ ద<b>క్షి॑</b>ణేన ॥ ౧ ॥ </p>
+				<button id = "p02" style = "display:none;"></button><br>
+				<p id = "p03" onclick="playGaneshaSuktam('03')"><small>వి॒</small>ద్మా హి త్వా᳚ తువి<small>కూ॒</small>ర్మి<small>న్తు॒</small>విదే᳚ష్ణం <small>తు॒</small>వీ<b>మ॑</b>ఘమ్ ।</p>
+				<p id = "p04" onclick="playGaneshaSuktam('04')"><small>తు॒వి॒మా॒</small>త్రమవో᳚భిః ॥ ౨ ॥</p>
+				<button id = "p05" style = "display:none"></button>
+				<span id = "p06"></span><br>
+				<p id = "p07" onclick="playGaneshaSuktam('07')"><small>న॒</small> హి త్వా᳚ శూర <small>దే॒</small>వా న మర్తా᳚<small>సో॒</small> దిత్స᳚న్తమ్ ।</p>
+				<p id = "p08" onclick="playGaneshaSuktam('08')"><small>భీ॒</small>మం న గాం <small>వా॒</small>రయ᳚న్తే ॥ ౩ ॥</p>
+				<button id = "p09" style = "display:none"></button>
+				<span id = "p10"></span><br>
+				<p id = "p11" onclick="playGaneshaSuktam('11')">ఏ<small>తో॒</small>న్వి<small>న్ద్రం॒</small> స్త<small>వా॒</small>మేశా᳚<small>నం॒</small> వ<b>స్వ॑:</b> <small>స్వ॒</small>రాజమ్᳚ ।</p>
+				<p id = "p12" onclick="playGaneshaSuktam('12')">న రా<b>ధ॑</b>సా మర్ధిషన్నః ॥ ౪ ॥</p>
+				<button id = "p13" style = "display:none"></button>
+				<span id = "p14"></span>
+				<span id = "p15"></span><br>
+				<p id = "p16" onclick="playGaneshaSuktam('16')">ప్ర స్తో᳚<small>ష॒</small>దు<b>ప॑</b> గాసి<small>ష॒</small>చ్ఛ్ర<small>వ॒</small>త్సా<b>మ॑</b> <small>గీ॒</small>యమా᳚నమ్ ।</p>
+				<p id = "p17" onclick="playGaneshaSuktam('17')"><small>అ॒</small>భిరా<b>ధ॑</b>సాజుగురత్ ॥ ౫ ॥</p>
+				<button id = "p18" style = "display:none"></button><br>
+				
+				<p id = "p19" onclick="playGaneshaSuktam('19')">ఆ నో᳚ భ<small>ర॒</small> ద<b>క్షి॑</b>ణే<small>నా॒</small>భి <small>స॒</small>వ్యే<small>న॒</small> ప్ర <b>మృ॑</b>శ ।</p>
+				<p id = "p20" onclick="playGaneshaSuktam('20')">ఇ<small>న్ద్ర॒</small> మా<small>నో॒</small> వ<small>సో॒</small>ర్నిర్భా᳚క్ ॥ ౬ ॥</p>
+				<button id = "p21" style = "display:none"></button>
+				<span id = "p22"></span><br>
+				<p id = "p23" onclick="playGaneshaSuktam('23')">ఉ<b>ప॑</b>క్ర<small>మ॒</small>స్వా <b>భ॑</b>ర ధృ<small>ష॒</small>తా <b>ధృ॑</b><small>ష్ణో॒</small> జనా᳚నామ్ ।</p>
+				<p id = "p24" onclick="playGaneshaSuktam('24')">అదా᳚శూష్టర<small>స్య॒</small> వే<b>ద॑:</b> ॥ ౭ ॥</p>
+				<button id = "p25" style = "display:none"></button>
+				<span id = "p26"></span><br>
+				<p id = "p27" onclick="playGaneshaSuktam('27')">ఇ<small>న్ద్ర॒</small> య <small>ఉ॒</small> ను <small>తే॒</small> అ<small>స్తి॒</small> వా<small>జో॒</small> విప్రే᳚<small>భి॒:</small> స<b>ని॑</b>త్వః ।</p>
+				<p id = "p28" onclick="playGaneshaSuktam('28')"><small>అ॒</small>స్మా<small>భి॒:</small> సుతం <b>స॑</b>నుహి ॥ ౮ ॥</p>
+				<button id = "p29" style = "display:none"></button>
+				<span id = "p30"></span>
+				<span id = "p31"></span><br>
+				<p id = "p32" onclick="playGaneshaSuktam('32')"><small>స॒ద్యో॒</small>జు<b>వ॑</b><small>స్తే॒</small> వాజా᳚ <small>అ॒</small>స్మభ్య᳚మ్ <small>వి॒</small>శ్వశ్చ᳚న్ద్రాః ।</p>
+				<p id = "p33" onclick="playGaneshaSuktam('33')">వశై᳚శ్చ <small>మ॒</small>క్షూ <b>జ॑</b>రన్తే ॥ ౯ ॥</p>
+				<button id = "p34" style = "display:none"></button><br>
+				<p id = "p35" onclick="playGaneshaSuktam('35')"><small>గ॒</small>ణానాం᳚ త్వా <small>గ॒</small>ణ<b>ప॑</b>తిం హవామహే</p>
+				<p id = "p36" onclick="playGaneshaSuktam('36')"><small>క॒</small>విం <b>క॑</b><small>వీ॒</small>నా<b>ము॑</b><small>ప॒</small>మ<b>శ్ర॑</b>వస్తమమ్ ।</p>
+				<button id = "p37" style = "display:none"></button>
+				<p id = "p38" onclick="playGaneshaSuktam('38')"><small>జ్యే॒ష్ఠ॒</small>రా<small>జం॒</small> బ్ర<b>హ్మ॑</b>ణాం బ్రహ్మణస్ప<small>త॒</small></p>
+				<p id = "p39" onclick="playGaneshaSuktam('39')">ఆ <b>న॑:</b> <small>శృ॒</small>ణ్వన్నూ॒తి<b>భి॑</b>స్సీ<small>ద॒</small> సా<b>ద॑</b>నమ్ ॥ ౧౦ ॥</p>
+				<button id = "p40" style = "display:none"></button><br>
+				<span id = "p41"></span>
+				<p id = "p42" onclick="playGaneshaSuktam('42')">ని షు సీ᳚ద గణపతే <small>గ॒</small>ణే<small>షు॒</small> త్వామా᳚<small>హు॒</small>ర్వి<b>ప్ర॑</b>తమం క<small>వీ॒</small>నామ్ ।</p>
+				<p id = "p43" onclick="playGaneshaSuktam('43')">న <small>ఋ॒</small>తే త్వ<b>త్క్రి॑</b>య<small>తే॒</small> కిం <small>చ॒</small>నారే <small>మ॒</small>హా<small>మ॒</small>ర్కం <b>మ॑</b>ఘవఞ్చి॒త్ర<b>మ॑</b>ర్చ ॥ ౧౧ ॥</p>
+				<button id = "p44" style = "display:none"></button><br>
+				<p id = "p45" onclick="playGaneshaSuktam('45')"><small>అ॒భి॒</small>ఖ్యానో᳚ మఘ<small>వ॒</small>న్నా<b>ధ॑</b>మా<small>నా॒</small>న్త్సఖే᳚ <small>బో॒</small>ధి <b>వ॑</b>సుప<small>తే॒</small> సఖీ᳚నామ్ ।</p>
+				<p id = "p46" onclick="playGaneshaSuktam('46')">రణం᳚ కృధి రణకృత్సత్య<small>శు॒</small>ష్మా<b>భ॑</b>క్తే <small>చి॒</small>దా <b>భ॑</b>జా <small>రా॒</small>యే <small>అ॒</small>స్మాన్ ॥ ౧౨ ॥</p>
+				<button id = "p47" style = "display:none"></button><br>
+				<span id = "p48"></span>
+				<span id = "p49"></span>
+			</p>
+				
+			</p><br>
+			<br><br>
+
+	</div>
+
+  </body>
+</html>
