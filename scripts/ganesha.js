@@ -23,7 +23,7 @@
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
 			var sourceAud = "audio/GaneshaSuktam/PPcom.mp3";
-		else if(buttonEle instanceof HTMLButtonElement)
+		else if((buttonEle instanceof HTMLButtonElement) || (buttonEle instanceof HTMLSpanElement))
 			sourceAud = "audio/GaneshaSuktam/" + "ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/GaneshaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
@@ -308,7 +308,8 @@
 			document.getElementById("lanList1").style.display = "none";
 			document.getElementById("lanList2").style.display = "none";
 			document.getElementById("lanList3").style.display = "none"; 				 
-			document.getElementById("lanList4").style.display = "none"; 				 
+			document.getElementById("lanList4").style.display = "none"; 
+			document.getElementById("lanList5").style.display = "none"; 			
 			//divId.style.visibility = 'visible';
 			
 			  }			
