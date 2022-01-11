@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>side</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" href = "style.css">
+		<link rel="stylesheet" href="css/sideNavCss.css">
+		
+		<script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	</head>
+	<body>
+	<div class = "btn">
+		<span class = "fa fa-bars"></span>
+	</div>
+		<nav class= "sidebar">
+		<div class ="text">Side Menu</div>
+		<ul>
+			<li><a href = "#">Dashboard</a></li>
+			<li><a href = "#" class = "lang-btn">Language<span class= "fa fa-caret-down first"></span></a>
+				<ul class = "lang-show">
+					<li><a href = "#">Hindi</a></li>
+					<li><a href = "#">Telugu</a></li>
+					<li><a href = "#">English</a></li>				
+					<li><a href = "#">Tamil</a></li>
+					<li><a href = "#">Kannada</a></li>
+				</ul>
+			</li>
+			
+			<li><a href = "#"  class = "text-btn">Text Display<span class= "fa fa-caret-down second"></span></a>
+				<ul class = "text-show">
+					<li><a href = "#">Normal </a></li>
+					<li><a href = "#">With Swaras</a></li>
+				
+				</ul>
+			</li>
+			
+			<li><a href = "#"  class = "lear-btn">Learning Mode<span class= "fa fa-caret-down third"></span></a>
+			<ul class = "lear-show">
+					<li><a href = "#">Word by Word</a></li>
+					<li><a href = "#">Line by Line</a></li>
+					<li><a href = "#">Meditative</a></li>				
+				</ul>
+			</li>
+			<li><a href = "#">Veda Tutor</a></li>
+			<li><a href = "#">Projects</a></li>
+			<li><a href = "#">Experiences</a></li>
+			
+		</ul>
+		</nav>
+		<script>
+		
+			$('.btn').click(function(){
+				$(this).toggleClass("click");
+				$('.sidebar').toggleClass("show");
+			});
+			$('.lang-btn').click(function(){
+				$('nav ul .lang-show').toggleClass("show");
+				$('nav ul .first').toggleClass("rotate");
+			
+			});
+			$('.text-btn').click(function(){
+				$('nav ul .text-show').toggleClass("show1");
+				$('nav ul .second').toggleClass("rotate");
+			
+			});
+			$('.lear-btn').click(function(){
+				$('nav ul .lear-show').toggleClass("show2");
+				$('nav ul .third').toggleClass("rotate");
+			
+			});
+			
+			$('nav ul li').click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				});
+		</script>
+	</body>	
+</html>
