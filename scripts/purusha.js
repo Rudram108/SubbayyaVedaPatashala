@@ -23,7 +23,8 @@
 		if(getLearningMode() == 'com')
 		{
 			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
-			document.body.style.cursor = "not-allowed";
+			//document.body.style.cursor = "not-allowed";
+			document.getElementById("anu1").style.pointerEvents = "not-allowed";
 		}
 		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
 			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
