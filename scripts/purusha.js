@@ -14,15 +14,18 @@
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
-		
+		document.getElementById(buttonId).scrollIntoViewIfNeeded();
 		var curBut; 
 		var currAud;
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
+		{
 			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
-		else if(buttonEle instanceof HTMLButtonElement)
+			document.body.style.cursor = "not-allowed";
+		}
+		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
 			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/PurushaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
@@ -45,6 +48,22 @@
 				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
+				/*if(currButtonEle instanceof HTMLParagraphElement){
+					//alert("Yes");
+					
+					var tempBtn = +playingButton -1;
+					var tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
+					while(!(tempBtnEle instanceof HTMLParagraphElement)){
+						tempButnID = "p" + tempBtn;
+						//alert(tempButnID
+						if(tempBtnEle instanceof HTMLSpanElement)
+						inActiveButtonColor(tempButnID);
+						tempBtn = +tempBtn - 1;
+						tempBtn = leftPad(tempBtn,2);
+						tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
+					}
+				}
+				else */
 				if(currButtonEle instanceof HTMLButtonElement){
 				
 				var dualButton = +playingButton -1;
@@ -73,6 +92,7 @@
 				{
 					sounds.pause();								
 				}
+				
 			if(buttonEle instanceof HTMLButtonElement){
 				//alert('inspan');
 				var dualButton = +buttonNum -1;
@@ -109,23 +129,27 @@
 			//alert('reached');
 		sounds.onended = function() {
 			//alert('reached');
+			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
 				{
 					bolds[i].style.color = '#17202A';
-				}
+			}
+			if(getLearningMode() == 'com'){playPurushaSuktam('00');	}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
 			var ele = document.getElementById('audio-text');
-			var numberOfButtons = ele.getElementsByTagName('p').length;
+			var numberOfPs = ele.getElementsByTagName('p').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
+			var numberOfButtons = ele.getElementsByTagName('button').length;
 			//alert(+numberOfButtons + +numberOfSpans);
-			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
+			if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
 				playPurushaSuktam(buttonNum);
 			else
-			alert("Anuvakam is complete. Please choose the next one");
+			//alert("Anuvakam is complete. Please choose the next one");
+				playPurushaSuktam('00');	
 		}
 					
 			}
@@ -263,7 +287,8 @@
 			document.getElementById("lanList1").style.display = "none";
 			document.getElementById("lanList2").style.display = "none";
 			document.getElementById("lanList3").style.display = "none"; 				 
-			document.getElementById("lanList4").style.display = "none"; 				 
+			document.getElementById("lanList4").style.display = "none"; 
+document.getElementById("lanList5").style.display = "none";					
 			//divId.style.visibility = 'visible';
 			
 			  }			
@@ -357,6 +382,7 @@
 	}
 	 
 	function inActiveButtonColor(buttonId){
+		//alert(buttonId);
 		document.getElementById(buttonId).style.color = "#000";
 		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
 		for(var i = 0; i < smalls.length; i++)
@@ -372,5 +398,10 @@
 			bolds[i].style.color = '#17202A';
 			
 		}	
+		var spans = document.getElementById(buttonId).getElementsByTagName('span');
+		for(var i = 0; i < spans.length; i++){
+			spans[i].style.color = "#000";
+			
+		}
 	}
 	
