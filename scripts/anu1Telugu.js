@@ -21,8 +21,9 @@
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
-		if(getLearningMode() == 'com')
+		if(getLearningMode() == 'com'){
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
+			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
 		else if(buttonEle instanceof HTMLSpanElement)
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
