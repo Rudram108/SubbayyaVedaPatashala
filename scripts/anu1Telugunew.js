@@ -223,8 +223,8 @@
 		var scr = "namakamAnu" + scrAnuvakam + getLanguage() + tMode+".html";
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
-		document.getElementById("textList1").style.display = "none";
-		document.getElementById("textList2").style.display = "none"; 
+		/*document.getElementById("textList1").style.display = "none";
+		document.getElementById("textList2").style.display = "none"; */
 	}
 		/*
 		This function get the Text Mode
@@ -252,11 +252,11 @@
 		var scr = "namakamAnu" + scrAnuvakam + lang + getTextMode()+".html";
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
-		document.getElementById("lanList1").style.display = "none";
+		/*document.getElementById("lanList1").style.display = "none";
 		document.getElementById("lanList2").style.display = "none";
 		document.getElementById("lanList3").style.display = "none";	
 		document.getElementById("lanList4").style.display = "none";	
-		document.getElementById("lanList5").style.display = "none";			
+		document.getElementById("lanList5").style.display = "none";	*/		
 	}			
 			/*
 		This function get the Language Mode
@@ -282,9 +282,7 @@
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
-		
-		
-		
+
 	}
 		
 	function manuBtnOnClick(){

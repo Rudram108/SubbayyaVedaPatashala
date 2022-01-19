@@ -3,7 +3,7 @@
 	padding : 0;
 	user-select : none;
 	box-sizing : border-box;
-	font-family : 'Poppins' , sans-serif;
+	font-family : Poppins , sans-serif;
 }
 
 .stars {
@@ -22,7 +22,7 @@
 
 .btn{
 	position: relative;
-	top : 125px;
+	top : 195px;
 	left : 45px;
 	height: 45px;
 	width: 45px;
@@ -118,6 +118,9 @@ nav ul ul {
 	display : none;
 
 }
+nav ul .lang-show{
+	display:none;
+}
 nav ul .lang-show.show{
 	display:block;
 }
@@ -132,7 +135,7 @@ nav ul .anu-show{
 }
 
 nav ul .anu-show.show3{
-	display:block;
+	display:none;
 }
 nav ul ul li{
 	line-height : 42px;
@@ -191,7 +194,7 @@ nav ul li a span.rotate{
 	
 }
 
-.aud-btn hover{
+.aud-btn:hover{
 	color: black;
 	background-color: white;
 }
