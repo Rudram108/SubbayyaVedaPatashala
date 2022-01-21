@@ -189,12 +189,17 @@ nav ul li a span.rotate{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 30px;
   border-radius: 30px;
 	
 }
 
 .aud-btn:hover{
+	color: black;
+	background-color: white;
+}
+
+.aud-btn:active{
 	color: black;
 	background-color: white;
 }
