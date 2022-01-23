@@ -34,15 +34,35 @@
 	transition: left 0.4s ease;
 	z-index : 7;
 }
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .btn{
+	top : 123px;
+	
+  }}
 .btn.click{
 	left : 460px;
 }
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .btn.click{
+	left : 250px;
+	
+  }}
 .btn span{
 	color : white;
 	font-size : 28px;
 	line-height : 45px;
-	
+	top : 105px;
 }
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .btn span{
+	right : 0px;
+  }}
 
 .btn.click span:before{
 	content: '\f00d';
@@ -61,6 +81,13 @@
 	white-space: nowrap;
 	z-index : 7;
 }
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .sidebar{
+	  width : 250px;
+	  height: 100%;
+  }}
 
 .sidebar.show{
 	left: 0px;
@@ -74,7 +101,12 @@
 	background :#1e1e1e;
 	letter-spacing : 1px;
 }
-
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  .sidebar .text{
+	  font-size : 15px;
+  }}
 nav ul{
 	background : #009B93;
 	width : 100%;
@@ -84,10 +116,13 @@ nav ul{
 nav ul li{
 	line-height : 60px;
 	border-bottom : 1px solid rgba(255,255,255,0.1);
-	}
+	}@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+  nav ul li{line-height : 30px;}}
 	
 	nav ul li:last-child{
-		border-bottom: 1px solid red;
+		border-bottom: 1px solid green;
 	}
 nav ul li a{
 	position : relative;
@@ -183,17 +218,26 @@ nav ul li a span.rotate{
 
 .aud-btn{
 	 background-color: #009688;
-  border: 2px solid black;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  border-radius: 30px;
+	border: 2px solid black;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 30px;
 	
 }
-
+@media  only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+	 .aud-btn{ 
+	 font-size: 15px;
+	 border-radius: 10px;
+	 height: 1px;
+	 text-align: justify;
+	 padding: 15px 22px;
+  }}
 .aud-btn:hover{
 	color: black;
 	background-color: white;
@@ -202,4 +246,26 @@ nav ul li a span.rotate{
 .aud-btn:active{
 	color: black;
 	background-color: white;
+}
+
+	::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 6px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009688; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ /* background: #009666	; */
+ background : #fff;
 }
