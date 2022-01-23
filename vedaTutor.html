@@ -16,6 +16,23 @@
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
 		}, false);
+		
+		function pickPage(){
+			//alert("inpage");
+			var w = window.innerWidth;
+			//alert(w);
+			if ( w < 500){
+				//alert(w + "is less than 500");
+				location.href = "namakamtest1.html";
+				}
+			else{
+				//alert(w + "is more than 500");
+				
+				location.href = "RudraNamakamGuru.html";}
+		}
+		
+		//alert("Window Width" + window.innerWidth);
+//alert("Window height" +window.innerHeight);
 	</script>
 </head>
 
@@ -71,7 +88,7 @@
 				</div>
 				
 				<div class = "images">
-					<a href = "RudraNamakamGuru.html">
+					<a href = "javascript:pickPage()">
 					<img src = "images/namakam.png" >
 					<div id= "title">Rudra Namakam</div>
 					<div class = "text">
