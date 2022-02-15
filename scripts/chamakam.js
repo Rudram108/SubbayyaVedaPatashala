@@ -22,9 +22,9 @@
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
-			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
+			var sourceAud = "audio/Chamakam"+ leftPad(anuNum,2)+"com.mp3";
 		else if(buttonEle instanceof HTMLSpanElement)
-			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
+			sourceAud = "audio/Chamakam" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
