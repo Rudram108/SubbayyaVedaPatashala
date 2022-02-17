@@ -215,7 +215,7 @@
 				localStorage.setItem("textMode" , tMode);
 				var iframe = document.getElementById("anu");
 				
-				var scr = "ShivaSankalpam" + getLanguage() + tMode+".html";
+				var scr = "shivaSankalpam" + getLanguage() + tMode+".html";
 			//alert(scr);
 				var iframe = document.getElementById("anu");
 			//alert("iframe");
@@ -253,7 +253,7 @@
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "ShivaSankalpam" + lang + getTextMode()+".html";
+			var scr = "shivaSankalpam" + lang + getTextMode()+".html";
 			
 			var iframe = document.getElementById("anu");
 			
