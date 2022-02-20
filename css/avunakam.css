@@ -63,14 +63,14 @@
 	position :relative;
 	top : 9%;
 	left:39px;
-	width: 70%; /*78vw;*/
+	width: 77%; /*70%;*/
 	word-wrap: break-word;
 	z-index : 1;
 	
 	}
 	@media only screen and (max-width: 1240px) {
 	.audio-text {
-		left:55px;
+		left:10px;
 	}}
 	
 	
