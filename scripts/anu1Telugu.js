@@ -21,16 +21,18 @@
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
+		var sounds = document.getElementById('anu1Aud');
 		if(getLearningMode() == 'com'){
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";
+			sounds.loop = true;
 			}
 		else if(buttonEle instanceof HTMLSpanElement)
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
-		var sounds = document.getElementById('anu1Aud');
+		
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
 		currAud = source.src ;
@@ -112,10 +114,7 @@
 			//alert('reached');
 			sounds.onended = function() {
 			//alert('reached');
-			if (getLearningMode() == 'com'){
-				sounds.play();
-			}
-			else{
+			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
@@ -137,7 +136,7 @@
 		}
 					
 	}
-	}
+	
 			
 	function leftPad(number, targetLength) {
 		var output = number + '';
