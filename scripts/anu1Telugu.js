@@ -108,7 +108,7 @@
 				
 			buttonEle.style.border = "none";
 			source.src = sourceAud;	
-			if(getLearningMode() == 'com')	sounds.loop = true;
+			if(getLearningMode() == 'com')	{sounds.loop = true;}
 			sounds.load();
 			sounds.play();
 			//alert('reached');
