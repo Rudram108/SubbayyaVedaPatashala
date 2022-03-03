@@ -19,6 +19,7 @@
 		var curBut; 
 		var currAud;
 		var prevNum;
+		var audio ;
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com'){
@@ -111,7 +112,8 @@
 			//alert('reached');
 		sounds.onended = function() {
 			if (getLearningMode() == 'com'){
-				var audio = new Audio('temple-bell.mp3');
+				alert("Ended in com");
+				audio = new Audio('temple-bell.mp3');
 				audio.play();
 				sounds.play();
 			}
