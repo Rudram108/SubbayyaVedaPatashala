@@ -26,6 +26,7 @@
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";
 			sounds.loop = true;
+			alert(sounds.loop);
 			}
 		else if(buttonEle instanceof HTMLSpanElement)
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
