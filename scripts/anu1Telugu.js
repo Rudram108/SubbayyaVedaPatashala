@@ -108,9 +108,11 @@
 				
 			buttonEle.style.border = "none";
 			source.src = sourceAud;	
-			if(getLearningMode() == 'com')	{sounds.loop = true;}
+			
 			sounds.load();
 			sounds.play();
+			if(getLearningMode() == 'com')	{sounds.loop = true;}
+			else{
 			//alert('reached');
 			sounds.onended = function() {
 			//alert('reached');
@@ -134,7 +136,7 @@
 				//alert("Anuvakam is complete. Please choose the next one");
 				anu1TeluguPrint(leftPad(anuNum,2),'00');
 		}
-					
+			}			
 	}
 	
 			
