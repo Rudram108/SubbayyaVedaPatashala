@@ -23,7 +23,8 @@
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com'){
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
-			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
+			document.getElementById("anu1").style.pointerEvents = "not-allowed";
+			}
 		else if(buttonEle instanceof HTMLSpanElement)
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
@@ -109,8 +110,12 @@
 			sounds.load();
 			sounds.play();
 			//alert('reached');
-		sounds.onended = function() {
+			sounds.onended = function() {
 			//alert('reached');
+			if (getLearningMode() == 'com'){
+				sounds.play();
+			}
+			else{
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
@@ -131,6 +136,7 @@
 				anu1TeluguPrint(leftPad(anuNum,2),'00');
 		}
 					
+	}
 	}
 			
 	function leftPad(number, targetLength) {
