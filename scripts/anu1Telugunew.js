@@ -110,6 +110,12 @@
 			sounds.play();
 			//alert('reached');
 		sounds.onended = function() {
+			if (getLearningMode() == 'com'){
+				var audio = new Audio('temple-bell.mp3');
+				audio.play();
+				sounds.play();
+			}
+			else{
 			//alert('reached');
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
@@ -132,7 +138,7 @@
 		}
 					
 	}
-			
+	}		
 	function leftPad(number, targetLength) {
 		var output = number + '';
 		while (output.length < targetLength) {
