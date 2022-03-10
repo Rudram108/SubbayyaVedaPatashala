@@ -114,7 +114,7 @@
 			
 			//alert('reached');
 			sounds.onended = function() {
-			alert('reached');
+			//alert('reached');
 			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
@@ -122,14 +122,14 @@
 				{
 					bolds[i].style.color = '#17202A';
 				}
-				alert(buttonNum);
+				//alert(buttonNum);
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
 			var ele = document.getElementById('audio-text');
 			var numberOfButtons = ele.getElementsByTagName('p').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
-			alert(+numberOfButtons + +numberOfSpans);
+			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
 			else
@@ -191,6 +191,7 @@
 			sounds.load();
 			//alert("playing " +playingButton);
 			sounds.play();
+			  sounds.loop = true;
 			
 				}
 			catch(err){
