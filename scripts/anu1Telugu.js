@@ -114,7 +114,7 @@
 			
 			//alert('reached');
 			sounds.onended = function() {
-			//alert('reached');
+			alert('reached');
 			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
