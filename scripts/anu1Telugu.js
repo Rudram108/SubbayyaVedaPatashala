@@ -111,8 +111,7 @@
 			
 			sounds.load();
 			sounds.play();
-			if(getLearningMode() == 'com')	{sounds.loop = true;}
-			else{
+			
 			//alert('reached');
 			sounds.onended = function() {
 			//alert('reached');
@@ -123,20 +122,20 @@
 				{
 					bolds[i].style.color = '#17202A';
 				}
+				alert(buttonNum);
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
 			var ele = document.getElementById('audio-text');
 			var numberOfButtons = ele.getElementsByTagName('p').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
-			//alert(+numberOfButtons + +numberOfSpans);
+			alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
 			else
-				//alert("Anuvakam is complete. Please choose the next one");
+				alert("Anuvakam is complete. Please choose the next one");
 				anu1TeluguPrint(leftPad(anuNum,2),'00');
-		}
-			}			
+		}		
 	}
 	
 			
