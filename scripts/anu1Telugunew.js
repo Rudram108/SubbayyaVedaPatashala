@@ -22,7 +22,7 @@
 		var audio ;
 		var targetLength = 2;
 		//alert(getLearningMode());
-		if(getLearningMode() == 'com'){
+		if(getLearningMode() == 'com' || anuNum == '12'){
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
 		else if(buttonEle instanceof HTMLSpanElement)
@@ -193,6 +193,7 @@
 			sounds.load();
 			//alert("playing " +playingButton);
 			sounds.play();
+			  sounds.loop = true;
 			
 				}
 			catch(err){
