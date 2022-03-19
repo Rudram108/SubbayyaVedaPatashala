@@ -9,7 +9,7 @@
 	
 	function anu1TeluguPrint(anuNum, buttonNum){
 			//alert(anuNum);
-				//alert(buttonNum);
+			//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
@@ -33,6 +33,7 @@
 		//alert('here');
 		
 		sounds.controls = true;
+	
 		var source = document.getElementById('audioSource');
 		currAud = source.src ;
 		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
@@ -111,7 +112,7 @@
 			
 			sounds.load();
 			sounds.play();
-			
+			sounds.loop = false;
 			//alert('reached');
 			sounds.onended = function() {
 			//alert('reached');
@@ -131,10 +132,11 @@
 			var numberOfSpans = ele.getElementsByTagName('span').length;
 			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
-				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
-			else
+	
+			anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
+			else{
 				alert("Anuvakam is complete. Please choose the next one");
-				anu1TeluguPrint(leftPad(anuNum,2),'00');
+			anu1TeluguPrint(leftPad(anuNum,2),'00');}
 		}		
 	}
 	
@@ -202,6 +204,7 @@
 		//	try{
 				var playingButtonId  = "p" +playingButton;
 				innerDoc.getElementById(playingButtonId).click();
+				sounds.loop = false;
 		}
 		}		
 	
