@@ -23,13 +23,13 @@
 		//alert(getLearningMode());
 		var sounds = document.getElementById('anu1Aud');
 		if(getLearningMode() == 'com'  || anuNum == '12'){
-			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
+			var sourceAud = "audio/Mahanyasam/Anu"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";
 			}
 		else if(buttonEle instanceof HTMLSpanElement)
-			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
+			sourceAud = "audio/Mahanyasam/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
-			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
+			sourceAud = "audio/Mahanyasam/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
 		
 		sounds.controls = true;
@@ -107,6 +107,7 @@
 			
 				
 			buttonEle.style.border = "none";
+			
 			source.src = sourceAud;	
 			
 			sounds.load();
@@ -132,9 +133,9 @@
 			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
 				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
-			else
+			else{
 				alert("Anuvakam is complete. Please choose the next one");
-				anu1TeluguPrint(leftPad(anuNum,2),'00');
+			anu1TeluguPrint(leftPad(anuNum,2),'00');}
 		}		
 	}
 	
@@ -181,7 +182,7 @@
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
-			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
+			source.src = "audio/Mahanyasam/Anu"+ scrAnuvakam+mode+".mp3";
 			if(!sounds.paused)
 				{
 					sounds.pause();								
@@ -253,9 +254,12 @@
 		language = lang;						
 		localStorage.setItem("language" , lang);
 		var iframe = document.getElementById("anu");
-		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html"; mahanyasamAnu01Hinnrl namakamAnu10Tamswr
+		
 		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(10,12);
+	
+		var scrAnuvakam = scrName.substring(13,15);
+	
 		var scr = "mahanyasamAnu" + scrAnuvakam + lang + getTextMode()+".html";
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
@@ -286,6 +290,7 @@
 		var divId = document.getElementById("anu1");
 		var iframe = document.getElementById("anu");
 		var scrName = "mahanyasamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+		//alert(scrName);
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
