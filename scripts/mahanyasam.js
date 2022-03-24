@@ -157,7 +157,7 @@
 			localStorage.setItem("learningMode" , mode);
 			document.getElementById("llList1").style.display = "none";
 			document.getElementById("llList2").style.display = "none";
-			document.getElementById("llList3").style.display = "none";
+			//document.getElementById("llList3").style.display = "none";
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
@@ -266,7 +266,7 @@
 		document.getElementById("lanList1").style.display = "none";
 		document.getElementById("lanList2").style.display = "none";
 		document.getElementById("lanList3").style.display = "none";	
-		document.getElementById("lanList4").style.display = "none";	
+		//document.getElementById("lanList4").style.display = "none";	
 		document.getElementById("lanList5").style.display = "none";			
 	}			
 			/*
