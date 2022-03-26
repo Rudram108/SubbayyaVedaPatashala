@@ -291,6 +291,98 @@
 		color: yellow;
 		padding-bottom : 12px;
 	}
+	.p-textff7  {
+		 text-align: justify;
+		cursor: pointer;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+		font-family:ff7;
+		font-weight: 900;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.p-textff7 {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7  {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	.p-textff7  small {
+		font-size: 22px;
+		/*text-decoration: underline;*/
+		color: #6b6a6a;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-textff7 p small {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7 p small{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-textff7  b {
+		/*font-size : 16px;*/
+		color : #17202A;
+	/*	vertical-align:super;*/
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-textff7 p b {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7 p b{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-textff7 :hover *{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		font-size: 21px;
+		padding-bottom : 12px;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-textff7 :hover *{
+		font-size: 43px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7  small{
+		font-size: 29px;
+		
+		}
+	}
+	
+	.p-textff7 p:hover , .p-textff7 p small:hover , .p-textff7 p b:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		padding-bottom : 12px;
+	}
 	
 	::-webkit-scrollbar {
   width: 10px;
