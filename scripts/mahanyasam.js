@@ -427,6 +427,13 @@
 			bolds[i].style.color = '#241CB6'
 			
 		}
+		var ems = 	document.getElementById(buttonId).getElementsByTagName('em');
+		
+		for(var i = 0; i < ems.length; i++)
+		{
+			ems[i].style.color = 'blue';
+			
+		}
 	}
 	 
 	function inActiveButtonColor(buttonId){
@@ -444,6 +451,14 @@
 		{
 			bolds[i].style.color = '#17202A';
 			
-		}	
+		}
+			
+		var ems = 	document.getElementById(buttonId).getElementsByTagName('em');
+		
+		for(var i = 0; i < ems.length; i++)
+		{
+			ems[i].style.color = '#17202A';
+			
+		}
 	}
 	

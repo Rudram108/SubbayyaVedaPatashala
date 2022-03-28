@@ -148,7 +148,11 @@
 		
 		}
 	}
+	.audio-text p em {
+		 font-style: normal; 
+		 
 	
+	}
 	.audio-text :hover *{
 		border: none;
 		cursor: pointer;
@@ -383,6 +387,34 @@
 		color: yellow;
 		padding-bottom : 12px;
 	}
+	
+	
+	
+	.audio-text-noCursor p {
+		 text-align: justify;
+		cursor: not-allowed;;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text-noCursor p {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text-noCursor p {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
 	
 	::-webkit-scrollbar {
   width: 10px;
