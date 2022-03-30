@@ -1,0 +1,68 @@
+Herbie Garcia (Organizer)to Everyone
+https://aws.amazon.com/about-aws/global-infrastructure/
+
+public 11:47 AM
+Brian Searles (Organizer, Presenter)to Everyone
+https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2
+Herbie Garcia (Organizer)to Everyone
+https://aws.amazon.com/console/
+Herbie Garcia (Organizer)to Everyone
+I always recommend students create their own account and start experimenting!
+
+public 12:00 PM
+Herbie Garcia (Organizer)to Everyone
+It's he best way to learn.
+
+public 12:01 PM
+Herbie Garcia (Organizer)to Everyone
+https://aws.amazon.com/compliance/shared-responsibility-model/
+
+public 12:02 PM
+Herbie Garcia (Organizer)to Everyone
+AWS Identity and Access Management (IAM) is a web service that helps you manage secure access to your AWS accounts and resources.
+
+With IAM, you can create and manage AWS users, applications, and connected services. By using permissions, you can control how users, applications, and services access your AWS resources.
+
+public 12:06 PM
+Herbie Garcia (Organizer)to Everyone
+By default, when you create a new IAM user in AWS, it has no permissions associated with it. To allow an IAM user to perform specific actions in AWS, such as implement resources, you must grant the IAM user the necessary permissions.
+
+public 12:12 PM
+Herbie Garcia (Organizer)to Everyone
+Granting permission by assigning policies at the user level is a good idea, but what if you have 3,000 users in your AWS account? Administrating access can become a challenge. To ease this challenge, AWS created IAM groups.
+
+public 12:13 PM
+Herbie Garcia (Organizer)to Everyone
+And or use Roles to temporarily delegate permissions.
+
+public 12:14 PM
+Herbie Garcia (Organizer)to Everyone
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html
+
+public 12:16 PM
+
+
+For AMIs, you can: Create your own Use available AWS AMIs Purchase from AWS Marketplace
+
+Reference To learn more about AMI, refer to the AMI online user guide: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html
+
+
+Check this web page for more on EC2 Instance types:https://aws.amazon.com/ec2/instance-types/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Compute|EC2|US|EN|Text&s_kwcid=AL!4422!3!536392622533!e!!g!!aws%20instance%20types&ef_id=EAIaIQobChMI-MikxvHr9gIVY8njBx0bHwMxEAAYASABEgKUpfD_BwE:G:s&s_kwcid=AL!4422!3!536392622533!e!!g!!aws%20instance%20types
+
+public 12:53 PM
+Herbie Garcia (Organizer)to Everyone
+https://aws.amazon.com/ec2/instance-types/?trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&sc_campaign=acquisition&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Compute|EC2|US|EN|Text&s_kwcid=AL!4422!3!536392622533!e!!g!!aws%20instance%20types&ef_id=EAIaIQobChMI-MikxvHr9gIVY8njBx0bHwMxEAAYASABEgKUpfD_BwE:G:s&s_kwcid=AL!4422!3!536392622533!e!!g!!aws%20instance%20types
+
+public 12:53 PM
+Herbie Garcia (Organizer)to Everyone
+https://aws.amazon.com/ec2/instance-types/
+
+public 12:53 PM
+Herbie Garcia (Organizer)to Everyone
+Reference To learn more, visit the EC2 pricing website: https://aws.amazon.com/ec2/pricing.
+
+public 1:10 PM
+Herbie Garcia (Organizer)to Everyone
+Also, the pricing calculator is a GREAT "what if" tool... https://calculator.aws/#/
+
+public 1:11 PM
