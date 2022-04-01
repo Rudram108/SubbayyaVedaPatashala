@@ -204,7 +204,7 @@
 	
 	
 	.p-text  {
-		 text-align: justify;
+		text-align: justify;
 		cursor: pointer;
 		color: #340002;
 		font-size: 22px;/*Yamini was 19*/
@@ -212,7 +212,7 @@
 		padding-left: 1px;
 		margin: 0px auto;
 		font-family:ff6;
-		font-weight: 900;
+		font-weight:900;
 	
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
