@@ -295,19 +295,19 @@
 		color: yellow;
 		padding-bottom : 12px;
 	}
-	.p-textff7  {
+	/*.p-textff7  {
 		 text-align: justify;
 		cursor: pointer;
 		color: #340002;
-		font-size: 22px;/*Yamini was 19*/
-		padding-right: 3px;/*changing it to 1 was 33*/
+		font-size: 22px;/*Yamini was 19
+		padding-right: 3px;/*changing it to 1 was 33
 		padding-left: 1px;
 		margin: 0px auto;
 		font-family:ff7;
 		font-weight: 900;
 	
 	}
-	@media screen and (max-width: 1240px) { /*for phone*/
+	@media screen and (max-width: 1240px) { /*for phone
 	.p-textff7 {
 		font-size: 55px;
 		line-height : 150%;
@@ -325,9 +325,9 @@
 	
 	.p-textff7  small {
 		font-size: 22px;
-		/*text-decoration: underline;*/
+		/*text-decoration: underline;
 		color: #6b6a6a;
-	}@media screen and (max-width: 1240px) { /*for phone*/
+	}@media screen and (max-width: 1240px) { /*for phone
 	.p-textff7 p small {
 		font-size: 55px;
 	}}
@@ -342,10 +342,10 @@
 	}
 	
 	.p-textff7  b {
-		/*font-size : 16px;*/
+		/*font-size : 16px;
 		color : #17202A;
-	/*	vertical-align:super;*/
-	}@media screen and (max-width: 1240px) { /*for phone*/
+	/*	vertical-align:super;
+	}@media screen and (max-width: 1240px) { /*for phone
 	.p-textff7 p b {
 		font-size: 55px;
 	}}
@@ -366,7 +366,7 @@
 		color: yellow;
 		font-size: 21px;
 		padding-bottom : 12px;
-	}@media screen and (max-width: 1240px) { /*for phone*/
+	}@media screen and (max-width: 1240px) { /*for phone
 	.p-textff7 :hover *{
 		font-size: 43px;
 	}}
@@ -386,13 +386,28 @@
 		background-color: Transparent;
 		color: yellow;
 		padding-bottom : 12px;
-	}
+	}*/
 	
+	.audio-text-noCursor {
+    text-align: justify;
+    padding-right: 1px !important;
+	position :relative;
+	top : 9%;
+	left:39px;
+	width: 77%; /*70%;*/
+	word-wrap: break-word;
+	z-index : 1;
+	
+	}
+	@media only screen and (max-width: 1240px) {
+	.audio-text-noCursor  {
+		left:10px;
+	}}
 	
 	
 	.audio-text-noCursor p {
 		 text-align: justify;
-		cursor: not-allowed;;
+		cursor: not-allowed;
 		color: #340002;
 		font-size: 22px;/*Yamini was 19*/
 		padding-right: 3px;/*changing it to 1 was 33*/
