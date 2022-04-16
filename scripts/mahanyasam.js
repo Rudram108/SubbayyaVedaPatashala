@@ -266,7 +266,7 @@
 		document.getElementById("lanList1").style.display = "none";
 		document.getElementById("lanList2").style.display = "none";
 		document.getElementById("lanList3").style.display = "none";	
-		//document.getElementById("lanList4").style.display = "none";	
+		document.getElementById("lanList4").style.display = "none";	
 		document.getElementById("lanList5").style.display = "none";			
 	}			
 			/*
