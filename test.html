@@ -1,98 +1,111 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-<meta name ="viewport" content = "width = device-width, initial-scale=1">
-<meta charset = "utf-8">
-	 <title>Namakam</title>
-	 
-	 <link rel="stylesheet" type = "text/css" href="index4Anu.css"/>
-	   <link rel="stylesheet"  href="dd.css">
-	 
-	  
-	<script src="scripts/anu1Telugu.js"></script>
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/dd.css">
+	 <link rel="stylesheet" href="css/vedatutor.css">
+    <title>Hello, world!</title>
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<body class = "bg">
-	<div class ="wrapper">
-
-		<div class = "logo">
-			<a href = "index.html">
-			<img src= "images/logo.png"  width= "120vw" height = "100vh">
-			</a>
-		</div>
-		
-		<div class = "allPage"><!-- navbar-inverse navbar-fixed-top"> -->
-			<h3> Subbayya Veda Patashala </h3>
-			<!--<a href = "indexRudram.html">
-				<img src = "images/home.png"  width= "35vw" height = "35vh">
-			</a>-->
-		</div>
-		
-	
-		<div id= "manuBtn">
-			<img src= "images/menu.png" id="menu" onclick =  "manuBtnOnClick()">
-		</div>
-		<div class = "namakambtn" id = "namakambtn">
-		<nav>
-			<ul>	
-				<li><a href = "javascript:showDiv('01')" target = "_top"><span></span> Anuvakam 1</a></li>
-				<li><a href = "javascript:showDiv('02')" target = "_top"> Anuvakam 2 </a></li>
-				<li><a href = "javascript:showDiv('03')" target = "_top"> Anuvakam 3 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 4 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 5 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 6 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 7 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 8 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 9 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 10 </a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 11</a></li>
-				<li><a href = "pageNotFound.html"> Anuvakam 12 </a></li>
-			</ul>
-			
-			
-				
-		</nav>
-		</div>
-		
-		<div class="anu-space" name="anu" id="anu1" style="visibility: hidden">
-			<iframe id = "anu" type="text/html" src="namakamAnu01Telswr.html"  target = "_top" width= "180%" height = "80%" frameBorder="0" scrolling = "yes"></iframe>
-		</div>
-	
-		<div class= "top-nav">
-			<ul id="navmenu">
-				<li id = "lanCap"> <a href = "javascript:openLanguage('lanCap')">Language</a>
-					<ul class = "sub1">
-						<li id ="lanList1" class = "lang"> <a href = "javascript:setLanguage('Tel')">Telugu</a></li>
-						<li id ="lanList2" class = "lang"> <a href = "javascript:setLanguage('Hin')">Hindi</a></li>
-						<li id ="lanList3" class = "lang"> <a href = "javascript:setLanguage('Eng')">English</a></li>
-						<li id ="lanList4" class = "lang"> <a href = "javascript:setLanguage('Tam')">Tamil</a></li>
-					</ul>
-				</li>
-				
-				<!-- changes made-->
-				<li id="textCap"> <a href = "javascript:openText('textCap')">Text</a>
-					<ul class = "sub1">
-						<li id ="textList1"> <a href = "javascript:setTextMode('nrl')">Normal</a></li>
-						<li id ="textList2"> <a href = "javascript:setTextMode('swr')">Swaraas</a></li>
-					</ul>
-				</li>
-				<!-- changes made-->
-				
-				<li id="llCap"> <a href = "javascript:openMode('llCap')">Learning Level</a>
-					<ul class = "sub1">
-						<li id ="llList1"> <a href = "javascript:setLearningMode('ww')">WordByWord</a></li>
-						<li id ="llList2"> <a href = "javascript:setLearningMode('ll')">LineByLine</a></li>
-						<!--<li> <a href = "javascript:setLearningMode('nrp')">Tutorial</a></li>-->
-					</ul>
-				</li>
-			</ul>	
-		</div>
-		
-		
-		
+ </head>
+ <body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-info">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Menu</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">loser</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col py-3">
+            <h3>Left Sidebar with Submenus</h3>
+            <p class="lead">
+                An example 2-level sidebar with collasible menu items. The menu functions like an "accordion" where only a single 
+                menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink in width on smaller screens.</p>
+            <ul class="list-unstyled">
+                <li><h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile</li>
+            </ul>
+        </div>
+    </div>
 </div>
-
-	
-</body>
-</html>
