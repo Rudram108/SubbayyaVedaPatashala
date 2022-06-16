@@ -9,7 +9,7 @@
 	
 	function anu1TeluguPrint(anuNum, buttonNum){
 			//alert(anuNum);
-				//alert(buttonNum);
+			//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
@@ -31,7 +31,7 @@
 		else
 			sourceAud = "audio/Mahanyasam/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
-		
+		//alert(sourceAud);
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
 		currAud = source.src ;
@@ -50,24 +50,48 @@
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
 				if(currButtonEle instanceof HTMLSpanElement){
-				
-				var dualButton = +playingButton -1;
-				dualButton = leftPad(dualButton,2);
-				var dualButtonId = "p" + dualButton;
-				//document.getElementById(dualButtonId).style.color = "#000";
-				inActiveButtonColor(dualButtonId);
-				dualButton = +playingButton -2;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "p" + dualButton;
-				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
-					dualButton = +playingButton -3;
-					dualButton = leftPad(dualButton,2);
-					dualButtonId = "p" + dualButton;
-				
-					inActiveButtonColor(dualButtonId);
+					var dualButton;
+					var dualButtonId;
+					var repCount = currButtonEle.innerHTML;
+					//alert(repCount + "inacivate");
+					//alert(currButtonEle.innerHTML.length);
+					if(currButtonEle.innerHTML.length == 0)
+					{
+						var repCount = currButtonEle.innerHTML;
+						//alert(repCount);
+						dualButton = +playingButton -1;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						//document.getElementById(dualButtonId).style.color = "#000";
+						inActiveButtonColor(dualButtonId);
+						dualButton = +playingButton -2;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
+							dualButton = +playingButton -3;
+							dualButton = leftPad(dualButton,2);
+							dualButtonId = "p" + dualButton;
+						
+							inActiveButtonColor(dualButtonId);
+						}
+						else
+							inActiveButtonColor(dualButtonId);
+				}else // span has a count
+				{
+				//	alert(currButtonEle.innerHTML.length + "is in else" +repCount);
+						var ite = 1;
+						repCount++;
+						//alert(repCount);
+						while(ite <= repCount){
+							//alert(buttonNum);
+						dualButton = +buttonNum -ite;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						//alert(dualButtonId);
+						inActiveButtonColor(dualButtonId);
+						ite++;
+						}
 				}
-				else
-					inActiveButtonColor(dualButtonId);
 			
 			}else
 				inActiveButtonColor(curBut);
@@ -78,29 +102,49 @@
 					sounds.pause();								
 				}
 			if(buttonEle instanceof HTMLSpanElement){
-				//alert('inspan');
-				var dualButton = +buttonNum -1;
-				dualButton = leftPad(dualButton,2);
-				//alert('dualButton');
-				//alert(dualButton);
-				var dualButtonId = "p" + dualButton;
-				
-				activeButtonColor(dualButtonId);
-				dualButton = +buttonNum -2;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "p" + dualButton;
-				//alert(dualButtonId);
-				//alert(dualButton);
-				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
-					dualButton = +buttonNum -3;
+				var repCount = buttonEle.innerHTML;
+				//alert(repCount);
+				//alert(buttonEle.innerHTML.length);
+				if(buttonEle.innerHTML.length == 0)
+				{
+					//alert("Yes");}
+					//alert('inspan');
+					var dualButton = +buttonNum -1;
+					dualButton = leftPad(dualButton,2);
+					//alert('dualButton');
+					//alert(dualButton);
+					var dualButtonId = "p" + dualButton;
+					
+					activeButtonColor(dualButtonId);
+					dualButton = +buttonNum -2;
 					dualButton = leftPad(dualButton,2);
 					dualButtonId = "p" + dualButton;
+					//alert(dualButtonId);
+					//alert(dualButton);
+					if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
+						dualButton = +buttonNum -3;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						
+						activeButtonColor(dualButtonId);
+					}
+					else
+						activeButtonColor(dualButtonId);
 					
-					activeButtonColor(dualButtonId);
 				}
-				else
-					activeButtonColor(dualButtonId);
-					
+				else // span has a count
+				{
+					//alert(buttonEle.innerHTML.length + "is in else");
+						var ite = 1;
+						while(ite <= repCount){
+						dualButton = +buttonNum -ite;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						
+						activeButtonColor(dualButtonId);
+						ite++;
+						}
+				}
 			}
 			else
 				activeButtonColor(buttonId);
