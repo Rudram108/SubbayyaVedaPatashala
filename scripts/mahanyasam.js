@@ -271,7 +271,8 @@
 		var iframe = document.getElementById("anu");
 		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
 		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(10,12);
+		var scrAnuvakam = scrName.substring(13,15);
+		
 		var scr = "mahanyasamAnu" + scrAnuvakam + getLanguage() + tMode+".html";
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
