@@ -1,0 +1,195 @@
+	html{
+		
+		height : 100%;
+		overflow-x :hidden;
+	}
+	
+	.regHeader{
+		position : fixed;
+		width : 100%;
+		height : 218px;
+		z-index : 5;
+		top : 0%;
+		left : 0%;
+		right:0%;	
+		background: #009688;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.regHeader{
+		width : 100%;
+		height : 108px;
+	}
+	}
+
+	.regBg{
+			
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			border :1;
+			
+			/*font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;*/
+		}
+	.allPage h3{
+		color : #fff;
+	}
+	.bckGrnd
+	{
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			border :1;
+			
+	}
+	.bckGrndImg1{
+		width : 120px;
+		position: fixed;
+		top : 120px;
+		left:0;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg1{
+		top : 80px;
+		width : 40px;
+	}
+	}
+	
+	.bckGrndImg2{
+		width : 120px;
+		position: fixed;
+		top : 120px;
+		left:40%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg2{
+		width : 40px;
+		left:40%;
+		top : 80px;
+	}
+	}
+	.bckGrndImg3{
+		width : 120px;
+		position: fixed;
+		top : 120px;
+		left:50%;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg3{
+		width : 40px;
+		left:50%;
+		top : 80px;
+	}
+	}
+	.bckGrndImg4{
+		width : 120px;
+		position: fixed;
+		top : 120px;
+		right:0;
+		z-index : 6;
+	}
+	@media only screen and  (max-width: 1240px) {
+	.bckGrndImg4{
+		width : 40px;
+		right:0;
+		top : 80px;
+	}
+	}	
+	.bckGrndImg5{
+		width : 120px;
+		
+		top : 500px;
+		right:50%;
+		z-index : 6;
+	}@media only screen and  (max-width: 1240px) {
+	.bckGrndImg5{
+		width : 40px;
+		right:50%;
+		top : 280px;
+	}
+	}	
+	.regBlock{
+		position : relative;
+		top : 240px;
+		text-align : center;
+		color : #000;
+		
+	}
+	@media only screen and  (max-width: 1240px) {
+		.regBlock{
+			top : 140px;
+			font-size : 20px;
+	}}	
+	
+
+#myInput {
+  background-image: url(../images/searchicon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+	
+	.registrationForm iframe{
+		width: 640px;
+		height:720px;
+		overflow: hidden;
+		
+	}
+	@media only screen and  (max-width: 1240px) {
+		.registrationForm iframe{
+			width: 320px;
+			height:820px;
+	}}
+	
+	.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
