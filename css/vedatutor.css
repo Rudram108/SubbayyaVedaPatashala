@@ -53,6 +53,8 @@ overflow-y: scroll;
 	.allPage{
 		font-size: large;
 		left: 140px;
+		top:-2%;
+		right:28%;
 	
 	}
 	}

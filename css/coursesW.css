@@ -4,21 +4,8 @@
 		overflow-x :hidden;
 	}
 	
-	.regBg{
-			
-			top:0;
-			right:0;
-			left:0;
-			bottom:0;
-			border :1;
-			
-			/*font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;*/
-		}
-		
-	
 	.regHeader{
 		position : fixed;
-		width : 100%;
 		height : 218px;
 		z-index : 5;
 		top : 0%;
@@ -28,15 +15,25 @@
 	}
 	@media only screen and  (max-width: 1240px) {
 	.regHeader{
-		width : 100%;
-		height : 108px;
+		width : auto;
+		height : 10%;
 	}
 	}
-.allPage h3{
+
+	.regBg{
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			border :1;
+			
+			/*font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;*/
+		}
+		
+	.allPage h3{
 		color : #fff;
-		top:0%;
 	}
-.bckGrnd
+	.bckGrnd
 	{
 			top:0;
 			right:0;
@@ -100,14 +97,14 @@
 		right:0;
 		top : 80px;
 	}
-	}		
+	}	
+	
 	
 	.regBlock input{
 		position : relative;
 		top : 240px;
 		text-align : center;
 		color : #000;
-		width : 80%;
 		
 	}
 	@media only screen and  (max-width: 1240px) {
@@ -115,19 +112,6 @@
 			top : 140px;
 			font-size : 20px;
 	}}
-	
-	#myInput {
-  background-image: url(../images/searchicon.png);
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #009688;
-  margin-bottom: 12px;
-  
-}
-
 	
 	.regBlock table{
 		position : relative;
@@ -141,28 +125,46 @@
 			top : 140px;
 			font-size : 20px;
 	}}	
+	
+
+#myInput {
+  background-image: url(../images/searchicon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  
+}
 
 #myTable {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #009688;
+  border: 1px solid #ddd;
   font-size: 18px;
 }
 
-#myTable th{
-	color : #009688;
-}
 #myTable th, #myTable td {
   text-align: left;
   padding: 12px;
- }
+}
 
 #myTable tr {
-  border-bottom: 1px solid #009688;
+  border-bottom: 1px solid #ddd;
 }
 
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
+}
+	
+	
+	
+	.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
