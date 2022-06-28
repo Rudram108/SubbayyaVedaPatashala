@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Courses by Subbaya garu</title>
+		<link rel="stylesheet" href="css/dd.css">
+	    <link rel="stylesheet" href="css/vedatutor.css">
+	    <link rel="stylesheet" href="css/courses.css">
+		
+		<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+ function openTimeZone(inputTime){
+		var input = inputTime;
+        document.getElementById('cst').style.display = 'none';
+		document.getElementById('ist').style.display = 'none';
+		//document.getElementById('est').style.display = 'none';
+		document.getElementById(input).style.display = 'block';
+		
+    }
+</script>
+<script>
+function open()
+{
+alert('hi');
+}
+</script>
+	  
+	
+</head>
+
+<body class = "regBg">
+
+	<div class = "regHeader">
+			<div class = "logo">
+				<a href = "index.html">
+				<img src= "images/logo.png"  class = "logo">
+				</a>
+			</div>
+			<div class = "allPage"><!-- navbar-inverse navbar-fixed-top"> -->
+				<h3 align = "center"> Subbayya Veda Patashala </h3>
+			</div>
+	</div>	
+	<!--	
+	<div class ="bckGrnd"> 
+			<img src= "images/amma-modified.png"  class = "bckGrndImg1">
+			<img src= "images/Baba-modified.png"  class = "bckGrndImg2">
+			<img src= "images/puparti-modified.png"  class = "bckGrndImg3">
+			<img src= "images/ammachi-modified.png"  class = "bckGrndImg4">
+			
+	</div>-->
+
+	<div class = "regBlock">
+	<div class = "searchNav">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for course name.." title="Type in the course name">
+	</div>	
+		<div id = "cst">
+			<table id = "myTable">
+				<tr>
+					<th style="width:30%;"> Script </th>
+					<th style="width:20%;"> Language </th>
+					<th style="width:30%;"> pdf </th>
+					<th	style="width:50%;"> Source Links</th>
+					
+				</tr>
+				
+				<tr>
+					<td> Mahanyasam </td>
+					<td> Telugu </td>
+					<td> <a href="pdfs/MahanyasamTelugu.pdf">Mahanyasam Telugu</a> </td>
+					<td><a href = 
+					https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Telugu-2017.pdf">
+						https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Telugu-2017.pdf</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Mahanyasam </td>
+					<td> Kannada </td>
+					<td> <a href="pdfs/MahanyasamKannada.pdf">Mahanyasam Kannada</a>  </td>
+					<td><a href =  "https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Kannada-2017.pdf"> https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Kannada-2017.pdf</a></td>
+				</tr>
+				
+				<tr>
+					<td> Mahanyasam </td>
+					<td> Sanskrit </td>
+					<td> <a href="pdfs/MahanyasamSanskrit.pdf">Mahanyasam Sanskrit</a> </td>
+					<td>
+						
+						<a href = "https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Sanskrit-2017.pdf" >https://www.hindutemplealbany.org/wp-content/uploads/2017/02/Rudra-Mahanyasam-Sanskrit-2017.pdf</a>
+						
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Namakam </td>
+					<td> Telugu </td>	
+					<td><a href="pdfs/NamakamTelugu.pdf">Namakam Telugu</a> </td>
+					<td><a href = "https://vignanam.org/telugu/sri-rudram-namakam.html">https://vignanam.org/telugu/sri-rudram-namakam.html</a></td>
+				</tr>
+				
+				<tr>
+					<td> Namakam </td>
+					<td> English </td>
+					<td> <a href="pdfs/NamakamEnglish.pdf">Namakam English</a> </td>
+					<td>
+						<a href = "https://vignanam.org/english/sri-rudram-namakam.html">https://vignanam.org/english/sri-rudram-namakam.html</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Namakam </td>
+					<td> Kannada </td>
+					<td> <a href="pdfs/NamakamKannada.pdf">Namakam Kannada</a> </td>
+					<td>
+						<a href = "https://vignanam.org/kannada/sri-rudram-namakam.html">https://vignanam.org/kannada/sri-rudram-namakam.html</a>
+					</td>
+				</tr>
+				
+				
+				
+				
+			</table>
+		</div>
+		
+	</div>	
+</body>

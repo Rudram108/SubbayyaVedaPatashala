@@ -28,8 +28,21 @@ function myFunction() {
     }       
   }
 }
+ function openTimeZone(inputTime){
+		var input = inputTime;
+        document.getElementById('cst').style.display = 'none';
+		document.getElementById('ist').style.display = 'none';
+		//document.getElementById('est').style.display = 'none';
+		document.getElementById(input).style.display = 'block';
+		
+    }
 </script>
-
+<script>
+function open()
+{
+alert('hi');
+}
+</script>
 	  
 	
 </head>
@@ -46,24 +59,36 @@ function myFunction() {
 				<h3 align = "center"> Subbayya Veda Patashala </h3>
 			</div>
 	</div>	
-		
+	<!--	
 	<div class ="bckGrnd"> 
 			<img src= "images/amma-modified.png"  class = "bckGrndImg1">
 			<img src= "images/Baba-modified.png"  class = "bckGrndImg2">
 			<img src= "images/puparti-modified.png"  class = "bckGrndImg3">
 			<img src= "images/ammachi-modified.png"  class = "bckGrndImg4">
 			
-	</div>
+	</div>-->
 
 	<div class = "regBlock">
+	<div class = "searchNav">
 		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for course name.." title="Type in the course name">
-
+		<div class="dropdown" style="float:right;">
+		  <button class="dropbtn">TimeZone</button>
+		  <div class="dropdown-content" style="right:0;">
+			  <button onclick="openTimeZone('cst');">CST</button>
+			  <button onclick="openTimeZone('ist');">IST</button>
+			 
+			  
+		  </div>
+		</div>
+	</div>	
+		<div id = "cst">
 			<table id = "myTable">
 				<tr>
-					<th style="width:20%;"> Day of the week </th>
+					<th style="width:30%;"> Day of the week </th>
 					<th style="width:20%;"> Time </th>
-					<th style="width:40%;"> Course </th>
-					<th style="width:20%;"> Links</th>
+					<th style="width:60%;"> Course </th>
+					<th	style="width:40%;"> Links</th>
+					
 				</tr>
 				
 				<tr>
@@ -184,6 +209,137 @@ function myFunction() {
 						<span class="tooltiptext">This is only for kids.</span>
 						</div></td>
 				</tr>
-			</table>	
+			</table>
+		</div>
+		<div id = "ist" hidden>
+		<table id = "myTable">
+				<table id = "myTable">
+				<tr>
+					<th style="width:30%;"> Day of the week </th>
+					<th style="width:20%;"> Time </th>
+					<th style="width:60%;"> Course </th>
+					<th	style="width:40%;"> Links</th>
+				</tr>
+				
+				<tr>
+					<td> Tuesday </td>
+					<td> 6:30 am IST </td>
+					<td> Mahanyasam </td>
+					<td>
+						<div class="tooltip">
+						<a href = "https://chat.whatsapp.com/E3ZbF33N62lBEqLbCzgv88" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">Please donot join if you are in rudram school watsapp groups.</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Wednesday </td>
+					<td> 6:30 am IST  </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Thursday </td>
+					<td> 6:30 am IST  </td>
+					<td> Mahanyasam </td>
+					<td>
+						<div class="tooltip">
+						<a href = "https://chat.whatsapp.com/E3ZbF33N62lBEqLbCzgv88" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">Please donot join if you are in rudram school watsapp groups.</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Friday </td>
+					<td> 6:30 am IST  </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Saturday </td>
+					<td> 6:30 am IST  </td>
+					<td> Mahanyasam </td>
+					<td>
+						<div class="tooltip">
+						<a href = "https://chat.whatsapp.com/E3ZbF33N62lBEqLbCzgv88" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">Please donot join if you are in rudram school watsapp groups.</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Sunday </td>
+					<td> 6:30 am IST  </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Monday </td>
+					<td> 6:30 am IST  </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Saturday </td>
+					<td> 6:30 pm IST </td>
+					<td> Namakam </td>
+					<td>
+						<div class="tooltip">
+						<a href = "https://chat.whatsapp.com/E3ZbF33N62lBEqLbCzgv88" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">Please donot join if you are in rudram school watsapp groups.</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Sunday </td>
+					<td> 6:30 pm IST </td>
+					<td> Namakam </td>
+					<td>
+						<div class="tooltip">
+						<a href = "https://chat.whatsapp.com/E3ZbF33N62lBEqLbCzgv88" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">Please donot join if you are in rudram school watsapp groups.</span>
+						</div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td> Sunday </td>
+					<td> 6:30 am IST </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Monday </td>
+					<td> 6:30 am IST </td>
+					<td> Laksha Rudra Parayanam </td>
+					<td><a href = "https://docs.google.com/spreadsheets/d/1PgQFGZ2PH3JaYfr4KoW_6eHdIclK16p9_IHCx05WJH8/edit?usp=sharing">Fill form to participate</a></td>
+				</tr>
+				
+				<tr>
+					<td> Mon - Fri </td>
+					<td> 5:00 pm IST</td>
+					<td> Lalitha Sahastranamam </td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td> Sunday </td>
+					<td> 3:00 am IST </td>
+					<td> USA Kids Class </td>
+					<td><div class="tooltip">
+						<a href = "https://chat.whatsapp.com/HC643WxqRVkANcycwfBKeX" >New Joinee Whatsapp Group</a>
+						<span class="tooltiptext">This is only for kids.</span>
+						</div></td>
+				</tr>
+			</table>
+		</div>		
 	</div>	
 </body>
