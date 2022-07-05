@@ -140,7 +140,7 @@
 						dualButton = +buttonNum -ite;
 						dualButton = leftPad(dualButton,2);
 						dualButtonId = "p" + dualButton;
-						
+						//alert(dualButtonId);
 						activeButtonColor(dualButtonId);
 						ite++;
 						}
