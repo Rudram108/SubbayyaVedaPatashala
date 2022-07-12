@@ -233,3 +233,28 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.downPic{
+		width : 30%;
+			}
+	@media only screen and  (max-width: 1240px) {
+	.downPic{
+		width : 50%;
+		padding : 5px;
+	}
+	}
+	
+.picDesc{
+	font-size : 1.0em;
+	position : absolute;
+	padding : 5px 15px;
+	left : 0%;
+	right:0%;	
+}@media only screen and  (max-width: 1240px) {
+	.picDesc{
+	font-size : 0.9em;
+	position : absolute;
+	padding : 5px 15px 5px;
+	}
+	}
+	
