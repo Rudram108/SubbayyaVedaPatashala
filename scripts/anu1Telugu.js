@@ -1,4 +1,4 @@
-		/* Om
+/* Om
 		This function generates the source of the audio based on anuvakam and line number. 
 		The source is also based on word to word learning or line by line learning.
 		
@@ -292,9 +292,6 @@
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
-		
-		
-		
 	}
 		
 	
@@ -444,4 +441,3 @@
 			
 		}	
 	}
-	
