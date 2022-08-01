@@ -13,7 +13,6 @@
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
-		
 		var buttonEle = document.getElementById(buttonId);
 		document.getElementById(buttonId).scrollIntoViewIfNeeded();
 		var curBut; 
@@ -26,6 +25,7 @@
 			var sourceAud = "audio/Anu"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";
 			}
+			
 		else if(buttonEle instanceof HTMLSpanElement)
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
@@ -440,4 +440,42 @@
 			bolds[i].style.color = '#17202A';
 			
 		}	
+	}
+	
+	function addCount(){
+		 count = localStorage.getItem("namakamCount");
+		 if(count === null){
+			 count = 0;
+		}
+		count++;		
+		localStorage.setItem("namakamCount" , count);
+		 document.getElementById("count").innerHTML = "Count : " +count;
+	}
+	
+	function getCount(){
+		var count = localStorage.getItem("namakamCount");
+		 if(count === null){
+			 count = 0;
+		}
+		return count;
+	}
+	
+	function editCount(){
+		document.getElementById("ecount").style.visibility = "hidden";
+		document.getElementById("editedCount").style.visibility = "visible";
+		document.getElementById("enterCount").style.visibility = "visible";
+		
+		
+	}
+	
+	function editEntereeCount(){
+		count = document.getElementById("editedCount").value;
+		if(count === null){
+			 count = localStorage.getItem("namakamCount");
+		}
+		localStorage.setItem("namakamCount" , count);
+		 document.getElementById("count").innerHTML = "Count : " +count;
+		 document.getElementById("ecount").style.visibility = "visible";
+		document.getElementById("editedCount").style.visibility = "hidden";
+		document.getElementById("enterCount").style.visibility = "hidden";
 	}

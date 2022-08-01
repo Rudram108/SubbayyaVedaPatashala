@@ -38,6 +38,10 @@
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
 		}, false);
+		
+		document.addEventListener('DOMContentLoaded', e => {
+		document.getElementById("count").innerText = "Count : " + getCount();
+		});
 	</script>
 	</head>
   <body class = "anubg">
@@ -79,5 +83,20 @@
 
 	</div>	
    
+   
+<br><br><br>
+<!-- changes today -->
+<div class = "navButton">
+	<a href="javascript:showDiv('10')" class="previous">&laquo; Anuvakam 10</a>
+	<a id = "count" href="javascript:addCount()" class="next"> </a>
+	<a id = "ecount" href="javascript:editCount()" class="nextEdit"> &hellip;</a><br>
+	<input type="number" id="editedCount">
+	<a id = "enterCount" href="javascript:editEntereeCount()" class="enterCount"> &crarr;</a>
+	
+	
+</div>
+<br><br><br>
+		
+		
   </body> 
 </html>		

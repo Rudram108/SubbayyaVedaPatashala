@@ -40,6 +40,10 @@
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
 		}, false);
+		
+		document.addEventListener('DOMContentLoaded', e => {
+		document.getElementById("count").innerText = "Count : " + getCount();
+		});
 	</script>
 	</head>
   <body class = "anubg">
@@ -52,10 +56,10 @@
 	
 	<div class = "audio-text-noCursor" id="audio-text-noCursor" style="font-family:NotoSansTelugu;line-height : 250%; font-size: 22px;"><br>
 
-<p id = "p00" onclick="anu1TeluguPrint('12','00')">	<br>	
+<!--<p id = "p00" onclick="anu1TeluguPrint('12','00')">	<br>	
 		<p>శ్రీ రుద్ర ప్రశ్నః</p>
 <p>కృష్ణ యజుర్వేదీయ తైత్తిరీయ సంహితా<br />
-చతుర్థం-వైఀశ్వదేవం కాండం పంచమః ప్రపాఠకః</pbr
+చతుర్థం-వైఀశ్వదేవం కాండం పంచమః ప్రపాఠకః</p><br>-->
 <p>ఓం నమో భగవతే॑ రుద్రా॒య ॥<br />
 నమ॑స్తే రుద్ర మ॒న్యవ॑ ఉ॒తోత॒ ఇష॑వే॒ నమః॑ । <br />
 నమ॑స్తే అస్తు॒ ధన్వ॑నే బా॒హుభ్యా॑ము॒త తే॒ నమః॑ ॥ </p>
@@ -253,6 +257,18 @@
 </p></span>					<br /><br /><br /></p>
 </div>
 
+<br><br><br>
+<!-- changes today -->
+<div class = "navButton">
+	
+	<a id = "count" href="javascript:addCount()" class="next"> </a>
+	<a id = "ecount" href="javascript:editCount()" class="nextEdit"> &hellip;</a><br>
+	<input type="number" id="editedCount">
+	<a id = "enterCount" href="javascript:editEntereeCount()" class="enterCount"> &crarr;</a>
+	
+	
+</div>
+<br><br><br>
    
   </body> 
 </html>		
