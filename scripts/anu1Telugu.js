@@ -471,8 +471,9 @@
 	function editEntereeCount(){
 		count = document.getElementById("editedCount").value;
 		if(count === null){
-			 count = localStorage.getItem("namakamCount");
+			 count = getCount();
 		}
+		
 		localStorage.setItem("namakamCount" , count);
 		 document.getElementById("count").innerHTML = "Count : " +count;
 		 document.getElementById("ecount").style.visibility = "visible";

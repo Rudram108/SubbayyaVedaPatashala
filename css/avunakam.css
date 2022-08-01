@@ -465,6 +465,7 @@
 /* chages */
 
 .navButton a {
+	
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -487,8 +488,12 @@
 		background-color: #009688;
 		color: white;
 		border-radius: 18px;
-		width: 7%;
-}
+		width: 10%;
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.next {
+		width: 15%;
+		font-size : 33px;
+	}}
 
 .nextEdit {
 		position : relative;
@@ -497,7 +502,10 @@
 		height: 1%;		
 		color: white;
 		border-radius: 18px;
-}
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.nextEdit {
+		background-color: #009688;
+	}}
 
 #editedCount {
 		position : relative;
@@ -523,7 +531,11 @@
 		color: black;
 		border-radius: 18px;
 		visibility : hidden;
-}
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.enterCount {
+		background-color: #009688;
+	}}
+
 .round {
   border-radius: 50%;
 }

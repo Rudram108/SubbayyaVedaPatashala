@@ -37,6 +37,7 @@
 		<link rel="stylesheet" href="css/dd.css">
 		<script src="scripts/anu1Telugu.js"></script>
 		<script>
+		
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
 		}, false);
@@ -44,6 +45,15 @@
 		document.addEventListener('DOMContentLoaded', e => {
 		document.getElementById("count").innerText = "Count : " + getCount();
 		});
+		
+		
+		/*	const countEdit =  document.getElementById("editedCount");
+		countEdit.addEventListener('input', function (e) {
+		
+			if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+			editEntereeCount();
+			}
+		});*/
 	</script>
 	</head>
   <body class = "anubg">
@@ -263,7 +273,7 @@
 	
 	<a id = "count" href="javascript:addCount()" class="next"> </a>
 	<a id = "ecount" href="javascript:editCount()" class="nextEdit"> &hellip;</a><br>
-	<input type="number" id="editedCount">
+	<input type="number" id = "editedCount" placeholder="Enter the count" />
 	<a id = "enterCount" href="javascript:editEntereeCount()" class="enterCount"> &crarr;</a>
 	
 	
