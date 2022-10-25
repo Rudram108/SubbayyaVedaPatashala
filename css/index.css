@@ -27,7 +27,7 @@
 		right:0;
 		left:0;
 		bottom:0;
-		overflow : scroll;
+		
 	}
 	
 	.wrapper{
@@ -110,19 +110,40 @@
 	.top-nav{
 		z-index: 5;
 	}
-	.banner-text{
+	/*.banner-text{
 		text-align : center;
 		color : #fff;
 		padding-top : 180px;
 		position:fixed;
 		left : 150px;
 		right : 150px;
+		
 	}
 	@media screen and (max-width: 770px){
 		.banner-text{
 			padding-top : 80px;
 			left : 110px;
 		right : 110px;
+			
+		}
+	}
+	*/
+	
+	.banner-text{
+		text-align : center;
+		color : #fff;
+		padding-top : 180px;
+		position:relative;
+		left : 20px;
+		right : 150px;
+		
+		
+	}
+	@media screen and (max-width: 770px){
+		.banner-text{
+			padding-top : 80px;
+			left : 20px;
+			right : 50px;
 			
 		}
 	}
