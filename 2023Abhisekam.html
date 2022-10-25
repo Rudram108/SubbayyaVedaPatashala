@@ -71,8 +71,38 @@ img {vertical-align: center;}
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width:50% ; 
+  height : 10%
 }
+
+@media only screen  and (max-width: 700px) {
+	.center{
+		 width:100% ; 
+  height : 100%
+		
+	}
+	}
+	
+	
+.desc{
+	
+	text-align : center;
+}
+@media only screen and (max-width: 700px) {
+	.desc{
+		padding-top : 10%;
+		font-size: small;
+		
+	
+	}
+	}
+	@media only screen and (min-width: 705px) {
+	.desc{
+		font-size: large;
+		left: 190px;
+		
+	}
+	}
 </style>
 </head>
 <body>
@@ -84,13 +114,13 @@ img {vertical-align: center;}
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="images/2023Abhisekm/pic1.jpeg" style="width:50% ; height : 10%" class = "center">
+  <img src="images/2023Abhisekm/pic1.jpeg" class = "center">
   <div class="text">Devotee guests participate in abhisekam</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="images/2023Abhisekm/pic2.jpeg" style="width:50% ; height : 10%" class = "center">
+  <img src="images/2023Abhisekm/pic2.jpeg"  class = "center">
   <div class="text">Paneer Doss garu and Suryavathi garu hosting the abhisekam</div>
 </div>
 
@@ -105,6 +135,8 @@ img {vertical-align: center;}
   <span class="dot"></span> 
 </div>
 
+<h4>Shata Rudra Abhisekam 2022</h4>
+<p class = "desc">Guru garu performs Rudra Abhisekam at the devotee homes in places like San Antonio , Bornea , Austin. Guru garu brings all the items needed for abhisekam and expects only pure love and devotion towards Lord Shiva from the hosts. This event is free of cost and any donations raised will be given to Veda Schools in India.</p>
 <script>
 let slideIndex = 0;
 showSlides();
