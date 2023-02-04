@@ -118,7 +118,13 @@ overflow-y: scroll;
 	color: #fff;
 	position : relative;
 	
-}
+}@media only screen and (max-width: 700px) {
+	.desc{
+		flex-basis : auto;
+		
+	
+	}
+	}
 .images img{
 	width :100%;
 	border-radius : 7px;/*mine*/
