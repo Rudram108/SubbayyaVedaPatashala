@@ -5,7 +5,7 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
-		function playPurushaSuktam(buttonNum)
+		function playAtharava(buttonNum)
 			{
 				//alert(anuNum);
 				//alert(buttonNum);
@@ -22,14 +22,14 @@
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
 		{
-			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
+			var sourceAud = "audio/Atharava/PPcom.mp3";
 			//document.body.style.cursor = "not-allowed";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";
 		}
 		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
-			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
+			sourceAud = "audio/Atharava/" + "ww_" + buttonNum +".mp3";
 		else
-			sourceAud = "audio/PurushaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
+			sourceAud = "audio/Atharava/" +getLearningMode()+"_" + buttonNum +".mp3";
 		//alert('here');
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
@@ -137,7 +137,7 @@
 				{
 					bolds[i].style.color = '#17202A';
 			}
-			if(getLearningMode() == 'com'){playPurushaSuktam('00');	}
+			if(getLearningMode() == 'com'){playAtharava('00');	}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
@@ -147,10 +147,10 @@
 			var numberOfButtons = ele.getElementsByTagName('button').length;
 			//alert(+numberOfButtons + +numberOfSpans);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
-				playPurushaSuktam(buttonNum);
+				playAtharava(buttonNum);
 			else
 			//alert("Anuvakam is complete. Please choose the next one");
-				playPurushaSuktam('00');	
+				playAtharava('00');	
 		}
 					
 			}
@@ -197,7 +197,7 @@
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
-			source.src = "audio/PurushaSuktam/PPcom.mp3";
+			source.src = "audio/Atharava/PPcom.mp3";
 			if(!sounds.paused)
 				{
 					sounds.pause();								

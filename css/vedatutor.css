@@ -100,15 +100,21 @@ overflow-y: scroll;
 	}
 	
 .squares {
-	width:80%;
+	width:80%; 
 	display:flex;
+	flex-direction: row;
 	flex-wrap:wrap;
 	justify-content:space-around;
 	margin:auto;
 	position : relative;
 	top : 120px;
 	
-}
+}@media only screen and (max-width: 700px) {
+	.squares{
+		width:40%; 
+
+	}
+	}
 
 .images{
 	flex-basis : 30%;
@@ -119,7 +125,7 @@ overflow-y: scroll;
 	position : relative;
 	
 }@media only screen and (max-width: 700px) {
-	.desc{
+	.images{
 		flex-basis : auto;
 		
 	
