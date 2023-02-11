@@ -286,7 +286,7 @@
 				localStorage.setItem("textMode" , tMode);
 				var iframe = document.getElementById("anu");
 				
-				var scr = "suktamPurusha" + getLanguage() + tMode+".html";
+				var scr = "atharva" + getLanguage() + tMode+".html";
 			//alert(scr);
 				var iframe = document.getElementById("anu");
 			//alert("iframe");
@@ -324,7 +324,7 @@
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "suktamPurusha" + lang + getTextMode()+".html";
+			var scr = "atharva" + lang + getTextMode()+".html";
 			
 			var iframe = document.getElementById("anu");
 			
@@ -454,3 +454,5 @@ document.getElementById("lanList5").style.display = "none";
 		}
 	}
 	
+	
+		

@@ -110,12 +110,13 @@
 		padding-right: 3px;/*changing it to 1 was 33*/
 		padding-left: 1px;
 		margin: 0px auto;
+		line-height : 2em;
 	
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
 		font-size: 55px;
-		line-height : 150%;
+		line-height : 120%;
 	}}
 	@media only screen 
 		and (min-device-width: 768px) 
