@@ -162,7 +162,7 @@
 		padding-bottom : 12px;
 	}@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text :hover *{
-		font-size: 43px;
+		font-size: 55px; /* was42 */
 	}}
 	@media only screen 
 		and (min-device-width: 768px) 
