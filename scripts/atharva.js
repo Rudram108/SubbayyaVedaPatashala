@@ -14,6 +14,7 @@
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
+		//alert(buttonEle);
 		document.getElementById(buttonId).scrollIntoViewIfNeeded();
 		var curBut; 
 		var currAud;
