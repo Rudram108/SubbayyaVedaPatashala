@@ -64,14 +64,18 @@
 	top : 9%;
 	left:39px;
 	right:0px;
-	width: 70%; /*78vw;*/
+	width: 80%; /*78vw;*/
 	word-wrap: break-word;
 	z-index : 1;
+	letter-spacing: 1px;
+	
 	
 	}
 	@media only screen and (max-width: 1240px) {
 	.audio-text {
 		right:0px;
+		letter-spacing: 5px;
+		left:0px;
 	}}
 	.stars {
   position: fixed;
@@ -103,6 +107,39 @@
 		word-wrap:break-word;
 		margin: 1px auto;
 	}*/
+	
+	
+	
+	.audio-text span {
+		 text-align: justify;
+		cursor: pointer;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+		line-height : 2em;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text span {
+		font-size: 55px;
+		line-height : 220%;
+		letter-spacing: 1px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text span {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	
+	
 	.audio-text p {
 		 text-align: justify;
 		cursor: pointer;
