@@ -5,66 +5,48 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
-		function playPurushaSuktam(buttonNum)
+		function playDurgaSuktam(buttonNum)
 			{
 				//alert(anuNum);
-				//alert(buttonNum);
+				
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
-		document.getElementById(buttonId).scrollIntoViewIfNeeded();
+		buttonEle.scrollIntoViewIfNeeded();
+		//alert(buttonNum);
 		var curBut; 
 		var currAud;
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
-		{
-			var sourceAud = "audio/PurushaSuktam/PPcom.mp3";
-			//document.body.style.cursor = "not-allowed";
-			document.getElementById("anu1").style.pointerEvents = "not-allowed";
-		}
-		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
-			sourceAud = "audio/PurushaSuktam/" + "ww_" + buttonNum +".mp3";
+			var sourceAud = "audio/DurgaSuktam/PPcom.mp3";
+		else if((buttonEle instanceof HTMLButtonElement) || (buttonEle instanceof HTMLSpanElement))
+			sourceAud = "audio/DurgaSuktam/" + "ww_" + buttonNum +".mp3";
 		else
-			sourceAud = "audio/PurushaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
-		//alert('here');
+			sourceAud = "audio/DurgaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
+		//alert(sourceAud);
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
 		currAud = source.src ;
 		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
 		var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
-		
+		//alert(playingButton);
 		/*FETCHING THE CURRENTLY PLAYING BUTTON NUMBER BASED ON THE AUDIO BEING PLAYED. THAT BUTTON COLOR IS CHANGED TO BLACK.
 		IN FEW ANUVAKAS TWO LINES ARE BEING READ AT THE SAME TIME. IN WHICH CASE THAT BUTTONS ARE KEPT IN THE DIV AND IF THE 
 		ELEMENT IS A DIV, ALL THE CHILDRENS COLOR IS CHANGED TO BLACK AFTER PAUSING.
 		*/
+		
 		if(Number.isInteger(playingButton))	
-			{
+		{
 				playingButton=leftPad(playingButton,targetLength);
 				curBut = "p" + playingButton;
 				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
-				/*if(currButtonEle instanceof HTMLParagraphElement){
-					//alert("Yes");
-					
-					var tempBtn = +playingButton -1;
-					var tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
-					while(!(tempBtnEle instanceof HTMLParagraphElement)){
-						tempButnID = "p" + tempBtn;
-						//alert(tempButnID
-						if(tempBtnEle instanceof HTMLSpanElement)
-						inActiveButtonColor(tempButnID);
-						tempBtn = +tempBtn - 1;
-						tempBtn = leftPad(tempBtn,2);
-						tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
-					}
-				}
-				else */
 				if(currButtonEle instanceof HTMLButtonElement){
 				
 				var dualButton = +playingButton -1;
@@ -85,15 +67,30 @@
 				else
 					inActiveButtonColor(dualButtonId);
 			
-			}else
-				inActiveButtonColor(curBut);
 			}
+			else if(currButtonEle instanceof HTMLSpanElement){
+			//	alert("Span");
+				var repeatButtonId ="p" + buttonNum;
+				var repeatButton;
+				
+				for(i = buttonNum -1 ; i >= 0 ; i--){
+					repeatButtonId ="p" + leftPad(i,2);
+					//alert(repeatButtonId);
+					repeatButton = document.getElementById(repeatButtonId);
+					if(repeatButton instanceof HTMLParagraphElement){
+						//alert("colorchange" + repeatButtonId);
+						inActiveButtonColor(repeatButtonId);
+					}
+				}
+			}
+			else
+				inActiveButtonColor(curBut);
+		}
 				
 		if(!sounds.paused)
 				{
 					sounds.pause();								
 				}
-				
 			if(buttonEle instanceof HTMLButtonElement){
 				//alert('inspan');
 				var dualButton = +buttonNum -1;
@@ -125,32 +122,33 @@
 				
 			buttonEle.style.border = "none";
 			source.src = sourceAud;	
+		//	alert(sourceAud);
 			sounds.load();
 			sounds.play();
 			//alert('reached');
 		sounds.onended = function() {
 			//alert('reached');
-			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
 				{
 					bolds[i].style.color = '#17202A';
-			}
-			if(getLearningMode() == 'com'){playPurushaSuktam('00');	}
+				}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
 			var ele = document.getElementById('audio-text');
 			var numberOfPs = ele.getElementsByTagName('p').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
-			var numberOfButtons = ele.getElementsByTagName('button').length;
+			numberOfButtons = ele.getElementsByTagName('button').length;
 			//alert(+numberOfButtons + +numberOfSpans);
-			if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
-				playPurushaSuktam(buttonNum);
+			
+			if( buttonNum < 49)	{							
+				playDurgaSuktam(buttonNum);
+				
+			}
 			else
-			//alert("Anuvakam is complete. Please choose the next one");
-				playPurushaSuktam('00');	
+			playDurgaSuktam('00');
 		}
 					
 			}
@@ -197,7 +195,7 @@
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
-			source.src = "audio/PurushaSuktam/PPcom.mp3";
+			source.src = "audio/DurgaSuktam/PPcom.mp3";
 			if(!sounds.paused)
 				{
 					sounds.pause();								
@@ -238,7 +236,7 @@
 				localStorage.setItem("textMode" , tMode);
 				var iframe = document.getElementById("anu");
 				
-				var scr = "suktamPurusha" + getLanguage() + tMode+".html";
+				var scr = "DurgaSuktam" + getLanguage() + tMode+".html";
 			//alert(scr);
 				var iframe = document.getElementById("anu");
 			//alert("iframe");
@@ -276,7 +274,7 @@
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "suktamPurusha" + lang + getTextMode()+".html";
+			var scr = "DurgaSuktam" + lang + getTextMode()+".html";
 			
 			var iframe = document.getElementById("anu");
 			
@@ -289,7 +287,7 @@
 			document.getElementById("lanList2").style.display = "none";
 			document.getElementById("lanList3").style.display = "none"; 				 
 			document.getElementById("lanList4").style.display = "none"; 
-document.getElementById("lanList5").style.display = "none";					
+			document.getElementById("lanList5").style.display = "none"; 			
 			//divId.style.visibility = 'visible';
 			
 			  }			
@@ -383,7 +381,6 @@ document.getElementById("lanList5").style.display = "none";
 	}
 	 
 	function inActiveButtonColor(buttonId){
-		//alert(buttonId);
 		document.getElementById(buttonId).style.color = "#000";
 		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
 		for(var i = 0; i < smalls.length; i++)
@@ -399,10 +396,5 @@ document.getElementById("lanList5").style.display = "none";
 			bolds[i].style.color = '#17202A';
 			
 		}	
-		var spans = document.getElementById(buttonId).getElementsByTagName('span');
-		for(var i = 0; i < spans.length; i++){
-			spans[i].style.color = "#000";
-			
-		}
 	}
 	

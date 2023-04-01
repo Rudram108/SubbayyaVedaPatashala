@@ -62,6 +62,7 @@
     padding-right: 1px !important;
 	position :relative;
 	top : 9%;
+	left:39px;
 	right:0px;
 	width: 70%; /*78vw;*/
 	word-wrap: break-word;
@@ -164,7 +165,7 @@
 		
 		}
 	}
-	
+	/*
 	.audio-text :hover *{
 		border: none;
 		cursor: pointer;
@@ -172,7 +173,7 @@
 		color: yellow;
 		font-size: 21px;
 		padding-bottom : 12px;
-	}@media screen and (max-width: 1240px) { /*for phone*/
+	}@media screen and (max-width: 1240px) { /*for phone
 	.audio-text :hover *{
 		font-size: 43px;
 	}}
@@ -184,9 +185,9 @@
 		font-size: 29px;
 		
 		}
-	}
+	}*/
 	
-	.audio-text p:hover , .audio-text p small:hover , .audio-text p b:hover{
+	.audio-text span:hover , .audio-text span small:hover , .audio-text span b:hover{
 		border: none;
 		cursor: pointer;
 		background-color: Transparent;
