@@ -163,3 +163,27 @@
 			height:820px;
 	}}
 	
+	.evaluationForm{
+		position : relative;
+		top: 140px;
+		left : 200px;
+		overflow: hidden;
+		
+	}
+	@media only screen and  (max-width: 1240px) {
+		.evaluationForm {
+			left : 30px;
+			
+	}}	
+	.evaluationForm iframe{
+		width: 640px;
+		height:720px;
+		overflow: hidden;
+		
+	}
+	@media only screen and  (max-width: 1240px) {
+		.evaluationForm iframe{
+			width: 320px;
+			height:820px;
+	}}
+	

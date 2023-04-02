@@ -23,7 +23,7 @@
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
 			var sourceAud = "audio/DurgaSuktam/PPcom.mp3";
-		else if((buttonEle instanceof HTMLButtonElement) || (buttonEle instanceof HTMLSpanElement))
+		else if((buttonEle instanceof HTMLButtonElement) )
 			sourceAud = "audio/DurgaSuktam/" + "ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/DurgaSuktam/" +getLearningMode()+"_" + buttonNum +".mp3";
@@ -166,6 +166,7 @@
 		*/
 			function setLearningMode(mode){
 		//	document.getElementById("error").innerHTML = "";
+		
 			learningMode = mode;
 			localStorage.setItem("learningMode" , mode);
 			document.getElementById("llList1").style.display = "none";
@@ -179,7 +180,7 @@
 			//alert(iframe);
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			//alert(innerDoc);
+			alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
