@@ -180,7 +180,7 @@
 			//alert(iframe);
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			alert(innerDoc);
+			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
 			var source = innerDoc.getElementById('audioSource');
