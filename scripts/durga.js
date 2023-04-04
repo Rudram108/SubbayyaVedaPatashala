@@ -22,7 +22,7 @@
 		var targetLength = 2;
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
-			var sourceAud = "audio/DurgaSuktam/PPcom.mp3";
+			var sourceAud = "audio/DurgaSuktam/PPCom.mp3";
 		else if((buttonEle instanceof HTMLButtonElement) )
 			sourceAud = "audio/DurgaSuktam/" + "ww_" + buttonNum +".mp3";
 		else
@@ -346,11 +346,14 @@
 	function openMode(listID){		
 //document.getElementById("error").innerHTML = "";	
 		const myElement = document.getElementById(listID);
+		
 		var list;
 		for (let i = 0; i < myElement.children.length; i++) {
-			var listClass = myElement.children[i].className ;	
+			var listClass = myElement.children[i].className ;
+				//alert("listClass " +listClass);
 			if (listClass != ''){
-				list = document.getElementsByClassName(listClass)[2];
+				list = document.getElementsByClassName(listClass)[1];
+				//alert("list " +list);
 				for (let j = 0; j < list.children.length; j++) {
 					if(document.getElementById(list.children[j].id).style.display == "block")
 						document.getElementById(list.children[j].id).style.display = "none";
