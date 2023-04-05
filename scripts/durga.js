@@ -196,7 +196,7 @@
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
-			source.src = "audio/DurgaSuktam/PPcom.mp3";
+			source.src = "audio/DurgaSuktam/PPCom.mp3";
 			if(!sounds.paused)
 				{
 					sounds.pause();								
