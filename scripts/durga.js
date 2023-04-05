@@ -275,7 +275,7 @@
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "DurgaSuktam" + lang + getTextMode()+".html";
+			var scr = "DurgaSuktam" + lang + "nrl"+".html";
 			
 			var iframe = document.getElementById("anu");
 			
