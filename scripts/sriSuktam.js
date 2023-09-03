@@ -277,7 +277,7 @@ inActiveButtonColor(curBut);
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "SriSuktam" + lang + "Nrl"+".html";
+			var scr = "sriSuktam" + lang + "Nrl"+".html";
 			
 			var iframe = document.getElementById("anu");
 			
