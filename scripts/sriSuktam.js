@@ -260,7 +260,7 @@ inActiveButtonColor(curBut);
 			  function getTextMode(){
 				 tMode = localStorage.getItem("textMode");
 				if(tMode === null){
-					return 'nrl';
+					return 'Nrl';
 				}
 				return tMode;
 				 
@@ -277,7 +277,7 @@ inActiveButtonColor(curBut);
 
 			/*changes made*/
 			var iframe = document.getElementById("anu");
-			var scr = "SriSuktam" + lang + "nrl"+".html";
+			var scr = "SriSuktam" + lang + "Nrl"+".html";
 			
 			var iframe = document.getElementById("anu");
 			
