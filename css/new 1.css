@@ -937,14 +937,21 @@ font-size: 18px;
 		left: 20px;
 	}
 	}
+	/*FOR LINEAR*/
+	@media only screen and (min-width: 200px) {
+	.anu-space{
+		top:150%;
+		width:94%;
+		left: 60px;
+	}
 	
-		
+	/*	
 	@media only screen and (min-width: 200px) {
 	.anu-space{
 		top:150%;
 		width: 70vw;
-		left: 110px;/*Yamini was 0px*/
-	}
+		left: 110px;
+	}*/
 	}
 	@media only screen and (min-width:1025px) {
 	.anu-space{
