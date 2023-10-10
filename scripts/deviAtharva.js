@@ -174,8 +174,15 @@
 				
 			buttonEle.style.border = "none";
 			source.src = sourceAud;	
+			try{
 			sounds.load();
 			sounds.play();
+			}
+			catch(err)
+			{
+				alert("The audio is yet to be updated");
+				alert(err);
+			}
 			//alert('reached');
 		sounds.onended = function() {
 			//alert('reached');
@@ -217,7 +224,7 @@
 		*/
 			function setLearningMode(mode){
 		//	document.getElementById("error").innerHTML = "";
-			
+			//alert(mode);
 			learningMode = mode;
 			
 			localStorage.setItem("learningMode" , mode);
@@ -227,6 +234,8 @@
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
+			 iframe.width = iframe.contentWindow.document.body.scrollWidth;
+			iframe.height = iframe.contentWindow.document.body.scrollHeight;
 			//scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			//var scrAnuvakam = scrName.substring(10,12);
 			//alert(iframe);
