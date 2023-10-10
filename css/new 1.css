@@ -116,7 +116,12 @@ br
 	/* color: #959595; */
 	color: #A6312D;
 }
-
+@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		.text2 {
+		font-size: 25px;
+		}
+	}
 h2 {
 	/* background: url(images/img9.gif) no-repeat left 50%; */
 	/* padding-left: 15px; */
@@ -546,7 +551,12 @@ a:hover {
 	/* color: #153E7E; */
 	color: #036ffc;
 	text-decoration: none;
-}
+}@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		.link3{
+		font-size: 19px;
+		}
+	}
 
 .link3_small {
 	letter-spacing: -1px;

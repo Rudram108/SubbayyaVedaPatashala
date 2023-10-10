@@ -5,39 +5,34 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
+	
 		function playAtharva(buttonNum)
-			{
-				//alert(anuNum);
-				//alert(buttonNum);
-			//	 document.getElementById("error").innerHTML = "";
-			
-		var buttonId = "p" + buttonNum;
+		{			var buttonId = "p" + buttonNum;
+			var buttonEle = document.getElementById(buttonId);
 		
-		var buttonEle = document.getElementById(buttonId);
-		//alert(buttonEle);
-		document.getElementById(buttonId).scrollIntoViewIfNeeded();
-		var curBut; 
-		var currAud;
-		var prevNum;
-		var targetLength = 2;
-		//alert(getLearningMode());
-		if(getLearningMode() == 'com')
-		{
-			var sourceAud = "audio/deviAtharvam/PPcom.mp3";
-			//document.body.style.cursor = "not-allowed";
-			document.getElementById("anu1").style.pointerEvents = "not-allowed";
-		}
-		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
-			sourceAud = "audio/deviAtharvam/" + "ww_" + buttonNum +".mp3";
-		else
-			sourceAud = "audio/deviAtharvam/" +getLearningMode()+"_" + buttonNum +".mp3";
+			document.getElementById(buttonId).scrollIntoViewIfNeeded();
+			var curBut; 
+			var currAud;
+			var prevNum;
+			var targetLength = 2;
 		
-		var sounds = document.getElementById('anu1Aud');
-		sounds.controls = true;
-		var source = document.getElementById('audioSource');
-		currAud = source.src ;
-		currAud = currAud.substring(currAud.lastIndexOf('/')+1);
-		var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
+				if(getLearningMode() == 'com')
+				{
+					var sourceAud = "audio/deviAtharvam/PPcom.mp3";
+					//document.body.style.cursor = "not-allowed";
+					document.getElementById("anu1").style.pointerEvents = "not-allowed";
+				}
+				else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
+					sourceAud = "audio/deviAtharvam/" + "ww_" + buttonNum +".mp3";
+				else
+					sourceAud = "audio/deviAtharvam/" +getLearningMode()+"_" + buttonNum +".mp3";
+		
+				var sounds = document.getElementById('anu1Aud');
+				sounds.controls = true;
+				var source = document.getElementById('audioSource');
+				currAud = source.src ;
+				currAud = currAud.substring(currAud.lastIndexOf('/')+1);
+				var playingButton = parseInt(currAud.substring((currAud.indexOf('_')+1),(currAud.indexOf('.mp3'))));
 		
 		/*FETCHING THE CURRENTLY PLAYING BUTTON NUMBER BASED ON THE AUDIO BEING PLAYED. THAT BUTTON COLOR IS CHANGED TO BLACK.
 		IN FEW ANUVAKAS TWO LINES ARE BEING READ AT THE SAME TIME. IN WHICH CASE THAT BUTTONS ARE KEPT IN THE DIV AND IF THE 
@@ -47,84 +42,46 @@
 			{
 				playingButton=leftPad(playingButton,targetLength);
 				curBut = "p" + playingButton;
-				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
-				/*ChNGES FOR ANU3*/
-				/*if(currButtonEle instanceof HTMLParagraphElement){
-					//alert("Yes");
-					
-					var tempBtn = +playingButton -1;
-					var tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
-					while(!(tempBtnEle instanceof HTMLParagraphElement)){
-						tempButnID = "p" + tempBtn;
-						//alert(tempButnID
-						if(tempBtnEle instanceof HTMLSpanElement)
-						inActiveButtonColor(tempButnID);
-						tempBtn = +tempBtn - 1;
-						tempBtn = leftPad(tempBtn,2);
-						tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
-					}
-				}
-				else */
-				//alert(currButtonEle);
-				if(currButtonEle instanceof HTMLButtonElement){
+				if(currButtonEle instanceof HTMLButtonElement)
+				{
 					
 					let rep = currButtonEle.value;
-					
 					var dualButton;
 					var i = 1;
-					while(rep > 0){
+					while(rep > 0)
+					{
 						
 						dualButton = +playingButton -i;
 						dualButton = leftPad(dualButton,2);
 						var dualButtonId = "p" + dualButton;
 						
-						if(!(document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
+						if(!(document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement))
+						{
 						inActiveButtonColor(dualButtonId);
 						rep--;
+						}
+						i++;
 					}
-					i++;
-				}
 				}
 				else
-				inActiveButtonColor(curBut);	
+					inActiveButtonColor(curBut);	
 					
-				/*Yamini	
-				//alert(playingButton);
-				var dualButton = +playingButton -1;
-				dualButton = leftPad(dualButton,2);
-				var dualButtonId = "p" + dualButton;
-				//document.getElementById(dualButtonId).style.color = "#000";
-				inActiveButtonColor(dualButtonId);
-				dualButton = +playingButton -2;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "p" + dualButton;
-				if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
-					dualButton = +playingButton -3;
-					dualButton = leftPad(dualButton,2);
-					dualButtonId = "p" + dualButton;
-				
-					inActiveButtonColor(dualButtonId);
-				}
-				else
-					inActiveButtonColor(dualButtonId);
-			
-			}
-				inActiveButtonColor(curBut);*/
 			}
 				
 		if(!sounds.paused)
-				{
-					sounds.pause();								
-				}
-				//alert(buttonNum);
-				//alert(buttonEle);
-			if(buttonEle instanceof HTMLButtonElement){
+			{
+				sounds.pause();								
+			}
+				
+		if(buttonEle instanceof HTMLButtonElement)
+			{
 				let rep = buttonEle.value;
 				//alert('rep is : ' + rep);
 				var dualButton;
 				var i = 1;
-				while(rep > 0){
+				while(rep > 0)
+				{
 					//alert('enter while');
 					dualButton = +buttonNum -i;
 					dualButton = leftPad(dualButton,2);
@@ -135,89 +92,60 @@
 						rep--;
 					}
 					i++;
-				}
-				
-				/*testing
-				
-				var dualButton = +buttonNum -1;
-				dualButton = leftPad(dualButton,2);
-				//alert('dualButton');
-				//alert(dualButton);
-				var dualButtonId = "p" + dualButton;
-				
-				activeButtonColor(dualButtonId);
-				dualButton = +buttonNum -2;
-				dualButton = leftPad(dualButton,2);
-				dualButtonId = "p" + dualButton;
-				//alert(dualButtonId);
-				//alert(dualButton);
-				if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement))
-				{
-					dualButton = +buttonNum -3;
-					dualButton = leftPad(dualButton,2);
-					dualButtonId = "p" + dualButton;
-					if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
-						dualButton = +buttonNum -4;
-						dualButton = leftPad(dualButton,2);
-						dualButtonId = "p" + dualButton;
-						activeButtonColor(dualButtonId);
-					}else
-					activeButtonColor(dualButtonId);
-				}
-				else
-					activeButtonColor(dualButtonId);testing*/
-					
+				}		
 			}
-			else
+		else
 				activeButtonColor(buttonId);
 			
 				
-			buttonEle.style.border = "none";
-			source.src = sourceAud;	
-			try{
-			sounds.load();
-			sounds.play();
-			}
-			catch(err)
+		buttonEle.style.border = "none";
+	  
+		sounds.addEventListener('error', function(e) {
+			alert('The audio file is not uploaded');
+		}, true);
+		source.src = sourceAud;	
+		sounds.load();
+		sounds.play();
+		sounds.onended = function() 
 			{
-				alert("The audio is yet to be updated");
-				alert(err);
-			}
-			//alert('reached');
-		sounds.onended = function() {
-			//alert('reached');
+				buttonEle.style.color = "#000";
+				var bolds = buttonEle.getElementsByTagName('b');
+				for(var i = 0; i < bolds.length; i++)
+					{
+						bolds[i].style.color = '#17202A';
+					}
+				if(getLearningMode() == 'com')
+					{
+						playAtharva('00');	
+					}
+				buttonNum = +buttonNum + 1;
+				buttonNum = leftPad(buttonNum,2);
+					//alert(buttonNum);
+				var ele = document.getElementById('audio-text');
+				var numberOfPs = ele.getElementsByTagName('p').length;
+				var numberOfSpans = ele.getElementsByTagName('span').length;
+				var numberOfButtons = ele.getElementsByTagName('button').length;
+				//alert(+numberOfButtons + +numberOfSpans);
+				if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
+					playAtharva(buttonNum);
+				else
+				//alert("Anuvakam is complete. Please choose the next one");
+					playAtharva('00');	
 			
-			buttonEle.style.color = "#000";
-			var bolds = buttonEle.getElementsByTagName('b');
-			for(var i = 0; i < bolds.length; i++)
-				{
-					bolds[i].style.color = '#17202A';
-			}
-			if(getLearningMode() == 'com'){playAtharva('00');	}
-			buttonNum = +buttonNum + 1;
-			buttonNum = leftPad(buttonNum,2);
-				//alert(buttonNum);
-			var ele = document.getElementById('audio-text');
-			var numberOfPs = ele.getElementsByTagName('p').length;
-			var numberOfSpans = ele.getElementsByTagName('span').length;
-			var numberOfButtons = ele.getElementsByTagName('button').length;
-			//alert(+numberOfButtons + +numberOfSpans);
-			if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
-				playAtharva(buttonNum);
-			else
-			//alert("Anuvakam is complete. Please choose the next one");
-				playAtharva('00');	
-		}
 					
-			}
+		}
+			return 1;
+	}	
 			
-			function leftPad(number, targetLength) {
-				var output = number + '';
-				while (output.length < targetLength) {
-					output = '0' + output;
-				}
-				return output;
+			
+		function leftPad(number, targetLength) 
+		{
+			var output = number + '';
+			while (output.length < targetLength) {
+				output = '0' + output;
 			}
+			return output;
+		}
 			
 		/*
 		This function set the Learning Mode
@@ -234,13 +162,14 @@
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
-			 iframe.width = iframe.contentWindow.document.body.scrollWidth;
-			iframe.height = iframe.contentWindow.document.body.scrollHeight;
+			
 			//scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 			//var scrAnuvakam = scrName.substring(10,12);
 			//alert(iframe);
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+			iframe.width = innerDoc.body.scrollWidth;
+			iframe.height = innerDoc.body.scrollHeight;
 			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
