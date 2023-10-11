@@ -954,8 +954,16 @@ font-size: 18px;
 		width:94%;
 		left: 60px;
 	}
+	@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		.anu-space{
+		top:150%;
+		width:100%;
+		left: 60px;
+		}
+	}
 	
-	/*	
+	/*	f
 	@media only screen and (min-width: 200px) {
 	.anu-space{
 		top:150%;

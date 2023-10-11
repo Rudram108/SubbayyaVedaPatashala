@@ -1,7 +1,4 @@
-	*{
-		margin : 0;
-		padding : 0;
-	}
+	
 	
 	div{
 		display : block;
@@ -106,7 +103,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text span {
-		font-size: 20px;
+		font-size: 40px;
 		line-height : 150%;
 	}}
 	@media only screen 
@@ -121,7 +118,7 @@
 		@media only screen 
 		and (-webkit-min-device-pixel-ratio: 3) {
 		.audio-text span {
-		font-size: 35px;
+		font-size: 75px;
 		line-height : 120%;
 		}
 	}
@@ -535,7 +532,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	#error  {
-		font-size: 10px;
+		font-size: 20px;
 	}}
 	@media only screen 
 		and (min-device-width: 768px) 
@@ -548,6 +545,7 @@
 		@media only screen 
 		and (-webkit-min-device-pixel-ratio: 3) {
 		#error  {
-		font-size: 18px;
+			top : 100px;
+		font-size: 23px;
 		}
 	}
