@@ -29,6 +29,10 @@
 	.audio-select{
 	top:20px;
 	}}
+	@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		.audio-select{width: 100vw;}}
+		
 	.audio-select audio{
 		 background: transparent;
 	}
@@ -115,8 +119,8 @@
 		@media only screen 
 		and (-webkit-min-device-pixel-ratio: 3) {
 		.audio-text span {
-		font-size: 22px;
-		line-height : 150%;
+		font-size: 30px;
+		line-height : 120%;
 		}
 	}
 	

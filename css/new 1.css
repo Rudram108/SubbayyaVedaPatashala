@@ -56,7 +56,8 @@ br
 
 .fgtable {
 	/* background-color:#F2FBFF; */
-	background-color:#FAFFFF;
+	/*background-color:#FAFFFF;*/
+	background-color:	#FFFFE0;
 /*	background: linear-gradient(#A5E5FF,#009688)!important;		*/
 	width: 940;
 	border: 1;
