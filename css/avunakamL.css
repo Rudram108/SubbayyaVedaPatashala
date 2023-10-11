@@ -60,7 +60,9 @@
 		width: 40vw;
 		left : 150px;
 	}}
-	
+	@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		#anu1Aud {background-color:#FFFFE0;}}
 	
 
 	.audio-text {
@@ -119,7 +121,7 @@
 		@media only screen 
 		and (-webkit-min-device-pixel-ratio: 3) {
 		.audio-text span {
-		font-size: 30px;
+		font-size: 35px;
 		line-height : 120%;
 		}
 	}
@@ -513,3 +515,39 @@
 .round {
   border-radius: 50%;
 }
+
+
+	#error  {
+		position:absolute;
+		top : 70px;
+		
+		left : 10px;
+		
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: blue;
+		font-size: 1px;/*Yamini was 19*/
+		padding-right: 33px;/*changing it to 1 was 33*/
+		padding-left: 10px;
+		margin: 0px auto;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	#error  {
+		font-size: 10px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		#error {
+		font-size: 10px;
+		}
+	}
+		@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		#error  {
+		font-size: 18px;
+		}
+	}

@@ -101,7 +101,10 @@
 		buttonEle.style.border = "none";
 	  
 		sounds.addEventListener('error', function(e) {
-			alert('The audio file is not uploaded');
+			//alert('The audio file is not uploaded');
+			document.getElementById("error").innerHTML = "Audio will be uploaded at an earliest.Thank you for your patience.";
+			document.getElementById("error").style.color = "red";
+			document.getElementById("error").scrollIntoViewIfNeeded();
 		}, true);
 		source.src = sourceAud;	
 		sounds.load();
