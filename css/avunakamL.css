@@ -71,6 +71,7 @@
 	width: 90%; /*70%;*/
 	word-wrap: break-word;
 	z-index : 1;
+	font-size: 10px;
 	
 	}
 	@media only screen and (max-width: 1240px) {
@@ -95,7 +96,7 @@
 		 text-align: justify;
 		cursor: pointer;
 		color: #340002;
-		font-size: 20px;/*Yamini was 19*/
+		font-size: 10px;/*Yamini was 19*/
 		padding-right: 3px;/*changing it to 1 was 33*/
 		padding-left: 1px;
 		margin: 0px auto;
@@ -103,7 +104,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text span {
-		font-size: 40px;
+		font-size: 20px;
 		line-height : 150%;
 	}}
 	@media only screen 

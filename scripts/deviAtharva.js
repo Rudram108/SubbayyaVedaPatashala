@@ -7,7 +7,11 @@
 		*/
 	
 		function playAtharva(buttonNum)
-		{			var buttonId = "p" + buttonNum;
+		{
+
+			document.getElementById("error").innerHTML = "DEVI ATHARVASHEERSHAM";
+			document.getElementById("error").style.color = "blue";
+			var buttonId = "p" + buttonNum;
 			var buttonEle = document.getElementById(buttonId);
 		
 			document.getElementById(buttonId).scrollIntoViewIfNeeded();
@@ -101,10 +105,12 @@
 		buttonEle.style.border = "none";
 	  
 		sounds.addEventListener('error', function(e) {
+			
+			document.getElementById("error").scrollIntoView();
 			//alert('The audio file is not uploaded');
-			document.getElementById("error").innerHTML = "Audio will be uploaded at an earliest.Thank you for your patience.";
+			document.getElementById("error").innerHTML = "Audio will be uploaded at an earliest.";
 			document.getElementById("error").style.color = "red";
-			document.getElementById("error").scrollIntoViewIfNeeded();
+			
 		}, true);
 		source.src = sourceAud;	
 		sounds.load();
@@ -154,6 +160,7 @@
 		This function set the Learning Mode
 		*/
 			function setLearningMode(mode){
+				
 		//	document.getElementById("error").innerHTML = "";
 			//alert(mode);
 			learningMode = mode;
@@ -171,8 +178,11 @@
 			//alert(iframe);
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-			iframe.width = innerDoc.body.scrollWidth;
-			iframe.height = innerDoc.body.scrollHeight;
+			alert(innerDoc.body.scrollWidth);
+			iframe.width = "";
+			iframe.height = "";
+			iframe.width = innerDoc.body.scrollWidth + "px";
+			iframe.height = innerDoc.body.scrollHeight + "px";
 			//alert(innerDoc);
 			var sounds = innerDoc.getElementById('anu1Aud');
 			sounds.controls = true;
@@ -188,7 +198,6 @@
 				playingButton = '00';
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
-			try{
 			source.src = "audio/deviAtharvam/PPcom.mp3";
 			if(!sounds.paused)
 				{
@@ -199,11 +208,14 @@
 			sounds.load();
 			//alert("playing " +playingButton);
 			sounds.play();
+			sounds.addEventListener('error', function(e) {
+			document.getElementById("error").scrollIntoViewIfNeeded();
+			//alert('The audio file is not uploaded');
+			document.getElementById("error").innerHTML = "Audio will be uploaded at an earliest. Thank you for your patience.";
+			document.getElementById("error").style.color = "red";
 			
-				}
-			catch(err){
-				document.getElementById("error").innerHTML = err.message+"Please contact Subbaya Shastry garu";
-			}
+		}, true);
+			
 		}
 		else{
 		//	try{
