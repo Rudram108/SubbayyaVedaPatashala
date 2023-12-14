@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -15,33 +14,6 @@ img {vertical-align: center;}
   position: relative;
   margin: auto;
   top : 10px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption textYamini  color: #f2f2f2;*/
@@ -76,12 +48,7 @@ img {vertical-align: center;}
   transition: background-color 0.6s ease;
 }
 
-/*
 .active {
-  background-color: #717171;
-}*/
-
-.active, .dot:hover {
   background-color: #717171;
 }
 
@@ -98,10 +65,8 @@ img {vertical-align: center;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-   .prev, .next,.text {font-size: 11px}
+  .text {font-size: 11px}
 }
-
-
 
 .center {
   display: block;
@@ -517,26 +482,6 @@ img {vertical-align: center;}
   <div class="text"> Saichand Bandarupalli garu hosting the abhisekam</div>
 </div>
 
-<div class="mySlides fade">
-<img src="images/2023Abhisekm/pic65.jpeg" class = "center">
-  <div class="text"> Vijay Lakshmi garu and Ravikanth garu hosting the abhisekam</div>
-</div>
-
-<div class="mySlides fade">
-<img src="images/2023Abhisekm/pic66.jpeg" class = "center">
-  <div class="text"> Bhanu Prakash garu hosting the abhisekam</div>
-</div>
-
-
-<div class="mySlides fade">
-<img src="images/2023Abhisekm/pic67.jpeg" class = "center">
-  <div class="text"> Manikanta garu hosting the abhisekam</div>
-</div>
-
-<div class="mySlides fade">
-<img src="images/2023Abhisekm/pic68.jpeg" class = "center">
-  <div class="text"> Suresh garu hosting the abhisekam</div>
-</div>
 <!--
 
 <div class="mySlides fade">
@@ -565,77 +510,67 @@ img {vertical-align: center;}
 <img src="images/2023Abhisekm/pic91.jpeg" class = "center">
   <div class="text"> Amar Kanth Pallapotu garu hosting the abhisekam</div>
 </div>-->
-
-<a class="prev" onclick="minusSlides()">❮</a>
-<a class="next" onclick="plusSlides()">❯</a>
-
 </div>
 <br>
 
-
-
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <!--
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+   <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> -->
+</div>
 
 <h4>Shata Rudra Abhisekam 2023</h4>
 <p class = "desc"> During Karthika masam guru garu, Subbayya Shastry garu, brings Lord Shiva idol with major items needed for abhisekam and expects only pure love and devotion towards Lord Shiva from the hosts. Any donations raised will be donated to Veda Schools in India.<br> In the year 2023 , Rudram School team performed Rudra Abhisekam at the devotee homes in places like San Antonio , Boerne , Austin , Dallas<br></p>
 <script>
 let slideIndex = 0;
 let dotIndex = 0;
-var timer = 0;
-let slides = document.getElementsByClassName("mySlides");
-  
 showSlides();
 
-function plusSlides() {
-	
-	slideIndex += 1;
-	if (slideIndex > slides.length) {slideIndex = slides.length}
-	manual(slideIndex);
-}
-
-function minusSlides() {
-	
-	slideIndex -= 1;
-	if (slideIndex < 0) {slideIndex = 0}
-    manual(slideIndex);
-}
-function manual(n) {
-
-if (timer) {
-            clearTimeout(timer);
-            timer = 0;
-        }
- let i;
-   if (n > slides.length) {slideIndex = 0}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  
-   slides[n].style.display = "block";  
-   timer = setTimeout(showSlides, 20000); 
- // slides[slideIndex-1].style.display = "block";  
- // dots[slideIndex-1].className += " active";
-  
-}
-
 function showSlides() {
-
-
   let i;
-  
+  let slides = document.getElementsByClassName("mySlides");
+
+  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   slideIndex++;
+  if (dotIndex < 5)
+  dotIndex++;
+  else 
+  dotIndex = 1;
   if (slideIndex > slides.length) {slideIndex = 1}    
-  
+  for (i = 0; i < 5; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
   slides[slideIndex-1].style.display = "block";  
-  
-  timer = setTimeout(showSlides, 3000); // Change image every 3 seconds
+  dots[dotIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-
-
-
 </script>
 
 </body>
