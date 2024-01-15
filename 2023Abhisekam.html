@@ -169,12 +169,15 @@ img {vertical-align: center;}
   background-color: #04AA6D;
   color: white;
 }
+
+
 </style>
 </head>
-<body>
+<body onload="myFunction()">
 <!--
 <h2>Automatic Slideshow</h2>
 <p>Change image every 2 seconds:</p>-->
+
 <div class="topnav">
   <a href="2022Abhisekam.html">2022</a>
   <a class="active" href="2023Abhisekam.html">2023</a>
@@ -182,6 +185,8 @@ img {vertical-align: center;}
    <a href="https://www.rudramschool.org/index.html">Home</a>
   
 </div>
+
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -578,6 +583,17 @@ img {vertical-align: center;}
 <h4>Shata Rudra Abhisekam 2023</h4>
 <p class = "desc"> During Karthika masam guru garu, Subbayya Shastry garu, brings Lord Shiva idol with major items needed for abhisekam and expects only pure love and devotion towards Lord Shiva from the hosts. Any donations raised will be donated to Veda Schools in India.<br> In the year 2023 , Rudram School team performed Rudra Abhisekam at the devotee homes in places like San Antonio , Boerne , Austin , Dallas<br></p>
 <script>
+function myFunction() {
+ let vid = document.getElementById("myAudio");
+ alert(vid);
+ vid.autoplay = true;
+ vid.muted = true; // without this line it's not working although I have "muted" in HTML
+    vid.play();
+ 
+vid.play();
+alert('play');
+  }
+
 let slideIndex = 0;
 let dotIndex = 0;
 var timer = 0;
