@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
 		<link rel="stylesheet" href="css/norm.css">
-		<script type = "text/javascript" src="scripts/chamakam.js"></script>
+		<script type = "text/javascript" src="scripts/chamakamjs.js"></script>
 		<script>
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
@@ -54,22 +54,49 @@
 	</nav>
 	
 	
-	<div class = "audio-text" id="audio-text"  style="font-family:NotoSans; line-height:150%;font-size: 22px;"><br><br>
-			<p id = "p00" onclick="anu1TeluguPrint('01','00')">ఓం అగ్నా॑విష్ణో స॒జోష॑సే॒మావ॑ర్ధంతు వాం॒ గిరః॑ ।<br></p><br>
-			<p id = "p01" onclick="anu1TeluguPrint('01','01')">ద్యు॒మ్నైర్వాజే॑భి॒రాగ॑తమ్ ।</p>
-			<p id = "p02" onclick="anu1TeluguPrint('01','02')">వాజ॑శ్చ మే ప్రస॒వశ్చ॑ మే॒ ప్రయ॑తిశ్చ మే॒ ప్రసి॑తిశ్చ మే <br></p><br>
+	<div class = "audio-text" id="audio-text"  style="font-family:NotoSansTelugu; line-height:200%;font-size: 22px;"><br><br>
+	
+	
+	
+		<span class = "point" id = "p00" onclick="playChamakam('01','00')">ఓం అగ్నా॑విష్ణో స॒జోష॑సే॒మావ॑ర్ధంతు వాం॒ గిరః॑ ।</span>
+		<span  class = "point" id = "p01" onclick="playChamakam('01','01')">ద్యు॒మ్నైర్వాజే॑భి॒రాగ॑తమ్ ।</span><br>
+		<button id = "p02" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p03" onclick="playChamakam('01','03')">వాజ॑శ్చ మే ప్రస॒వశ్చ॑ మే॒ ప్రయ॑తిశ్చ మే॒ ప్రసి॑తిశ్చ మే </span>
+		<button id = "p04"   value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p05" onclick="playChamakam('01','05')">ధీ॒తిశ్చ॑ మే క్రతు॑శ్చ మే॒ స్వర॑శ్చ మే॒ శ్లోక॑శ్చ మే</span><br>
+		<button id = "p06" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p07" onclick="playChamakam('01','07')">శ్రా॒వశ్చ॑ మే॒ శ్రుతి॑శ్చ మే॒ జ్యోతి॑శ్చ మే॒ సువ॑శ్చ మే</span>
+		<button id = "p08" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p09" onclick="playChamakam('01','09')">ప్రా॒ణశ్చ॑ మేఽపా॒నశ్చ॑ మే వ్యా॒నశ్చ॒ మేఽసు॑శ్చ మే</span><br>
+		<button id = "p10" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p11" onclick="playChamakam('01','11')">చి॒త్తం చ॑ మ॒ ఆధీ॑తం చ మే॒ వాక్చ॑ మే॒ మన॑శ్చ మే॒ </span>
+		<button id = "p12" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p13" onclick="playChamakam('01','13')"> చక్షు॑శ్చ మే॒ శ్రోత్రం॑ చ మే॒ దక్ష॑శ్చ మే॒ బలం॑ చ మ॒</span><br>
+		<button id = "p14" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p15" onclick="playChamakam('01','15')"> ఓజ॑శ్చ మే॒ సహ॑శ్చ మ॒ ఆయు॑శ్చ మే జ॒రా చ॑ మ</span>
+		<button id = "p16" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p17" onclick="playChamakam('01','17')"> ఆ॒త్మా చ॑ మే త॒నూశ్చ॑ మే॒ శర్మ॑ చ మే॒ వర్మ॑ చ॒</span><br>
+		<button id = "p18" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p19" onclick="playChamakam('01','19')"> మేఽంగా॑ని చ మే॒ఽస్థాని॑ చ మే॒ పరూగ్ం॑షి చ మే॒ శరీ॑రాణి చ మే ॥ 1 ॥<br><br></span><br>
+		<button id = "p20" value = "2" style = "display:none;"></button>
+		
+		
+		<!--
+			<p id = "p00" onclick="playChamakam('01','00')">ఓం అగ్నా॑విష్ణో స॒జోష॑సే॒మావ॑ర్ధంతు వాం॒ గిరః॑ ।<br></p><br>
+			<p id = "p01" onclick="playChamakam('01','01')">ద్యు॒మ్నైర్వాజే॑భి॒రాగ॑తమ్ ।</p>
+			<p id = "p02" onclick="playChamakam('01','02')">వాజ॑శ్చ మే ప్రస॒వశ్చ॑ మే॒ ప్రయ॑తిశ్చ మే॒ ప్రసి॑తిశ్చ మే <br></p><br>
 			<br>
-			<p id = "p03" onclick="anu1TeluguPrint('01','03')">ధీ॒తిశ్చ॑ మే క్రతు॑శ్చ మే॒ స్వర॑శ్చ మే॒ శ్లోక॑శ్చ మే<br></p><br>
-			<p id = "p04" onclick="anu1TeluguPrint('01','04')">శ్రా॒వశ్చ॑ మే॒ శ్రుతి॑శ్చ మే॒ జ్యోతి॑శ్చ మే॒ సువ॑శ్చ మే<br></p><br>
-			<p id = "p05" onclick="anu1TeluguPrint('01','05')">ప్రా॒ణశ్చ॑ మేఽపా॒నశ్చ॑ మే వ్యా॒నశ్చ॒ మేఽసు॑శ్చ మే<br></p><br>
-			<p id = "p06" onclick="anu1TeluguPrint('01','06')">చి॒త్తం చ॑ మ॒ ఆధీ॑తం చ మే॒ వాక్చ॑ మే॒<br></p><br>
+			<p id = "p03" onclick="playChamakam('01','03')">ధీ॒తిశ్చ॑ మే క్రతు॑శ్చ మే॒ స్వర॑శ్చ మే॒ శ్లోక॑శ్చ మే<br></p><br>
+			<p id = "p04" onclick="playChamakam('01','04')">శ్రా॒వశ్చ॑ మే॒ శ్రుతి॑శ్చ మే॒ జ్యోతి॑శ్చ మే॒ సువ॑శ్చ మే<br></p><br>
+			<p id = "p05" onclick="playChamakam('01','05')">ప్రా॒ణశ్చ॑ మేఽపా॒నశ్చ॑ మే వ్యా॒నశ్చ॒ మేఽసు॑శ్చ మే<br></p><br>
+			<p id = "p06" onclick="playChamakam('01','06')">చి॒త్తం చ॑ మ॒ ఆధీ॑తం చ మే॒ వాక్చ॑ మే॒<br></p><br>
 			<br>
-			<p id = "p07" onclick="anu1TeluguPrint('01','07')">మన॑శ్చ మే॒ చక్షు॑శ్చ మే॒ శ్రోత్రం॑ చ మే॒ దక్ష॑శ్చ మే॒<br></p><br>
-			<p id = "p08" onclick="anu1TeluguPrint('01','08')">బలం॑ చ మ॒ ఓజ॑శ్చ మే॒ సహ॑శ్చ మ॒ ఆయు॑శ్చ మే<br></p><br>
+			<p id = "p07" onclick="playChamakam('01','07')">మన॑శ్చ మే॒ చక్షు॑శ్చ మే॒ శ్రోత్రం॑ చ మే॒ దక్ష॑శ్చ మే॒<br></p><br>
+			<p id = "p08" onclick="playChamakam('01','08')">బలం॑ చ మ॒ ఓజ॑శ్చ మే॒ సహ॑శ్చ మ॒ ఆయు॑శ్చ మే<br></p><br>
 			<br>
-			<p id = "p09" onclick="anu1TeluguPrint('01','09')">జ॒రా చ॑ మ ఆ॒త్మా చ॑ మే త॒నూశ్చ॑ మే॒ శర్మ॑ చ మే॒<br></p><br>
-			<p id = "p10" onclick="anu1TeluguPrint('01','10')">వర్మ॑ చ॒ మేఽంగా॑ని చ మే॒ఽస్థాని॑ చ మే॒ పరూగ్ం॑షి చ మే॒ శరీ॑రాణి చ మే ॥ 1 ॥<br></p><br>
-			<br>
+			<p id = "p09" onclick="playChamakam('01','09')">జ॒రా చ॑ మ ఆ॒త్మా చ॑ మే త॒నూశ్చ॑ మే॒ శర్మ॑ చ మే॒<br></p><br>
+			<p id = "p10" onclick="playChamakam('01','10')">వర్మ॑ చ॒ మేఽంగా॑ని చ మే॒ఽస్థాని॑ చ మే॒ పరూగ్ం॑షి చ మే॒ శరీ॑రాణి చ మే ॥ 1 ॥<br></p><br>
+			<br>-->
 			
 			<br><br>
 		

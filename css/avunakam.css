@@ -74,6 +74,9 @@
 		left:10px;
 	}}
 	
+	.point{
+		cursor: pointer;
+	}
 	
 	/*.audio-text button {
 		border: none;

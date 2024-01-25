@@ -31,6 +31,19 @@
 				location.href = "RudraNamakamGuru.html";}
 		}
 		
+		function pickPageChamakam(){
+			//alert("inpage");
+			var w = window.innerWidth;
+			//alert(w);
+			if ( w < 500){
+				//alert(w + "is less than 500");
+				location.href = "RudraChamakamP.html";
+				}
+			else{
+				//alert(w + "is more than 500");
+				
+				location.href = "RudraChamakamGuru.html";}
+		}
 		//alert("Window Width" + window.innerWidth);
 //alert("Window height" +window.innerHeight);
 	</script>
@@ -107,9 +120,10 @@
 					</div>	
 					</div>
 					</a>
-				</div><!--
+				</div>
+				
 				<div class = "images">
-				<a href = "RudraChamakamGuru.html">
+					<a href = "javascript:pickPageChamakam()">
 					<img src = "images/chamkam.png" >
 					<div id= "title"> Rudra Chamakam</div>
 					<div class = "text">
@@ -117,7 +131,7 @@
 						<b>Rudra Chamakam</b> <br>Rudra Chamakam blesses the people with prosperity and joy.
 						</div></a>
 					</div>
-				</div>-->
+				</div>
 				<div class = "images">
 				<a href = "ShivaSankalpaSuktam.html">
 					<img src = "images/shivaSankalpamN.png" >

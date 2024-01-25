@@ -5,29 +5,34 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
-		
-	
-	function anu1TeluguPrint(anuNum, buttonNum){
-			//alert(anuNum);
+		function playChamakam(anuNum, buttonNum)
+			{
+				//alert(anuNum);
 				//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
 			
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
+		//alert(buttonEle);
 		document.getElementById(buttonId).scrollIntoViewIfNeeded();
 		var curBut; 
 		var currAud;
 		var prevNum;
 		var targetLength = 2;
 		//alert(getLearningMode());
+		
+		
 		if(getLearningMode() == 'com')
-			var sourceAud = "audio/Chamakam"+ leftPad(anuNum,2)+"com.mp3";
+		{var sourceAud = "audio/Chamakam/"+ leftPad(anuNum,2)+"com.mp3";
+			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
 		else if(buttonEle instanceof HTMLSpanElement)
-			sourceAud = "audio/Chamakam" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
+			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
-			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
-		//alert('here');
+			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
+		
+		
+		
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -46,8 +51,47 @@
 				//alert("here");
 				var currButtonEle = document.getElementById(curBut);
 				/*ChNGES FOR ANU3*/
-				if(currButtonEle instanceof HTMLSpanElement){
-				
+				/*if(currButtonEle instanceof HTMLParagraphElement){
+					//alert("Yes");
+					
+					var tempBtn = +playingButton -1;
+					var tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
+					while(!(tempBtnEle instanceof HTMLParagraphElement)){
+						tempButnID = "p" + tempBtn;
+						//alert(tempButnID
+						if(tempBtnEle instanceof HTMLSpanElement)
+						inActiveButtonColor(tempButnID);
+						tempBtn = +tempBtn - 1;
+						tempBtn = leftPad(tempBtn,2);
+						tempBtnEle = document.getElementById("p" + leftPad(tempBtn,targetLength));
+					}
+				}
+				else */
+				//alert(currButtonEle);
+				if(currButtonEle instanceof HTMLButtonElement){
+					
+					let rep = currButtonEle.value;
+					
+					var dualButton;
+					var i = 1;
+					while(rep > 0){
+						
+						dualButton = +playingButton -i;
+						dualButton = leftPad(dualButton,2);
+						var dualButtonId = "p" + dualButton;
+						
+						if(!(document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
+						inActiveButtonColor(dualButtonId);
+						rep--;
+					}
+					i++;
+				}
+				}
+				else
+				inActiveButtonColor(curBut);	
+					
+				/*Yamini	
+				//alert(playingButton);
 				var dualButton = +playingButton -1;
 				dualButton = leftPad(dualButton,2);
 				var dualButtonId = "p" + dualButton;
@@ -56,7 +100,7 @@
 				dualButton = +playingButton -2;
 				dualButton = leftPad(dualButton,2);
 				dualButtonId = "p" + dualButton;
-				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
+				if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
 					dualButton = +playingButton -3;
 					dualButton = leftPad(dualButton,2);
 					dualButtonId = "p" + dualButton;
@@ -66,16 +110,36 @@
 				else
 					inActiveButtonColor(dualButtonId);
 			
-			}else
-				inActiveButtonColor(curBut);
+			}
+				inActiveButtonColor(curBut);*/
 			}
 				
 		if(!sounds.paused)
 				{
 					sounds.pause();								
 				}
-			if(buttonEle instanceof HTMLSpanElement){
-				//alert('inspan');
+				//alert(buttonNum);
+				//alert(buttonEle);
+			if(buttonEle instanceof HTMLButtonElement){
+				let rep = buttonEle.value;
+				//alert('rep is : ' + rep);
+				var dualButton;
+				var i = 1;
+				while(rep > 0){
+					//alert('enter while');
+					dualButton = +buttonNum -i;
+					dualButton = leftPad(dualButton,2);
+					var dualButtonId = "p" + dualButton;
+					//alert(dualButtonId);
+					if(!(document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
+						activeButtonColor(dualButtonId);
+						rep--;
+					}
+					i++;
+				}
+				
+				/*testing
+				
 				var dualButton = +buttonNum -1;
 				dualButton = leftPad(dualButton,2);
 				//alert('dualButton');
@@ -88,15 +152,21 @@
 				dualButtonId = "p" + dualButton;
 				//alert(dualButtonId);
 				//alert(dualButton);
-				if(document.getElementById(dualButtonId) instanceof HTMLSpanElement){
+				if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement))
+				{
 					dualButton = +buttonNum -3;
 					dualButton = leftPad(dualButton,2);
 					dualButtonId = "p" + dualButton;
-					
+					if((document.getElementById(dualButtonId) instanceof HTMLButtonElement) || (document.getElementById(dualButtonId) instanceof HTMLParagraphElement)){
+						dualButton = +buttonNum -4;
+						dualButton = leftPad(dualButton,2);
+						dualButtonId = "p" + dualButton;
+						activeButtonColor(dualButtonId);
+					}else
 					activeButtonColor(dualButtonId);
 				}
 				else
-					activeButtonColor(dualButtonId);
+					activeButtonColor(dualButtonId);testing*/
 					
 			}
 			else
@@ -110,40 +180,43 @@
 			//alert('reached');
 		sounds.onended = function() {
 			//alert('reached');
+			
 			buttonEle.style.color = "#000";
 			var bolds = buttonEle.getElementsByTagName('b');
 			for(var i = 0; i < bolds.length; i++)
 				{
 					bolds[i].style.color = '#17202A';
-				}
+			}
+			if(getLearningMode() == 'com'){playChamakam('00');	}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
 			var ele = document.getElementById('audio-text');
-			var numberOfButtons = ele.getElementsByTagName('p').length;
+			var numberOfPs = ele.getElementsByTagName('p').length;
 			var numberOfSpans = ele.getElementsByTagName('span').length;
+			var numberOfButtons = ele.getElementsByTagName('button').length;
 			//alert(+numberOfButtons + +numberOfSpans);
-			if( buttonNum < (+numberOfButtons + +numberOfSpans))								
-				anu1TeluguPrint(leftPad(anuNum,2),buttonNum);
+			if( buttonNum < (+numberOfButtons + +numberOfSpans + +numberOfPs))								
+				playChamakam(leftPad(anuNum,2),buttonNum);
 			else
-				//alert("Anuvakam is complete. Please choose the next one");
-				anu1TeluguPrint(leftPad(anuNum,2),'00');
+			//alert("Anuvakam is complete. Please choose the next one");
+				playChamakam(leftPad(anuNum,2),'00');	
 		}
 					
-	}
+			}
 			
-	function leftPad(number, targetLength) {
-		var output = number + '';
-		while (output.length < targetLength) {
-			output = '0' + output;
-		}
-		return output;
-		}
+			function leftPad(number, targetLength) {
+				var output = number + '';
+				while (output.length < targetLength) {
+					output = '0' + output;
+				}
+				return output;
+			}
 			
 		/*
 		This function set the Learning Mode
 		*/
-	function setLearningMode(mode){
+			function setLearningMode(mode){
 		//	document.getElementById("error").innerHTML = "";
 			learningMode = mode;
 			localStorage.setItem("learningMode" , mode);
@@ -153,8 +226,8 @@
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
-			scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-			var scrAnuvakam = scrName.substring(10,12);
+			//scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+			//var scrAnuvakam = scrName.substring(10,12);
 			//alert(iframe);
 			//alert(scrName);
 			var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
@@ -174,7 +247,7 @@
 		//	alert("playingButton"+playingButton);
 		if(mode == 'com'){
 			try{
-			source.src = "audio/Anu"+ scrAnuvakam+mode+".mp3";
+			source.src = "audio/Atharava/PPcom.mp3";
 			if(!sounds.paused)
 				{
 					sounds.pause();								
@@ -195,192 +268,130 @@
 				var playingButtonId  = "p" +playingButton;
 				innerDoc.getElementById(playingButtonId).click();
 		}
-		}		
-	
+		}	
 		/*
 		This function get the Learning Mode
 		*/	
-	function getLearningMode(){
-	
-		lMode = localStorage.getItem("learningMode");
-		if(lMode === null){
-			return 'ww';
+			function getLearningMode(){
+				lMode = localStorage.getItem("learningMode");
+				if(lMode === null){
+					return 'ww';
+				}
+				return lMode;
 			}
-		return lMode;
-	}
 		/*
 		This function set the Text Mode
 		*/			
-	function setTextMode(tMode){
-	//	document.getElementById("error").innerHTML = "";
-		textMode = tMode;
-		localStorage.setItem("textMode" , tMode);
-		var iframe = document.getElementById("anu");
-		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
-		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(11,13);
-		var scr = "chamakamAnu" + scrAnuvakam + getLanguage() + tMode+".html";
-		var iframe = document.getElementById("anu");
-		document.getElementById("anu").src = scr;
-		document.getElementById("textList1").style.display = "none";
-		document.getElementById("textList2").style.display = "none"; 
-	}
+			function setTextMode(tMode){
+				 
+				textMode = tMode;
+				localStorage.setItem("textMode" , tMode);
+				var iframe = document.getElementById("anu");
+				
+				var scr = "atharva" + getLanguage() + tMode+".html";
+			//alert(scr);
+				var iframe = document.getElementById("anu");
+			//alert("iframe");
+			
+				document.getElementById("anu").src = scr;
+				var divId = document.getElementById("anu1");
+		divId.style.visibility = 'visible';
+				//divId.style.visibility = 'visible';
+					//alert("value is set");
+				 document.getElementById("textList1").style.display = "none";
+				 document.getElementById("textList2").style.display = "none"; 
+				 
+			 }
 		/*
 		This function get the Text Mode
 		*/			
 				 
-	function getTextMode(){
-		 tMode = localStorage.getItem("textMode");
-		 if(tMode === null){
-			 return 'nrl';
-		}
+			  function getTextMode(){
+				 tMode = localStorage.getItem("textMode");
+				if(tMode === null){
+					return 'nrl';
+				}
 				return tMode;
-	}
+				 
+			 }
 			/*
 		This function set the Language Mode
 		*/			
 			 
-	function setLanguage(lang){
-		//document.getElementById("error").innerHTML = "";
-		language = lang;						
-		localStorage.setItem("language" , lang);
-		var iframe = document.getElementById("anu");
-		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
-		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(10,12);
-		var scr = "chamakamAnu" + scrAnuvakam + lang + getTextMode()+".html";
-		var iframe = document.getElementById("anu");
-		document.getElementById("anu").src = scr;
-		document.getElementById("lanList1").style.display = "none";
-		document.getElementById("lanList2").style.display = "none";
-		document.getElementById("lanList3").style.display = "none";	
-		document.getElementById("lanList4").style.display = "none";	
-		document.getElementById("lanList5").style.display = "none";			
-	}			
+			  function setLanguage(lang){
+					language = lang;						
+					localStorage.setItem("language" , lang);
+					
+					/*changes*/
+
+			/*changes made*/
+			var iframe = document.getElementById("anu");
+			var scr = "atharva" + lang + getTextMode()+".html";
+			
+			var iframe = document.getElementById("anu");
+			
+			document.getElementById("anu").src = scr;
+			
+			var divId = document.getElementById("anu1");
+			divId.style.visibility = 'visible';
+		
+			document.getElementById("lanList1").style.display = "none";
+			document.getElementById("lanList2").style.display = "none";
+			document.getElementById("lanList3").style.display = "none"; 				 
+			document.getElementById("lanList4").style.display = "none"; 
+document.getElementById("lanList5").style.display = "none";					
+			//divId.style.visibility = 'visible';
+			
+			  }			
 			/*
 		This function get the Language Mode
-		*/	
-
-		
-			 
-	function getLanguage(){
-		lang = localStorage.getItem("language");
-		if(lang === null){
-			return 'Tel';
-		}
-		return lang; 
-	}
-			 
-			/*
-		This function makes the div holding the anuvakam text visible and sets the source of the frame based on the inputs.
 		*/		 
-	function showDiv(anuvakamNum){
-		var divId = document.getElementById("anu1");
-		var iframe = document.getElementById("anu");
-		var scrName = "chamakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
-		document.getElementById("anu").src = scrName;
-		divId.style.visibility = 'visible';
-		manuBtnOnClick();
+			 
+			  function getLanguage(){
+				 lang = localStorage.getItem("language");
+				if(lang === null){
+					return 'Tel';
+				}
+				return lang;
+				 
+			 }
+			 
 		
-		
-		
-	}
-		
+			
+	function openLanguage(listID){		 
+		const myElement = document.getElementById(listID);
+		for (let i = 0; i < myElement.children.length; i++) {
+			var listClass = myElement.children[i].className ;
+			//alert(listClass);
 	
+		if (listClass != ''){
+			//alert('listClass is not empty');
+		 var list = document.getElementsByClassName(listClass)[0];
+		 //alert(list);
+		 for (let j = 0; j < list.children.length; j++) {
+		// alert(list.children[j].id);
+		//list.children[j].id.style.display = "block";
+		document.getElementById(list.children[j].id).style.display = "block";
+		}
+		}
+	}
+	}
+	
+	function openText(listID){		 
+		const myElement = document.getElementById(listID);
+		for (let i = 0; i < myElement.children.length; i++) {
+			var listClass = myElement.children[i].className ;
 
-	function manuBtnOnClick(){
-		//document.getElementById("error").innerHTML = "";
-		var manuBtn = document.getElementById("manuBtn");
-		var namakam = document.getElementById("namakambtn");
-		var menu = document.getElementById("menu");
-		var iframe = document.getElementById("anu");
-		var doc;
-	
-		if(namakam.style.left== "-250px"){
-			namakam.style.left = "25px"; 
-			menu.src = "images/close.png"
-			namakam.style.backgroundColor = "#20B2AA";	
-		}
-		else{
-			namakam.style.left = "-250px";
-			menu.src = "images/menu.png"
-		}
-	}
-	
-	function moveAnuText(){
-			var Tmenu = document.getElementById("telugu");
-	}
-	
-	/*function hover(buttonHover){
+		if (listClass != ''){
+			
+		 var list = document.getElementsByClassName(listClass)[1];
 		
-		var buttonHoverId = "button" + buttonHover;
-		var buttonHoverEle = document.getElementById(buttonHoverId);
-		buttonHoverEle.style.color = "yellow";
-		var smalls = buttonHoverEle.getElementsByTagName('small');
-					
-						for(var i = 0; i < smalls.length; i++)
-						{
-							smalls[i].style.color = '#EBF11C';
-						}
-					var bolds = buttonHoverEle.getElementsByTagName('b');
-					
-						for(var i = 0; i < bolds.length; i++)
-						{
-							bolds[i].style.color = '#C5CB05';
-						}
-	}
-	
-	function hoverOut(buttonHover){
+		 for (let j = 0; j < list.children.length; j++) {
 		
-		var buttonHoverId = "button" + buttonHover;
-		var buttonHoverEle = document.getElementById(buttonHoverId);
-		buttonHoverEle.style.color = "#000";
-		var smalls = buttonHoverEle.getElementsByTagName('small');
-					
-						for(var i = 0; i < smalls.length; i++)
-						{
-							smalls[i].style.color = '#424949';
-						}
-					var bolds = buttonHoverEle.getElementsByTagName('b');
-					
-						for(var i = 0; i < bolds.length; i++)
-						{
-							bolds[i].style.color = '#17202A';
-						}
-	}
-			 */
-	function openLanguage(listID){	
-//document.getElementById("error").innerHTML = "";	
-		const myElement = document.getElementById(listID);
-		for (let i = 0; i < myElement.children.length; i++) {
-			var listClass = myElement.children[i].className ;
-			if (listClass != ''){
-				var list = document.getElementsByClassName(listClass)[0];
-				for (let j = 0; j < list.children.length; j++) {
-					if(document.getElementById(list.children[j].id).style.display == "block")
-						document.getElementById(list.children[j].id).style.display = "none";
-					else
-						document.getElementById(list.children[j].id).style.display = "block";
-				}
-			}
+		document.getElementById(list.children[j].id).style.display = "block";
+		}
 		}
 	}
-	
-	function openText(listID){		
-//document.getElementById("error").innerHTML = "";	
-		const myElement = document.getElementById(listID);
-		for (let i = 0; i < myElement.children.length; i++) {
-			var listClass = myElement.children[i].className ;
-			if (listClass != ''){
-				var list = document.getElementsByClassName(listClass)[1];
-				 for (let j = 0; j < list.children.length; j++) {
-				if(document.getElementById(list.children[j].id).style.display == "block")
-						document.getElementById(list.children[j].id).style.display = "none";
-					else
-						document.getElementById(list.children[j].id).style.display = "block";
-				}
-			}
-		}
 	}
 	
 /*	function openMode(listID){		
@@ -399,8 +410,8 @@
 				}
 			}
 		}
-	}*/
-	
+	}
+	*/
 	function activeButtonColor(buttonId){
 		document.getElementById(buttonId).style.color = "blue";
 		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
@@ -414,9 +425,15 @@
 			bolds[i].style.color = '#241CB6'
 			
 		}
+		var spans = document.getElementById(buttonId).getElementsByTagName('span');
+		for(var i = 0; i < spans.length; i++){
+			spans[i].style.color = "blue";
+			
+		}
 	}
 	 
 	function inActiveButtonColor(buttonId){
+		//alert(buttonId);
 		document.getElementById(buttonId).style.color = "#000";
 		var smalls = document.getElementById(buttonId).getElementsByTagName('small');
 		for(var i = 0; i < smalls.length; i++)
@@ -432,5 +449,12 @@
 			bolds[i].style.color = '#17202A';
 			
 		}	
+		var spans = document.getElementById(buttonId).getElementsByTagName('span');
+		for(var i = 0; i < spans.length; i++){
+			spans[i].style.color = "#000";
+			
+		}
 	}
 	
+	
+		

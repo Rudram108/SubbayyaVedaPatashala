@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Sri Rudra Namakam</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="css/sideNavCss.css">
+		<link rel="stylesheet" href="css/index4Anunew.css">
+	
+ 
+		<script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="scripts/anu1Telugunew.js"></script>
+	</head>
+	<body class = "bg" onload="onLoadfunc()">
+	<div class ="wrapper">
+		<div class = "logo">
+			<a href = "index.html">
+			<img src= "images/logo.png"  alt="Logo of RudramSchool"  width= "120vw" height = "100vh">
+			</a>
+		</div>
+		
+		<div class = "allPage">
+			<h3> Subbayya Veda Patashala </h3>
+			<img src= "images/amma-modified.png"  class = "ammaPic">
+			<img src= "images/Baba-modified.png"  class = "babaPic">
+			<img src= "images/puparti-modified.png"  class = "psaiPic">
+			<img src= "images/ammachi-modified.png"  class = "ammachiPic">
+			
+		</div>
+		
+		<div class = "btn" id = "btnid">
+			<span class = "fa fa-bars"></span>
+		</div>
+		<div class = "audioButton">
+			<button class = "aud-btn" id = "word" onclick = "setLearningMode('ww')">Word by word</button>
+			<button class = "aud-btn"  id = "Line" onclick = "setLearningMode('ll')">Line by Line</button>
+			<button class = "aud-btn"  onclick = "setLearningMode('com')">Meditative</button>
+		</div>
+		<nav class= "sidebar">
+		<div class ="text">Rudram School</div>
+		<ul>
+			<li><a href = "#" class = "lang-btn">Language<span class= "fa fa-caret-down first"></span></a>
+				<ul class = "lang-show">
+					<li><a href = "javascript:setLanguage('Hin')">Hindi</a></li>
+					<li><a href = "javascript:setLanguage('Tel')">Telugu</a></li>
+					<li><a href = "javascript:setLanguage('Eng')">English</a></li>				
+					<li><a href = "javascript:setLanguage('Tam')">Tamil</a></li>
+					<li><a href = "javascript:setLanguage('Kan')">Kannada</a></li>
+				</ul>
+			</li>
+			
+			
+			<li><a href = "#"  class = "anu-btn">Anuvakam<span class= "fa fa-caret-down forth"></span></a>
+			<ul class = "anu-show">
+					<li><a href = "javascript:showDiv('01')" target = "_top">Anuvakam 1</a></li>
+					<li><a href = "javascript:showDiv('02')" target = "_top">Anuvakam 2</a></li>
+					<li><a href = "javascript:showDiv('03')" target = "_top">Anuvakam 3</a></li>
+					<li><a href = "javascript:showDiv('04')" target = "_top">Anuvakam 4</a></li>
+					<li><a href = "javascript:showDiv('05')" target = "_top">Anuvakam 5</a></li>
+					<li><a href = "javascript:showDiv('06')" target = "_top">Anuvakam 6</a></li>
+					<li><a href = "javascript:showDiv('07')" target = "_top">Anuvakam 7</a></li>
+					<li><a href = "javascript:showDiv('08')" target = "_top">Anuvakam 8</a></li>
+					<li><a href = "javascript:showDiv('09')" target = "_top">Anuvakam 9</a></li>
+					<li><a href = "javascript:showDiv('10')" target = "_top">Anuvakam 10</a></li>
+					<li><a href = "javascript:showDiv('11')" target = "_top">Anuvakam 11</a></li>
+					<li><a href = "javascript:showDiv('12')" target = "_top">All Anuvakams</a></li>					
+				</ul>
+			</li>
+			<li><a href = "vedaTutor.html">Veda Tutor</a></li>
+			<li><a href = "projects.html">Projects</a></li>
+			<li><a href = "testimony.html">Experiences</a></li>
+			
+		</ul>
+		</nav>
+		
+		<div class="anu-space" name="anu" id="anu1" style="visibility: hidden" >
+			<!--<p id = "error" color = "red"></p>-->
+			
+			<iframe id = "anu" src="namakamAnu12Telnrl.html"  target = "_top" width= "180%" height = "80%" frameBorder="0" scrolling = "yes"></iframe>
+		</div>
+		<script>
+			
+			$('.btn').click(function(){
+				$(this).toggleClass("click");
+				$('.sidebar').toggleClass("show");
+			});
+			$('.lang-btn').click(function(){
+				$('nav ul .lang-show').toggleClass("show");
+				$('nav ul .first').toggleClass("rotate");
+			
+			});
+			$('.text-btn').click(function(){
+				$('nav ul .text-show').toggleClass("show1");
+				$('nav ul .second').toggleClass("rotate");
+			
+			});
+			$('.lear-btn').click(function(){
+				$('nav ul .lear-show').toggleClass("show2");
+				$('nav ul .third').toggleClass("rotate");
+			
+			});
+			$('.anu-btn').click(function(){
+				$('nav ul .anu-show').toggleClass("show3");
+				$('nav ul .forth').toggleClass("rotate");
+			
+			});
+			
+			$('nav ul li').click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				});
+		</script>
+	</div>	
+	</body>	
+</html>
