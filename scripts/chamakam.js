@@ -23,11 +23,12 @@
 		//alert(getLearningMode());
 		if(getLearningMode() == 'com')
 			var sourceAud = "audio/Chamakam"+ leftPad(anuNum,2)+"com.mp3";
-		else if(buttonEle instanceof HTMLSpanElement)
+		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
 			sourceAud = "audio/Chamakam" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/Anu" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
-		//alert('here');
+		//alert('here')
+		alert(sourceAud);
 		var sounds = document.getElementById('anu1Aud');
 		sounds.controls = true;
 		var source = document.getElementById('audioSource');
@@ -206,6 +207,7 @@
 		if(lMode === null){
 			return 'ww';
 			}
+			
 		return lMode;
 	}
 		/*
@@ -218,8 +220,9 @@
 		var iframe = document.getElementById("anu");
 		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
 		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(11,13);
+		var scrAnuvakam = scrName.substring(13,15);
 		var scr = "chamakamAnu" + scrAnuvakam + getLanguage() + tMode+".html";
+		alert(scr);
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
 		document.getElementById("textList1").style.display = "none";

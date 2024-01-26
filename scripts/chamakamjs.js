@@ -26,7 +26,7 @@
 		if(getLearningMode() == 'com')
 		{var sourceAud = "audio/Chamakam/"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
-		else if(buttonEle instanceof HTMLSpanElement)
+		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
 			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
 			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
@@ -318,35 +318,61 @@
 		This function set the Language Mode
 		*/			
 			 
-			  function setLanguage(lang){
-					language = lang;						
-					localStorage.setItem("language" , lang);
-					
-					/*changes*/
-
-			/*changes made*/
-			var iframe = document.getElementById("anu");
-			var scr = "atharva" + lang + getTextMode()+".html";
-			
-			var iframe = document.getElementById("anu");
-			
-			document.getElementById("anu").src = scr;
-			
-			var divId = document.getElementById("anu1");
-			divId.style.visibility = 'visible';
-		
-			document.getElementById("lanList1").style.display = "none";
-			document.getElementById("lanList2").style.display = "none";
-			document.getElementById("lanList3").style.display = "none"; 				 
-			document.getElementById("lanList4").style.display = "none"; 
-document.getElementById("lanList5").style.display = "none";					
-			//divId.style.visibility = 'visible';
-			
-			  }			
+		function setLanguage(lang){
+		//document.getElementById("error").innerHTML = "";
+		language = lang;						
+		localStorage.setItem("language" , lang);
+		var iframe = document.getElementById("anu");
+		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
+		var scrAnuvakam = scrName.substring(11,13);
+		//alert(scrAnuvakam);
+		var scr = "chamakamAnu" + scrAnuvakam + lang + getTextMode()+".html";
+		var iframe = document.getElementById("anu");
+		document.getElementById("anu").src = scr;
+		document.getElementById("lanList1").style.display = "none";
+		document.getElementById("lanList2").style.display = "none";
+		document.getElementById("lanList3").style.display = "none";	
+		document.getElementById("lanList4").style.display = "none";	
+		document.getElementById("lanList5").style.display = "none";			
+	}		
 			/*
 		This function get the Language Mode
 		*/		 
-			 
+			
+
+	function showDiv(anuvakamNum){
+		var divId = document.getElementById("anu1");
+		var iframe = document.getElementById("anu");
+		var scrName = "chamakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+		document.getElementById("anu").src = scrName;
+		divId.style.visibility = 'visible';
+		manuBtnOnClick();
+		
+		
+		
+	}	
+
+
+	function manuBtnOnClick(){
+		//document.getElementById("error").innerHTML = "";
+		var manuBtn = document.getElementById("manuBtn");
+		var namakam = document.getElementById("namakambtn");
+		var menu = document.getElementById("menu");
+		var iframe = document.getElementById("anu");
+		var doc;
+	
+		if(namakam.style.left== "-250px"){
+			namakam.style.left = "25px"; 
+			menu.src = "images/close.png"
+			namakam.style.backgroundColor = "#20B2AA";	
+		}
+		else{
+			namakam.style.left = "-250px";
+			menu.src = "images/menu.png"
+		}
+	}
+	
 			  function getLanguage(){
 				 lang = localStorage.getItem("language");
 				if(lang === null){
