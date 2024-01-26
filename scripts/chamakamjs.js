@@ -483,4 +483,10 @@
 	}
 	
 	
-		
+		function onLoadfunc(){
+				$('.btn').toggleClass("click");
+				$('.sidebar').toggleClass("show");
+			}
+	function moveAnuText(){
+			var Tmenu = document.getElementById("telugu");
+	}
