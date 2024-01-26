@@ -220,9 +220,9 @@
 		//	document.getElementById("error").innerHTML = "";
 			learningMode = mode;
 			localStorage.setItem("learningMode" , mode);
-			document.getElementById("llList1").style.display = "none";
-			document.getElementById("llList2").style.display = "none";
-			document.getElementById("llList3").style.display = "none";
+			//document.getElementById("llList1").style.display = "none";
+			//document.getElementById("llList2").style.display = "none";
+			//document.getElementById("llList3").style.display = "none";
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
