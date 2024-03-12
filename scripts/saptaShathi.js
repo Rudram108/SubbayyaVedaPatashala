@@ -187,7 +187,7 @@
 				{
 					bolds[i].style.color = '#17202A';
 			}
-			if(getLearningMode() == 'com'){playChamakam('00');	}
+			if(getLearningMode() == 'com'){playSaptaShati('00');	}
 			buttonNum = +buttonNum + 1;
 			buttonNum = leftPad(buttonNum,2);
 				//alert(buttonNum);
@@ -197,10 +197,10 @@
 			var numberOfButtons = ele.getElementsByTagName('button').length;
 			//alert(+numberOfButtons + +numberOfSpans + +numberOfPs);
 			if( buttonNum < (+numberOfButtons + +numberOfSpans ))								
-				playChamakam(leftPad(anuNum,2),buttonNum);
+				playSaptaShati(leftPad(anuNum,2),buttonNum);
 			else
 			//alert("Anuvakam is complete. Please choose the next one");
-			playChamakam(leftPad(anuNum,2),'00');	
+			playSaptaShati(leftPad(anuNum,2),'00');	
 		}
 					
 			}
