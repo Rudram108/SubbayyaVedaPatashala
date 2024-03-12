@@ -1,0 +1,545 @@
+	*{
+		margin : 0;
+		padding : 0;
+	}
+	
+	div{
+		display : block;
+	}
+	
+	.anubg{
+		width : 80vw;
+		height: 80vh;
+	}
+	
+	.audio-select{
+		position : fixed;
+		top:0px;
+		bottom:0px;
+		left: 0px;  
+		width: 80vw;
+		height: 88px;
+		display: block;
+		overflow: hidden;
+		z-index : 4;
+	}
+	@media screen and (min-device-width: 320px) 
+	and (max-device-width: 812px) { 
+	.audio-select{
+	top:20px;
+	}}
+	.audio-select audio{
+		 background: transparent;
+	}
+	
+
+	
+	#anu1Aud{
+		position : absolute;
+		top: 30px;
+		left : 40px;
+		padding-left : 10px;
+		width : 37vw;
+		background : #009688;
+		overflow: hidden;
+		/*border: medium dashed green;*/
+	}
+	
+	::-webkit-media-controls-play-button{
+		background-color:#009688;
+	}
+	
+	@media only screen and (max-width: 1240px) {
+	#anu1Aud {
+		top : 0px;
+		width: 40vw;
+		left : 150px;
+	}}
+	
+	
+
+	.audio-text {
+    text-align: justify;
+    padding-right: 1px !important;
+	position :relative;
+	top : 9%;
+	left:39px;
+	width: 77%; /*70%;*/
+	word-wrap: break-word;
+	z-index : 1;
+	
+	}
+	@media only screen and (max-width: 1240px) {
+	.audio-text {
+		left:10px;
+	}}
+	
+	.point{
+		cursor: pointer;
+	}
+	
+	/*.audio-text button {
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19
+		padding-bottom : 10px;
+		padding-top : 10px;
+		padding-right: 3px;/*changing it to 1 was 33
+		word-wrap:break-word;
+		margin: 1px auto;
+	}*/
+	.audio-text p {
+		 text-align: justify;
+		cursor: pointer;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text p {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text p {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	.audio-text p small {
+		font-size: 22px;
+		/*text-decoration: underline;*/
+		color: #6b6a6a;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text p small {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text p small{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.audio-text p b {
+		/*font-size : 16px;*/
+		color : #17202A;
+	/*	vertical-align:super;*/
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text p b {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text p b{
+		font-size: 30px;
+		
+		}
+	}
+	.audio-text p em {
+		 font-style: normal; 
+		 
+	
+	}
+	.audio-text :hover *{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		font-size: 21px;
+		padding-bottom : 12px;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text :hover *{
+		font-size: 55px; /* was42 */
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text p small{
+		font-size: 29px;
+		
+		}
+	}
+	
+	.audio-text p:hover , .audio-text p small:hover , .audio-text p b:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		padding-bottom : 12px;
+	}
+	
+/*		
+	@media only screen and (max-width: 700px) {
+	.audio-text {
+		width: 80vw;/*was70vw
+		left:0px;
+		font-size: 133px;/*Yamini was 15
+	}}
+	
+	@media only screen and (max-width: 700px) {
+	.audio-text  p b {
+				font-size:33px;/*Yamini was 19
+	}}
+	
+	@media only screen and (max-width: 700px) {
+	.audio-text p {
+				font-size:33px;/*Yamini was 19
+	}}
+*/	
+	
+	
+	.p-text  {
+		text-align: justify;
+		cursor: pointer;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+		font-family:ff6;
+		font-weight:900;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.p-text {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-text  {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	.p-text  small {
+		font-size: 22px;
+		/*text-decoration: underline;*/
+		color: #6b6a6a;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-text p small {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-text p small{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-text  b {
+		/*font-size : 16px;*/
+		color : #17202A;
+	/*	vertical-align:super;*/
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-text p b {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-text p b{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-text :hover *{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		font-size: 21px;
+		padding-bottom : 12px;
+	}@media screen and (max-width: 1240px) { /*for phone*/
+	.p-text :hover *{
+		font-size: 43px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-text  small{
+		font-size: 29px;
+		
+		}
+	}
+	
+	.p-text p:hover , .p-text p small:hover , .p-text p b:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		padding-bottom : 12px;
+	}
+	/*.p-textff7  {
+		 text-align: justify;
+		cursor: pointer;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19
+		padding-right: 3px;/*changing it to 1 was 33
+		padding-left: 1px;
+		margin: 0px auto;
+		font-family:ff7;
+		font-weight: 900;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone
+	.p-textff7 {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7  {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	.p-textff7  small {
+		font-size: 22px;
+		/*text-decoration: underline;
+		color: #6b6a6a;
+	}@media screen and (max-width: 1240px) { /*for phone
+	.p-textff7 p small {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7 p small{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-textff7  b {
+		/*font-size : 16px;
+		color : #17202A;
+	/*	vertical-align:super;
+	}@media screen and (max-width: 1240px) { /*for phone
+	.p-textff7 p b {
+		font-size: 55px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7 p b{
+		font-size: 30px;
+		
+		}
+	}
+	
+	.p-textff7 :hover *{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		font-size: 21px;
+		padding-bottom : 12px;
+	}@media screen and (max-width: 1240px) { /*for phone
+	.p-textff7 :hover *{
+		font-size: 43px;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.p-textff7  small{
+		font-size: 29px;
+		
+		}
+	}
+	
+	.p-textff7 p:hover , .p-textff7 p small:hover , .p-textff7 p b:hover{
+		border: none;
+		cursor: pointer;
+		background-color: Transparent;
+		color: yellow;
+		padding-bottom : 12px;
+	}*/
+	
+	.audio-text-noCursor {
+    text-align: justify;
+    padding-right: 1px !important;
+	position :relative;
+	top : 9%;
+	left:39px;
+	width: 77%; /*70%;*/
+	word-wrap: break-word;
+	z-index : 1;
+	
+	}
+	@media only screen and (max-width: 1240px) {
+	.audio-text-noCursor  {
+		left:10px;
+	}}
+	
+	
+	.audio-text-noCursor p {
+		 text-align: justify;
+		cursor: not-allowed;
+		color: #340002;
+		font-size: 22px;/*Yamini was 19*/
+		padding-right: 3px;/*changing it to 1 was 33*/
+		padding-left: 1px;
+		margin: 0px auto;
+	
+	}
+	@media screen and (max-width: 1240px) { /*for phone*/
+	.audio-text-noCursor p {
+		font-size: 55px;
+		line-height : 150%;
+	}}
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
+		.audio-text-noCursor p {
+		font-size: 30px;
+		line-height : 150%;
+		}
+	}
+	
+	
+	::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 6px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #009688; 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #009666	; 
+}
+
+#error{
+	color : #FF4500;
+	font-size : 13px;
+}
+@media only screen and (max-width: 1240px) {
+#error{
+		font-size : 30px;
+}
+}
+
+/* chages */
+
+.navButton a {
+	
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.navButton a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 18px;
+}
+
+.next {
+		position : relative;
+		left :50%;
+		background-color: #009688;
+		color: white;
+		border-radius: 18px;
+		width: 10%;
+		
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.next {
+		width: 15%;
+		font-size : 33px;
+		padding: 8px 16px;
+	}}
+
+.nextEdit {
+		position : relative;
+		left :50%;
+		width: 1%;
+		height: 1%;		
+		color: white;
+		border-radius: 18px;
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.nextEdit {
+		background-color: #009688;
+	}}
+
+#editedCount {
+		position : relative;
+		left :60%;
+		visibility : hidden;
+}
+
+#editedCount1 {
+		position : relative;
+		bottom : 100%;
+		left :65%;
+		width: 5%;
+		height: 2%;
+		color: white;
+		
+}
+
+.enterCount{
+		position : relative;
+		left :60%;
+		width: 1%;
+		height: 2%;
+		color: black;
+		border-radius: 18px;
+		visibility : hidden;
+}@media screen and (max-width: 1240px) { /*for phone*/
+	.enterCount {
+		background-color: #009688;
+	}}
+
+.round {
+  border-radius: 50%;
+}

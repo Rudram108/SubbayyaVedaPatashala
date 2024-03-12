@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-		<title>Sri Rudra chamakam(Anuvakam 1) - RudramSchool</title>
+		<title>Sri Durga Sapta Shati - RudramSchool</title>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="robots" content="index, follow" />
@@ -42,11 +42,26 @@
 				 url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.woff") format("woff"),
 				 url("https://www.rudramschool.org/fonts/Siddhanta/Siddhanta.ttf") format("truetype");
 		}
+		@font-face {
+			font-family: 'NotoSansTamil';
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot");
+			src: url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.eot?#iefix") format("embedded-opentype"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.woff") format("woff"),
+				 url("https://www.rudramschool.org/fonts/NotoSansTamil-Regular/NotoSansTamil-Regular.ttf") format("truetype");}
+				 @font-face {
+			font-family: 'Goda';
+			src: url("https://www.rudramschool.org/fonts/Goda/Goda.eot");
+			src: url("https://www.rudramschool.org/fonts/Goda/Goda.eot?#iefix") format("embedded-opentype"),
+					url("https://www.rudramschool.org/fonts/Goda/Goda.woff") format("woff"),
+					url("https://www.rudramschool.org/fonts/Goda/Goda.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;                
+		}
 		</style>
-		<link rel="stylesheet" href="css/avunakam.css" type="text/css"/>
+		<link rel="stylesheet" href="css/durga.css" type="text/css"/>
 		<link rel="stylesheet" href="css/dd.css">
 		<link rel="stylesheet" href="css/norm.css">
-		<script type = "text/javascript" src="scripts/chamakamjs.js"></script>
+		<script type = "text/javascript" src="scripts/saptaShathi.js"></script>
 		<script>
 		document.addEventListener("contextmenu", function(event){
 		event.preventDefault(); 
@@ -61,37 +76,19 @@
 	</nav>
 	
 	
-	<div class = "audio-text" id="audio-text"  style="font-family:NotoSans; line-height:200%;font-size: 22px;"><br><br>
+	<div class = "audio-text" id="audio-text"  style="font-family:NotoSansTelugu; line-height:200%;font-size: 22px;"><br><br>
 	
-<p>
 	
-		<span class = "point" id = "p00" onclick="playChamakam('02','00')">jaiṣṭhya̍-ñcha ma̠ ādhi̍patya-ñcha mē ma̠nyuścha̍ mē̠</span><br>
-		<span  class = "point" id = "p01" onclick="playChamakam('02','01')">bhāma̍ścha̠ mē-'ma̍ścha̠ mē-'mbha̍ścha mē jē̠mā cha̍ mē</span><br>
-		<button id = "p02" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p03" onclick="playChamakam('02','03')">mahi̠mā cha̍ mē vari̠mā cha̍ mē prathi̠mā cha̍ mē</span><br>
-		<button id = "p04"   value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p05" onclick="playChamakam('02','05')">va̠r​ṣmā cha̍ mē drāghu̠yā cha̍ mē vṛ̠ddha-ñcha̍ mē̠ </span><br>
+	<p>
+		<span class = "point" id = "p00" onclick="playSaptaShati('01','00')">ఓం మధ్యమ చరిత్రస్య విష్ణుఋషిః। మహాలక్ష్మిర్దేవతా। ఉష్ణిక్ ఛందః ।  శాకంభరీ శక్తిః । దుర్గా బీజమ్ । వాయుస్తత్త్వమ్ ।  యజుర్వేదః స్వరూపమ్ ।  శ్రీ మహాలక్ష్మి ప్రీత్యర్థం మధ్యమ చరిత్రే వినియోగః |</span><br><br>
+		
+		<span class = "point" id = "p01" onclick="playSaptaShati('01','01')"><b>ధ్యానం</b><br><br>ఓం అక్షస్రక్ పరశుం గదేషుకులిశం పద్మం ధనుః కుండికాం <br></span>
+		<span class = "point" id = "p02" onclick="playSaptaShati('01','02')">దండం శక్తిమసిం చ చర్మ జలజం ఘంటాం సురాభాజనమ్ ।<br></span>
+		<button id = "p03" value = "2" style = "display:none;"></button>
+		<span class = "point" id = "p04" onclick="playSaptaShati('01','04')">శూలం, పాశసుదర్శనే చ దధతీం, హస్తైః  ప్రసన్నాననాం । <br></span>
+		<span class = "point" id = "p05" onclick="playSaptaShati('01','05')">సేవే సైరిభమర్దినీమిహ మహలక్ష్మీం సరోజస్థితామ్ ॥ <br></span>
 		<button id = "p06" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p07" onclick="playChamakam('02','07')">vṛddhi̍ścha mē sa̠tya-ñcha̍ mē śra̠ddhā cha̍ mē̠ jaga̍chcha mē̠</span><br>
-		<button id = "p08" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p09" onclick="playChamakam('02','09')">dhana̍-ñcha mē̠ vaśa̍ścha mē̠ tviṣi̍ścha mē krī̠ḍā cha̍mē̠ </span><br>
-		<button id = "p10" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p11" onclick="playChamakam('02','11')">mōda̍ścha mē jā̠ta-ñcha̍ mē jani̠ṣyamā̍ṇa-ñcha mē</span><br>
-		<button id = "p12" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p13" onclick="playChamakam('02','13')">sū̠kta-ñcha̍ mē sukṛ̠ta-ñcha̍ mē vi̠tta-ñcha̍ mē̠ </span><br>
-		<button id = "p14" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p15" onclick="playChamakam('02','15')">vēdya̍-ñcha mē bhū̠ta-ñcha̍ mē bhavi̠ṣyachcha̍ mē </span><br>
-		<button id = "p16" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p17" onclick="playChamakam('02','17')">su̠ga-ñcha̍ mē su̠patha̍-ñcha ma ṛ̠ddha-ñcha̍ ma </span><br>
-		<button id = "p18" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p19" onclick="playChamakam('02','19')">ṛddhi̍ścha mē kL​i̠pta-ñcha̍ mē̠ kL​ipti̍ścha mē</span><br>
-		<button id = "p20" value = "2" style = "display:none;"></button>
-		<span class = "point" id = "p21" onclick="playChamakam('02','21')">ma̠tiścha̍ mē suma̠tiścha̍ mē ॥ 2 ॥</span><br><br><br>
-		<button id = "p22" value = "2" style = "display:none;"></button>
-		
-	
-		
-			
+	</p>	
 			<br><br>
 		
 	</div>	

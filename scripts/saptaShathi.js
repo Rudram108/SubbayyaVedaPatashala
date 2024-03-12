@@ -5,7 +5,7 @@
 		Also the current playing line of anuvakam is decided based on audio being palyed currently.
 		Audio and button are named such that they show the line number they are associated to.
 		*/
-		function playChamakam(anuNum, buttonNum)
+		function playSaptaShati(anuNum, buttonNum)
 			{
 				//alert(anuNum);
 				//alert(buttonNum);
@@ -24,12 +24,12 @@
 		
 		
 		if(getLearningMode() == 'com')
-		{var sourceAud = "audio/Chamakam/"+ leftPad(anuNum,2)+"com.mp3";
+		{var sourceAud = "audio/saptaShati/"+ leftPad(anuNum,2)+"com.mp3";
 			document.getElementById("anu1").style.pointerEvents = "not-allowed";}
 		else if((buttonEle instanceof HTMLButtonElement)||(buttonEle instanceof HTMLParagraphElement))
-			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
+			sourceAud = "audio/saptaShati/" + leftPad(anuNum,2) +"ww_" + buttonNum +".mp3";
 		else
-			sourceAud = "audio/Chamakam/" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
+			sourceAud = "audio/saptaShati/" + leftPad(anuNum,2) +getLearningMode()+"_" + buttonNum +".mp3";
 		
 		
 		
@@ -327,7 +327,7 @@
 		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
 		var scrAnuvakam = scrName.substring(11,13);
 		//alert(scrAnuvakam);
-		var scr = "chamakamAnu" + scrAnuvakam + lang + getTextMode()+".html";
+		var scr = "saptaShatiAnu" + scrAnuvakam + lang + getTextMode()+".html";
 		var iframe = document.getElementById("anu");
 		document.getElementById("anu").src = scr;
 		document.getElementById("lanList1").style.display = "none";
@@ -344,7 +344,7 @@
 	function showDiv(anuvakamNum){
 		var divId = document.getElementById("anu1");
 		var iframe = document.getElementById("anu");
-		var scrName = "chamakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+		var scrName = "saptaShatiAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
 		manuBtnOnClick();
