@@ -94,17 +94,18 @@
 		text-align: justify;
 		cursor: pointer;
 		color: #340002;
-		font-size: 22px;/*Yamini was 19*/
+		font-size: 44px;/*Yamini was 19*/
 		padding-right: 3px;/*changing it to 1 was 33*/
 		padding-left: 1px;
 		margin: 0px auto;
+		line-height : 150%;
 	
 	}
-	@media screen and (max-width: 1240px) { /*for phone*/
+	/*@media screen and (max-width: 1240px) { /*for phone
 	.audio-text p {
-		font-size: 22px;
+		font-size: 55px;
 		line-height : 150%;
-	}}
+	}}*/
 	@media only screen 
 		and (min-device-width: 768px) 
 		and (max-device-width: 1024px) 
