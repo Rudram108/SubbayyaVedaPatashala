@@ -91,7 +91,7 @@
 		margin: 1px auto;
 	}*/
 	.audio-text p {
-		 text-align: justify;
+		text-align: justify;
 		cursor: pointer;
 		color: #340002;
 		font-size: 22px;/*Yamini was 19*/
@@ -102,7 +102,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
-		font-size: 55px;
+		font-size: 22px;
 		line-height : 150%;
 	}}
 	@media only screen 

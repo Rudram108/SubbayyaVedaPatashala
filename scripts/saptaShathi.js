@@ -325,7 +325,7 @@
 		var iframe = document.getElementById("anu");
 		var scrName = document.getElementById("anu").src;// "namakamAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
 		scrName = scrName.substring(scrName.lastIndexOf('/')+1);
-		var scrAnuvakam = scrName.substring(11,13);
+		var scrAnuvakam = scrName.substring(13,15);
 		//alert(scrAnuvakam);
 		var scr = "saptaShatiAnu" + scrAnuvakam + lang + getTextMode()+".html";
 		var iframe = document.getElementById("anu");

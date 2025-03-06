@@ -50,15 +50,18 @@ br
 	/*
 	background-color:#b2f7f7;*/
 	/*background-color:#A5E5FF;*/
-	background-color:#008080;
-	/*background: linear-gradient(#009688,#A5E5FF)!important;		*/
+	/*background-color:#008080;*/
+	
+	
+	background: linear-gradient(#009688,#A5E5FF)!important;		
 }
 
 .fgtable {
 	/* background-color:#F2FBFF; */
 	/*background-color:#FAFFFF;*/
 	background-color:	#FFFFE0;
-/*	background: linear-gradient(#A5E5FF,#009688)!important;		*/
+	background-color:	#FFFFF0;
+	/*background: linear-gradient(#A5E5FF,#009688)!important;	*/
 	width: 940;
 	border: 1;
 }
