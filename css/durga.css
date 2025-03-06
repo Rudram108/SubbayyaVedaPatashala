@@ -103,12 +103,12 @@
 	}
 	@media only screen and (min-width: 1024px) { /*for desktop*/
 	.audio-text p {
-		font-size: 44px;
+		font-size: 22px;
 		line-height : 150%;
 	}}
 	@media only screen and (min-width: 320px) and (max-device-width: 480px) { /*for phone*/
 	.audio-text p {
-		font-size: 22px;
+		font-size: 44px;
 		line-height : 150%;
 	}}
 	@media only screen and (max-device-width: 320px)
