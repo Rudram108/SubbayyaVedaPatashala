@@ -9,7 +9,6 @@
 	
 	.anubg{
 		width : 80vw;
-		height: 80vh;
 	}
 	
 	.audio-select{
@@ -94,7 +93,7 @@
 		text-align: justify;
 		cursor: pointer;
 		color: #340002;
-		font-size: 34px;/*Yamini was 19*/
+		font-size: 22px;/*Yamini was 19*/
 		padding-right: 3px;/*changing it to 1 was 33*/
 		padding-left: 1px;
 		margin: 0px auto;
