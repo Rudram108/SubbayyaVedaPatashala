@@ -9,6 +9,7 @@
 	
 	.anubg{
 		width : 80vw;
+		height: 50vh;
 	}
 	
 	.audio-select{
@@ -93,7 +94,7 @@
 		text-align: justify;
 		cursor: pointer;
 		color: #340002;
-		font-size: 22px;/*Yamini was 19*/
+		font-size: 34px;/*Yamini was 19*/
 		padding-right: 3px;/*changing it to 1 was 33*/
 		padding-left: 1px;
 		margin: 0px auto;
@@ -107,7 +108,7 @@
 	}}
 	@media only screen and (min-width: 320px) and (max-device-width: 480px) { /*for phone*/
 	.audio-text p {
-		font-size: 55px;
+		font-size: px;
 		line-height : 150%;
 	}}
 	@media only screen and (max-device-width: 320px)
