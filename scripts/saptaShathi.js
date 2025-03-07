@@ -364,13 +364,12 @@ function onLoadfunc(){
 			}
 	
 			  function getLanguage(){
-				/* lang = localStorage.getItem("language");
+			 lang = localStorage.getItem("language");
 				if(lang === null){
 					return 'Tel';
 				}
-				return lang;*/
-				return 'Tel';
-				 
+				return lang;
+				
 			 }
 			 
 			 
