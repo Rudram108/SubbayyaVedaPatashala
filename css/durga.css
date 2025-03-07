@@ -103,7 +103,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
-		font-size: 25px;
+		font-size: 33px;
 		line-height : 150%;
 	}}
 	@media only screen 
