@@ -8,7 +8,7 @@
 	}
 	
 	.anubg{
-		width : 66vw;
+		width : 65vw;
 		height: 50vh;
 	}
 	
@@ -103,7 +103,7 @@
 	}
 	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
-		font-size: 20px;
+		font-size: 25px;
 		line-height : 150%;
 	}}
 	@media only screen 
