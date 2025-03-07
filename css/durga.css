@@ -8,7 +8,7 @@
 	}
 	
 	.anubg{
-		width : 80vw;
+		width : 66vw;
 		height: 50vh;
 	}
 	
@@ -101,23 +101,26 @@
 		line-height : 150%;
 	
 	}
-	@media only screen and (min-width: 1024px) { /*for desktop*/
+	@media screen and (max-width: 1240px) { /*for phone*/
 	.audio-text p {
-		font-size: 33px;
+		font-size: 20px;
 		line-height : 150%;
 	}}
-	@media only screen and (min-width: 320px) and (max-device-width: 480px) { /*for phone*/
-	.audio-text p {
-		font-size: 34px;
-		line-height : 150%;
-	}}
-	@media only screen and (max-device-width: 320px)
-		{
+	@media only screen 
+		and (min-device-width: 768px) 
+		and (max-device-width: 1024px) 
+		and (-webkit-min-device-pixel-ratio: 1) {
 		.audio-text p {
-		font-size: 30px;
+		font-size: 27px;
 		line-height : 150%;
 		}
 	}
+		@media only screen 
+		and (-webkit-min-device-pixel-ratio: 3) {
+		.audio-text p {
+		font-size: 75px;
+		line-height : 120%;
+		}
 	}
 	
 	.audio-text p small {
