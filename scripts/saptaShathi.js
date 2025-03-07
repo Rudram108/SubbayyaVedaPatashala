@@ -345,33 +345,23 @@
 		var divId = document.getElementById("anu1");
 		var iframe = document.getElementById("anu");
 		var scrName = "saptaShatiAnu" + anuvakamNum + getLanguage() + getTextMode()+".html";
+	
 		document.getElementById("anu").src = scrName;
 		divId.style.visibility = 'visible';
-		manuBtnOnClick();
-		
-		
+		manuBtnOnClick();	
 		
 	}	
 
 
-	function manuBtnOnClick(){
-		//document.getElementById("error").innerHTML = "";
-		var manuBtn = document.getElementById("manuBtn");
-		var namakam = document.getElementById("namakambtn");
-		var menu = document.getElementById("menu");
-		var iframe = document.getElementById("anu");
-		var doc;
-	
-		if(namakam.style.left== "-250px"){
-			namakam.style.left = "25px"; 
-			menu.src = "images/close.png"
-			namakam.style.backgroundColor = "#20B2AA";	
-		}
-		else{
-			namakam.style.left = "-250px";
-			menu.src = "images/menu.png"
-		}
+		function manuBtnOnClick(){
+				$('.btn').toggleClass("click");
+				$('.sidebar').toggleClass("show");
 	}
+
+function onLoadfunc(){
+				$('.btn').toggleClass("click");
+				$('.sidebar').toggleClass("show");
+			}
 	
 			  function getLanguage(){
 				/* lang = localStorage.getItem("language");
@@ -382,6 +372,7 @@
 				return 'Tel';
 				 
 			 }
+			 
 			 
 		
 			

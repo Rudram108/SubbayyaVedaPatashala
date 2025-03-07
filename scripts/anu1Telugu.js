@@ -11,7 +11,8 @@
 			//alert(anuNum);
 			//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
-			
+	
+		//manuBtnOnClick();	
 		var buttonId = "p" + buttonNum;
 		var buttonEle = document.getElementById(buttonId);
 		document.getElementById(buttonId).scrollIntoViewIfNeeded();
@@ -300,6 +301,7 @@
 		//document.getElementById("error").innerHTML = "";
 		var manuBtn = document.getElementById("manuBtn");
 		var namakam = document.getElementById("namakambtn");
+		alert(namakam);
 		var menu = document.getElementById("menu");
 		var iframe = document.getElementById("anu");
 		var doc;
