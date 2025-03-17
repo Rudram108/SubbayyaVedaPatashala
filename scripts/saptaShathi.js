@@ -10,7 +10,6 @@
 				//alert(anuNum);
 				//alert(buttonNum);
 			//	 document.getElementById("error").innerHTML = "";
-			
 		var buttonId = "p" + buttonNum;
 		
 		var buttonEle = document.getElementById(buttonId);
@@ -307,11 +306,7 @@
 		*/			
 				 
 			  function getTextMode(){
-				 tMode = localStorage.getItem("textMode");
-				if(tMode === null){
-					return 'nrl';
-				}
-				return tMode;
+								return 'nrl';
 				 
 			 }
 			/*
@@ -364,6 +359,7 @@ function onLoadfunc(){
 			}
 	
 			  function getLanguage(){
+				 
 			 lang = localStorage.getItem("language");
 				if(lang === null){
 					return 'Tel';
@@ -391,6 +387,7 @@ function onLoadfunc(){
 		document.getElementById(list.children[j].id).style.display = "block";
 		}
 		}
+		
 	}
 	}
 	
