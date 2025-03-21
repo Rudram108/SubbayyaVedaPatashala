@@ -284,11 +284,12 @@
 		*/			
 				 
 	function getTextMode(){
-		 tMode = localStorage.getItem("textMode");
+		 return 'nrl';
+		/* tMode = localStorage.getItem("textMode");
 		 if(tMode === null){
 			 return 'nrl';
 		}
-				return tMode;
+				return tMode;*/
 	}
 			/*
 		This function set the Language Mode
