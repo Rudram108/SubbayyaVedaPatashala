@@ -221,7 +221,7 @@
 			localStorage.setItem("learningMode" , mode);
 			document.getElementById("llList1").style.display = "none";
 			document.getElementById("llList2").style.display = "none";
-			document.getElementById("llList3").style.display = "none";
+			//document.getElementById("llList3").style.display = "none";
 		//	var sourceAud = "audio/Anu" + anuNum +getLearningMode()+"_" + buttonNum +".mp3";
 			var iframe = document.getElementById("anu");
 			var scrName = document.getElementById("anu").src;
@@ -376,7 +376,7 @@ document.getElementById("lanList5").style.display = "none";
 	}
 	}
 	
-	function openText(listID){		 
+	/*function openText(listID){		 
 		const myElement = document.getElementById(listID);
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;
@@ -391,7 +391,7 @@ document.getElementById("lanList5").style.display = "none";
 		}
 		}
 	}
-	}
+	}*/
 	
 	function openMode(listID){		
 //document.getElementById("error").innerHTML = "";	
@@ -400,7 +400,7 @@ document.getElementById("lanList5").style.display = "none";
 		for (let i = 0; i < myElement.children.length; i++) {
 			var listClass = myElement.children[i].className ;	
 			if (listClass != ''){
-				list = document.getElementsByClassName(listClass)[2];
+				list = document.getElementsByClassName(listClass)[1]; //change to 2 for Meditative mode.
 				for (let j = 0; j < list.children.length; j++) {
 					if(document.getElementById(list.children[j].id).style.display == "block")
 						document.getElementById(list.children[j].id).style.display = "none";
